@@ -182,14 +182,15 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                         setSelectSort('lastUpdate');
                                     }} className="btn btn-light lastUpdate-left">Last updated</div> */}
                                 </div>
+                                <div className="country-list-heading">
+                                    <div>Area</div>
+                                    <div className="confirmed">Confirmed</div>
+                                    <div className="recovered">Recovered</div>
+                                    <div className="deaths">Deaths</div>
+                                    <div>Updated</div>
+                                </div>
                                 <div className="country-list-container">
-                                    <div className="country-list-heading">
-                                        <div>Area</div>
-                                        <div className="confirmed">Confirmed</div>
-                                        <div className="recovered">Recovered</div>
-                                        <div className="deaths">Deaths</div>
-                                        <div>Updated</div>
-                                    </div>
+
                                     {renderList()}
                                 </div>
                             </>) :
