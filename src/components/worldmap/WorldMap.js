@@ -225,13 +225,13 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                     onCountryClick(country)
                 }}>
                     <div>{country.countryRegion} {country.provinceState}</div>
-                    <div className="confirmed" ><CountUp separator=',' delay={1} duration={3} end={country.confirmed} /></div>
-                    <div className="recovered" ><CountUp separator=',' delay={1} duration={3} end={country.recovered} /></div>
-                    <div className="deaths" ><CountUp separator=',' delay={1} duration={3} end={country.deaths} /></div>
+                    <div className="confirmed" >{country.confirmed}</div>
+                    <div className="recovered" >{country.recovered}</div>
+                    <div className="deaths" >{country.deaths}</div>
                     <div>{moment(country.lastUpdate).format('DD/MM/YY hh:mm:ss')}</div>
                 </div>
             )
-        })
+        });
 
         return data
     }
