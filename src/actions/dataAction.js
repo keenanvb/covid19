@@ -70,9 +70,12 @@ export const getMapData = () => {
                 type: GET_MAP_DATA,
                 payload: res.data
             })
-            dispatch(setAlert('Map data available', 'success'))
+            // dispatch(setAlert('Map data available', 'success'))
         } catch (err) {
-
+            dispatch({
+                type: GET_MAP_DATA,
+                payload: []
+            })
             dispatch(setAlert('Map data not available', 'danger'))
         }
     }
