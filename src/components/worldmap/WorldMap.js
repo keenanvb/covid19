@@ -168,6 +168,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                         }
 
                                     })}
+
                                     {/* <div onClick={() => {
                                         setSelectSort('confirmed');
                                     }} className="btn btn-light confirmed-left">Confirmed</div>
@@ -182,7 +183,13 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                     }} className="btn btn-light lastUpdate-left">Last updated</div> */}
                                 </div>
                                 <div className="country-list-container">
-
+                                    <div className="country-list-heading">
+                                        <div>Area</div>
+                                        <div className="confirmed">Confirmed</div>
+                                        <div className="recovered">Recovered</div>
+                                        <div className="deaths">Deaths</div>
+                                        <div>Updated</div>
+                                    </div>
                                     {renderList()}
                                 </div>
                             </>) :
@@ -220,7 +227,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                     <div className="confirmed" ><CountUp separator=',' delay={1} duration={3} end={country.confirmed} /></div>
                     <div className="recovered" ><CountUp separator=',' delay={1} duration={3} end={country.recovered} /></div>
                     <div className="deaths" ><CountUp separator=',' delay={1} duration={3} end={country.deaths} /></div>
-                    <div>{moment(country.lastUpdate).format('DD/MM/YY hh:mm:ss a')}</div>
+                    <div>{moment(country.lastUpdate).format('DD/MM/YY hh:mm:ss')}</div>
                 </div>
             )
         })
