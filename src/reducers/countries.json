@@ -1,0 +1,2499 @@
+[
+    {
+        "id": "0",
+        "title": "Afghanistan",
+        "code": "AFN",
+        "latlng:": [
+            33,
+            65
+        ],
+        "flag": "https://restcountries.eu/data/afg.svg"
+    },
+    {
+        "id": "2",
+        "title": "Albania",
+        "code": "ALL",
+        "latlng:": [
+            41,
+            20
+        ],
+        "flag": "https://restcountries.eu/data/alb.svg"
+    },
+    {
+        "id": "3",
+        "title": "Algeria",
+        "code": "DZD",
+        "latlng:": [
+            28,
+            3
+        ],
+        "flag": "https://restcountries.eu/data/dza.svg"
+    },
+    {
+        "id": "4",
+        "title": "American Samoa",
+        "code": "USD",
+        "latlng:": [
+            -14.33333333,
+            -170
+        ],
+        "flag": "https://restcountries.eu/data/asm.svg"
+    },
+    {
+        "id": "5",
+        "title": "Andorra",
+        "code": "EUR",
+        "latlng:": [
+            42.5,
+            1.5
+        ],
+        "flag": "https://restcountries.eu/data/and.svg"
+    },
+    {
+        "id": "6",
+        "title": "Angola",
+        "code": "AOA",
+        "latlng:": [
+            -12.5,
+            18.5
+        ],
+        "flag": "https://restcountries.eu/data/ago.svg"
+    },
+    {
+        "id": "7",
+        "title": "Anguilla",
+        "code": "XCD",
+        "latlng:": [
+            18.25,
+            -63.16666666
+        ],
+        "flag": "https://restcountries.eu/data/aia.svg"
+    },
+    {
+        "id": "8",
+        "title": "Antarctica",
+        "code": "AUD",
+        "latlng:": [
+            -74.65,
+            4.48
+        ],
+        "flag": "https://restcountries.eu/data/ata.svg"
+    },
+    {
+        "id": "9",
+        "title": "Antigua and Barbuda",
+        "code": "XCD",
+        "latlng:": [
+            17.05,
+            -61.8
+        ],
+        "flag": "https://restcountries.eu/data/atg.svg"
+    },
+    {
+        "id": "10",
+        "title": "Argentina",
+        "code": "ARS",
+        "latlng:": [
+            -34,
+            -64
+        ],
+        "flag": "https://restcountries.eu/data/arg.svg"
+    },
+    {
+        "id": "11",
+        "title": "Armenia",
+        "code": "AMD",
+        "latlng:": [
+            40,
+            45
+        ],
+        "flag": "https://restcountries.eu/data/arm.svg"
+    },
+    {
+        "id": "12",
+        "title": "Aruba",
+        "code": "AWG",
+        "latlng:": [
+            12.5,
+            -69.96666666
+        ],
+        "flag": "https://restcountries.eu/data/abw.svg"
+    },
+    {
+        "id": "13",
+        "title": "Australia",
+        "code": "AUD",
+        "latlng:": [
+            -27,
+            133
+        ],
+        "flag": "https://restcountries.eu/data/aus.svg"
+    },
+    {
+        "id": "14",
+        "title": "Austria",
+        "code": "EUR",
+        "latlng:": [
+            47.33333333,
+            13.33333333
+        ],
+        "flag": "https://restcountries.eu/data/aut.svg"
+    },
+    {
+        "id": "15",
+        "title": "Azerbaijan",
+        "code": "AZN",
+        "latlng:": [
+            40.5,
+            47.5
+        ],
+        "flag": "https://restcountries.eu/data/aze.svg"
+    },
+    {
+        "id": "16",
+        "title": "Bahamas",
+        "code": "BSD",
+        "latlng:": [
+            24.25,
+            -76
+        ],
+        "flag": "https://restcountries.eu/data/bhs.svg"
+    },
+    {
+        "id": "17",
+        "title": "Bahrain",
+        "code": "BHD",
+        "latlng:": [
+            26,
+            50.55
+        ],
+        "flag": "https://restcountries.eu/data/bhr.svg"
+    },
+    {
+        "id": "18",
+        "title": "Bangladesh",
+        "code": "BDT",
+        "latlng:": [
+            24,
+            90
+        ],
+        "flag": "https://restcountries.eu/data/bgd.svg"
+    },
+    {
+        "id": "19",
+        "title": "Barbados",
+        "code": "BBD",
+        "latlng:": [
+            13.16666666,
+            -59.53333333
+        ],
+        "flag": "https://restcountries.eu/data/brb.svg"
+    },
+    {
+        "id": "20",
+        "title": "Belarus",
+        "code": "BYN",
+        "latlng:": [
+            53,
+            28
+        ],
+        "flag": "https://restcountries.eu/data/blr.svg"
+    },
+    {
+        "id": "21",
+        "title": "Belgium",
+        "code": "EUR",
+        "latlng:": [
+            50.83333333,
+            4
+        ],
+        "flag": "https://restcountries.eu/data/bel.svg"
+    },
+    {
+        "id": "22",
+        "title": "Belize",
+        "code": "BZD",
+        "latlng:": [
+            17.25,
+            -88.75
+        ],
+        "flag": "https://restcountries.eu/data/blz.svg"
+    },
+    {
+        "id": "23",
+        "title": "Benin",
+        "code": "XOF",
+        "latlng:": [
+            9.5,
+            2.25
+        ],
+        "flag": "https://restcountries.eu/data/ben.svg"
+    },
+    {
+        "id": "24",
+        "title": "Bermuda",
+        "code": "BMD",
+        "latlng:": [
+            32.33333333,
+            -64.75
+        ],
+        "flag": "https://restcountries.eu/data/bmu.svg"
+    },
+    {
+        "id": "25",
+        "title": "Bhutan",
+        "code": "BTN",
+        "latlng:": [
+            27.5,
+            90.5
+        ],
+        "flag": "https://restcountries.eu/data/btn.svg"
+    },
+    {
+        "id": "26",
+        "title": "Bolivia (Plurinational State of)",
+        "code": "BOB",
+        "latlng:": [
+            -17,
+            -65
+        ],
+        "flag": "https://restcountries.eu/data/bol.svg"
+    },
+    {
+        "id": "27",
+        "title": "Bonaire, Sint Eustatius and Saba",
+        "code": "USD",
+        "latlng:": [
+            12.15,
+            -68.266667
+        ],
+        "flag": "https://restcountries.eu/data/bes.svg"
+    },
+    {
+        "id": "28",
+        "title": "Bosnia and Herzegovina",
+        "code": "BAM",
+        "latlng:": [
+            44,
+            18
+        ],
+        "flag": "https://restcountries.eu/data/bih.svg"
+    },
+    {
+        "id": "29",
+        "title": "Botswana",
+        "code": "BWP",
+        "latlng:": [
+            -22,
+            24
+        ],
+        "flag": "https://restcountries.eu/data/bwa.svg"
+    },
+    {
+        "id": "30",
+        "title": "Bouvet Island",
+        "code": "NOK",
+        "latlng:": [
+            -54.43333333,
+            3.4
+        ],
+        "flag": "https://restcountries.eu/data/bvt.svg"
+    },
+    {
+        "id": "31",
+        "title": "Brazil",
+        "code": "BRL",
+        "latlng:": [
+            -10,
+            -55
+        ],
+        "flag": "https://restcountries.eu/data/bra.svg"
+    },
+    {
+        "id": "32",
+        "title": "British Indian Ocean Territory",
+        "code": "USD",
+        "latlng:": [
+            -6,
+            71.5
+        ],
+        "flag": "https://restcountries.eu/data/iot.svg"
+    },
+    {
+        "id": "36",
+        "title": "Brunei Darussalam",
+        "code": "BND",
+        "latlng:": [
+            4.5,
+            114.66666666
+        ],
+        "flag": "https://restcountries.eu/data/brn.svg"
+    },
+    {
+        "id": "37",
+        "title": "Bulgaria",
+        "code": "BGN",
+        "latlng:": [
+            43,
+            25
+        ],
+        "flag": "https://restcountries.eu/data/bgr.svg"
+    },
+    {
+        "id": "38",
+        "title": "Burkina Faso",
+        "code": "XOF",
+        "latlng:": [
+            13,
+            -2
+        ],
+        "flag": "https://restcountries.eu/data/bfa.svg"
+    },
+    {
+        "id": "39",
+        "title": "Burundi",
+        "code": "BIF",
+        "latlng:": [
+            -3.5,
+            30
+        ],
+        "flag": "https://restcountries.eu/data/bdi.svg"
+    },
+    {
+        "id": "43",
+        "title": "Cabo Verde",
+        "code": "CVE",
+        "latlng:": [
+            16,
+            -24
+        ],
+        "flag": "https://restcountries.eu/data/cpv.svg"
+    },
+    {
+        "id": "40",
+        "title": "Cambodia",
+        "code": "KHR",
+        "latlng:": [
+            13,
+            105
+        ],
+        "flag": "https://restcountries.eu/data/khm.svg"
+    },
+    {
+        "id": "41",
+        "title": "Cameroon",
+        "code": "XAF",
+        "latlng:": [
+            6,
+            12
+        ],
+        "flag": "https://restcountries.eu/data/cmr.svg"
+    },
+    {
+        "id": "42",
+        "title": "Canada",
+        "code": "CAD",
+        "latlng:": [
+            60,
+            -95
+        ],
+        "flag": "https://restcountries.eu/data/can.svg"
+    },
+    {
+        "id": "44",
+        "title": "Cayman Islands",
+        "code": "KYD",
+        "latlng:": [
+            19.5,
+            -80.5
+        ],
+        "flag": "https://restcountries.eu/data/cym.svg"
+    },
+    {
+        "id": "45",
+        "title": "Central African Republic",
+        "code": "XAF",
+        "latlng:": [
+            7,
+            21
+        ],
+        "flag": "https://restcountries.eu/data/caf.svg"
+    },
+    {
+        "id": "46",
+        "title": "Chad",
+        "code": "XAF",
+        "latlng:": [
+            15,
+            19
+        ],
+        "flag": "https://restcountries.eu/data/tcd.svg"
+    },
+    {
+        "id": "47",
+        "title": "Chile",
+        "code": "CLP",
+        "latlng:": [
+            -30,
+            -71
+        ],
+        "flag": "https://restcountries.eu/data/chl.svg"
+    },
+    {
+        "id": "48",
+        "title": "China",
+        "code": "CNY",
+        "latlng:": [
+            35,
+            105
+        ],
+        "flag": "https://restcountries.eu/data/chn.svg"
+    },
+    {
+        "id": "49",
+        "title": "Christmas Island",
+        "code": "AUD",
+        "latlng:": [
+            -10.5,
+            105.66666666
+        ],
+        "flag": "https://restcountries.eu/data/cxr.svg"
+    },
+    {
+        "id": "50",
+        "title": "Cocos (Keeling) Islands",
+        "code": "AUD",
+        "latlng:": [
+            -12.5,
+            96.83333333
+        ],
+        "flag": "https://restcountries.eu/data/cck.svg"
+    },
+    {
+        "id": "51",
+        "title": "Colombia",
+        "code": "COP",
+        "latlng:": [
+            4,
+            -72
+        ],
+        "flag": "https://restcountries.eu/data/col.svg"
+    },
+    {
+        "id": "52",
+        "title": "Comoros",
+        "code": "KMF",
+        "latlng:": [
+            -12.16666666,
+            44.25
+        ],
+        "flag": "https://restcountries.eu/data/com.svg"
+    },
+    {
+        "id": "53",
+        "title": "Congo",
+        "code": "XAF",
+        "latlng:": [
+            -1,
+            15
+        ],
+        "flag": "https://restcountries.eu/data/cog.svg"
+    },
+    {
+        "id": "54",
+        "title": "Congo (Democratic Republic of the)",
+        "code": "CDF",
+        "latlng:": [
+            0,
+            25
+        ],
+        "flag": "https://restcountries.eu/data/cod.svg"
+    },
+    {
+        "id": "55",
+        "title": "Cook Islands",
+        "code": "NZD",
+        "latlng:": [
+            -21.23333333,
+            -159.76666666
+        ],
+        "flag": "https://restcountries.eu/data/cok.svg"
+    },
+    {
+        "id": "56",
+        "title": "Costa Rica",
+        "code": "CRC",
+        "latlng:": [
+            10,
+            -84
+        ],
+        "flag": "https://restcountries.eu/data/cri.svg"
+    },
+    {
+        "id": "57",
+        "title": "Croatia",
+        "code": "HRK",
+        "latlng:": [
+            45.16666666,
+            15.5
+        ],
+        "flag": "https://restcountries.eu/data/hrv.svg"
+    },
+    {
+        "id": "58",
+        "title": "Cuba",
+        "code": "CUC",
+        "latlng:": [
+            21.5,
+            -80
+        ],
+        "flag": "https://restcountries.eu/data/cub.svg"
+    },
+    {
+        "id": "59",
+        "title": "Curaçao",
+        "code": "ANG",
+        "latlng:": [
+            12.116667,
+            -68.933333
+        ],
+        "flag": "https://restcountries.eu/data/cuw.svg"
+    },
+    {
+        "id": "60",
+        "title": "Cyprus",
+        "code": "EUR",
+        "latlng:": [
+            35,
+            33
+        ],
+        "flag": "https://restcountries.eu/data/cyp.svg"
+    },
+    {
+        "id": "61",
+        "title": "Czech Republic",
+        "code": "CZK",
+        "latlng:": [
+            49.75,
+            15.5
+        ],
+        "flag": "https://restcountries.eu/data/cze.svg"
+    },
+    {
+        "id": "106",
+        "title": "Côte d'Ivoire",
+        "code": "XOF",
+        "latlng:": [
+            8,
+            -5
+        ],
+        "flag": "https://restcountries.eu/data/civ.svg"
+    },
+    {
+        "id": "62",
+        "title": "Denmark",
+        "code": "DKK",
+        "latlng:": [
+            56,
+            10
+        ],
+        "flag": "https://restcountries.eu/data/dnk.svg"
+    },
+    {
+        "id": "63",
+        "title": "Djibouti",
+        "code": "DJF",
+        "latlng:": [
+            11.5,
+            43
+        ],
+        "flag": "https://restcountries.eu/data/dji.svg"
+    },
+    {
+        "id": "64",
+        "title": "Dominica",
+        "code": "XCD",
+        "latlng:": [
+            15.41666666,
+            -61.33333333
+        ],
+        "flag": "https://restcountries.eu/data/dma.svg"
+    },
+    {
+        "id": "65",
+        "title": "Dominican Republic",
+        "code": "DOP",
+        "latlng:": [
+            19,
+            -70.66666666
+        ],
+        "flag": "https://restcountries.eu/data/dom.svg"
+    },
+    {
+        "id": "66",
+        "title": "Ecuador",
+        "code": "USD",
+        "latlng:": [
+            -2,
+            -77.5
+        ],
+        "flag": "https://restcountries.eu/data/ecu.svg"
+    },
+    {
+        "id": "67",
+        "title": "Egypt",
+        "code": "EGP",
+        "latlng:": [
+            27,
+            30
+        ],
+        "flag": "https://restcountries.eu/data/egy.svg"
+    },
+    {
+        "id": "68",
+        "title": "El Salvador",
+        "code": "USD",
+        "latlng:": [
+            13.83333333,
+            -88.91666666
+        ],
+        "flag": "https://restcountries.eu/data/slv.svg"
+    },
+    {
+        "id": "69",
+        "title": "Equatorial Guinea",
+        "code": "XAF",
+        "latlng:": [
+            2,
+            10
+        ],
+        "flag": "https://restcountries.eu/data/gnq.svg"
+    },
+    {
+        "id": "70",
+        "title": "Eritrea",
+        "code": "ERN",
+        "latlng:": [
+            15,
+            39
+        ],
+        "flag": "https://restcountries.eu/data/eri.svg"
+    },
+    {
+        "id": "71",
+        "title": "Estonia",
+        "code": "EUR",
+        "latlng:": [
+            59,
+            26
+        ],
+        "flag": "https://restcountries.eu/data/est.svg"
+    },
+    {
+        "id": "72",
+        "title": "Ethiopia",
+        "code": "ETB",
+        "latlng:": [
+            8,
+            38
+        ],
+        "flag": "https://restcountries.eu/data/eth.svg"
+    },
+    {
+        "id": "73",
+        "title": "Falkland Islands (Malvinas)",
+        "code": "FKP",
+        "latlng:": [
+            -51.75,
+            -59
+        ],
+        "flag": "https://restcountries.eu/data/flk.svg"
+    },
+    {
+        "id": "74",
+        "title": "Faroe Islands",
+        "code": "DKK",
+        "latlng:": [
+            62,
+            -7
+        ],
+        "flag": "https://restcountries.eu/data/fro.svg"
+    },
+    {
+        "id": "75",
+        "title": "Fiji",
+        "code": "FJD",
+        "latlng:": [
+            -18,
+            175
+        ],
+        "flag": "https://restcountries.eu/data/fji.svg"
+    },
+    {
+        "id": "76",
+        "title": "Finland",
+        "code": "EUR",
+        "latlng:": [
+            64,
+            26
+        ],
+        "flag": "https://restcountries.eu/data/fin.svg"
+    },
+    {
+        "id": "77",
+        "title": "France",
+        "code": "EUR",
+        "latlng:": [
+            46,
+            2
+        ],
+        "flag": "https://restcountries.eu/data/fra.svg"
+    },
+    {
+        "id": "78",
+        "title": "French Guiana",
+        "code": "EUR",
+        "latlng:": [
+            4,
+            -53
+        ],
+        "flag": "https://restcountries.eu/data/guf.svg"
+    },
+    {
+        "id": "79",
+        "title": "French Polynesia",
+        "code": "XPF",
+        "latlng:": [
+            -15,
+            -140
+        ],
+        "flag": "https://restcountries.eu/data/pyf.svg"
+    },
+    {
+        "id": "80",
+        "title": "French Southern Territories",
+        "code": "EUR",
+        "latlng:": [
+            -49.25,
+            69.167
+        ],
+        "flag": "https://restcountries.eu/data/atf.svg"
+    },
+    {
+        "id": "81",
+        "title": "Gabon",
+        "code": "XAF",
+        "latlng:": [
+            -1,
+            11.75
+        ],
+        "flag": "https://restcountries.eu/data/gab.svg"
+    },
+    {
+        "id": "82",
+        "title": "Gambia",
+        "code": "GMD",
+        "latlng:": [
+            13.46666666,
+            -16.56666666
+        ],
+        "flag": "https://restcountries.eu/data/gmb.svg"
+    },
+    {
+        "id": "83",
+        "title": "Georgia",
+        "code": "GEL",
+        "latlng:": [
+            42,
+            43.5
+        ],
+        "flag": "https://restcountries.eu/data/geo.svg"
+    },
+    {
+        "id": "84",
+        "title": "Germany",
+        "code": "EUR",
+        "latlng:": [
+            51,
+            9
+        ],
+        "flag": "https://restcountries.eu/data/deu.svg"
+    },
+    {
+        "id": "85",
+        "title": "Ghana",
+        "code": "GHS",
+        "latlng:": [
+            8,
+            -2
+        ],
+        "flag": "https://restcountries.eu/data/gha.svg"
+    },
+    {
+        "id": "86",
+        "title": "Gibraltar",
+        "code": "GIP",
+        "latlng:": [
+            36.13333333,
+            -5.35
+        ],
+        "flag": "https://restcountries.eu/data/gib.svg"
+    },
+    {
+        "id": "87",
+        "title": "Greece",
+        "code": "EUR",
+        "latlng:": [
+            39,
+            22
+        ],
+        "flag": "https://restcountries.eu/data/grc.svg"
+    },
+    {
+        "id": "88",
+        "title": "Greenland",
+        "code": "DKK",
+        "latlng:": [
+            72,
+            -40
+        ],
+        "flag": "https://restcountries.eu/data/grl.svg"
+    },
+    {
+        "id": "89",
+        "title": "Grenada",
+        "code": "XCD",
+        "latlng:": [
+            12.11666666,
+            -61.66666666
+        ],
+        "flag": "https://restcountries.eu/data/grd.svg"
+    },
+    {
+        "id": "90",
+        "title": "Guadeloupe",
+        "code": "EUR",
+        "latlng:": [
+            16.25,
+            -61.583333
+        ],
+        "flag": "https://restcountries.eu/data/glp.svg"
+    },
+    {
+        "id": "91",
+        "title": "Guam",
+        "code": "USD",
+        "latlng:": [
+            13.46666666,
+            144.78333333
+        ],
+        "flag": "https://restcountries.eu/data/gum.svg"
+    },
+    {
+        "id": "92",
+        "title": "Guatemala",
+        "code": "GTQ",
+        "latlng:": [
+            15.5,
+            -90.25
+        ],
+        "flag": "https://restcountries.eu/data/gtm.svg"
+    },
+    {
+        "id": "93",
+        "title": "Guernsey",
+        "code": "GBP",
+        "latlng:": [
+            49.46666666,
+            -2.58333333
+        ],
+        "flag": "https://restcountries.eu/data/ggy.svg"
+    },
+    {
+        "id": "94",
+        "title": "Guinea",
+        "code": "GNF",
+        "latlng:": [
+            11,
+            -10
+        ],
+        "flag": "https://restcountries.eu/data/gin.svg"
+    },
+    {
+        "id": "95",
+        "title": "Guinea-Bissau",
+        "code": "XOF",
+        "latlng:": [
+            12,
+            -15
+        ],
+        "flag": "https://restcountries.eu/data/gnb.svg"
+    },
+    {
+        "id": "96",
+        "title": "Guyana",
+        "code": "GYD",
+        "latlng:": [
+            5,
+            -59
+        ],
+        "flag": "https://restcountries.eu/data/guy.svg"
+    },
+    {
+        "id": "97",
+        "title": "Haiti",
+        "code": "HTG",
+        "latlng:": [
+            19,
+            -72.41666666
+        ],
+        "flag": "https://restcountries.eu/data/hti.svg"
+    },
+    {
+        "id": "98",
+        "title": "Heard Island and McDonald Islands",
+        "code": "AUD",
+        "latlng:": [
+            -53.1,
+            72.51666666
+        ],
+        "flag": "https://restcountries.eu/data/hmd.svg"
+    },
+    {
+        "id": "99",
+        "title": "Holy See",
+        "code": "EUR",
+        "latlng:": [
+            41.9,
+            12.45
+        ],
+        "flag": "https://restcountries.eu/data/vat.svg"
+    },
+    {
+        "id": "100",
+        "title": "Honduras",
+        "code": "HNL",
+        "latlng:": [
+            15,
+            -86.5
+        ],
+        "flag": "https://restcountries.eu/data/hnd.svg"
+    },
+    {
+        "id": "101",
+        "title": "Hong Kong",
+        "code": "HKD",
+        "latlng:": [
+            22.25,
+            114.16666666
+        ],
+        "flag": "https://restcountries.eu/data/hkg.svg"
+    },
+    {
+        "id": "102",
+        "title": "Hungary",
+        "code": "HUF",
+        "latlng:": [
+            47,
+            20
+        ],
+        "flag": "https://restcountries.eu/data/hun.svg"
+    },
+    {
+        "id": "103",
+        "title": "Iceland",
+        "code": "ISK",
+        "latlng:": [
+            65,
+            -18
+        ],
+        "flag": "https://restcountries.eu/data/isl.svg"
+    },
+    {
+        "id": "104",
+        "title": "India",
+        "code": "INR",
+        "latlng:": [
+            20,
+            77
+        ],
+        "flag": "https://restcountries.eu/data/ind.svg"
+    },
+    {
+        "id": "105",
+        "title": "Indonesia",
+        "code": "IDR",
+        "latlng:": [
+            -5,
+            120
+        ],
+        "flag": "https://restcountries.eu/data/idn.svg"
+    },
+    {
+        "id": "107",
+        "title": "Iran (Islamic Republic of)",
+        "code": "IRR",
+        "latlng:": [
+            32,
+            53
+        ],
+        "flag": "https://restcountries.eu/data/irn.svg"
+    },
+    {
+        "id": "108",
+        "title": "Iraq",
+        "code": "IQD",
+        "latlng:": [
+            33,
+            44
+        ],
+        "flag": "https://restcountries.eu/data/irq.svg"
+    },
+    {
+        "id": "109",
+        "title": "Ireland",
+        "code": "EUR",
+        "latlng:": [
+            53,
+            -8
+        ],
+        "flag": "https://restcountries.eu/data/irl.svg"
+    },
+    {
+        "id": "110",
+        "title": "Isle of Man",
+        "code": "GBP",
+        "latlng:": [
+            54.25,
+            -4.5
+        ],
+        "flag": "https://restcountries.eu/data/imn.svg"
+    },
+    {
+        "id": "111",
+        "title": "Israel",
+        "code": "ILS",
+        "latlng:": [
+            31.5,
+            34.75
+        ],
+        "flag": "https://restcountries.eu/data/isr.svg"
+    },
+    {
+        "id": "112",
+        "title": "Italy",
+        "code": "EUR",
+        "latlng:": [
+            42.83333333,
+            12.83333333
+        ],
+        "flag": "https://restcountries.eu/data/ita.svg"
+    },
+    {
+        "id": "113",
+        "title": "Jamaica",
+        "code": "JMD",
+        "latlng:": [
+            18.25,
+            -77.5
+        ],
+        "flag": "https://restcountries.eu/data/jam.svg"
+    },
+    {
+        "id": "114",
+        "title": "Japan",
+        "code": "JPY",
+        "latlng:": [
+            36,
+            138
+        ],
+        "flag": "https://restcountries.eu/data/jpn.svg"
+    },
+    {
+        "id": "115",
+        "title": "Jersey",
+        "code": "GBP",
+        "latlng:": [
+            49.25,
+            -2.16666666
+        ],
+        "flag": "https://restcountries.eu/data/jey.svg"
+    },
+    {
+        "id": "116",
+        "title": "Jordan",
+        "code": "JOD",
+        "latlng:": [
+            31,
+            36
+        ],
+        "flag": "https://restcountries.eu/data/jor.svg"
+    },
+    {
+        "id": "117",
+        "title": "Kazakhstan",
+        "code": "KZT",
+        "latlng:": [
+            48,
+            68
+        ],
+        "flag": "https://restcountries.eu/data/kaz.svg"
+    },
+    {
+        "id": "118",
+        "title": "Kenya",
+        "code": "KES",
+        "latlng:": [
+            1,
+            38
+        ],
+        "flag": "https://restcountries.eu/data/ken.svg"
+    },
+    {
+        "id": "119",
+        "title": "Kiribati",
+        "code": "AUD",
+        "latlng:": [
+            1.41666666,
+            173
+        ],
+        "flag": "https://restcountries.eu/data/kir.svg"
+    },
+    {
+        "id": "165",
+        "title": "Korea (Democratic People's Republic of)",
+        "code": "KPW",
+        "latlng:": [
+            40,
+            127
+        ],
+        "flag": "https://restcountries.eu/data/prk.svg"
+    },
+    {
+        "id": "210",
+        "title": "Korea (Republic of)",
+        "code": "KRW",
+        "latlng:": [
+            37,
+            127.5
+        ],
+        "flag": "https://restcountries.eu/data/kor.svg"
+    },
+    {
+        "id": "120",
+        "title": "Kuwait",
+        "code": "KWD",
+        "latlng:": [
+            29.5,
+            45.75
+        ],
+        "flag": "https://restcountries.eu/data/kwt.svg"
+    },
+    {
+        "id": "121",
+        "title": "Kyrgyzstan",
+        "code": "KGS",
+        "latlng:": [
+            41,
+            75
+        ],
+        "flag": "https://restcountries.eu/data/kgz.svg"
+    },
+    {
+        "id": "122",
+        "title": "Lao People's Democratic Republic",
+        "code": "LAK",
+        "latlng:": [
+            18,
+            105
+        ],
+        "flag": "https://restcountries.eu/data/lao.svg"
+    },
+    {
+        "id": "123",
+        "title": "Latvia",
+        "code": "EUR",
+        "latlng:": [
+            57,
+            25
+        ],
+        "flag": "https://restcountries.eu/data/lva.svg"
+    },
+    {
+        "id": "124",
+        "title": "Lebanon",
+        "code": "LBP",
+        "latlng:": [
+            33.83333333,
+            35.83333333
+        ],
+        "flag": "https://restcountries.eu/data/lbn.svg"
+    },
+    {
+        "id": "125",
+        "title": "Lesotho",
+        "code": "LSL",
+        "latlng:": [
+            -29.5,
+            28.5
+        ],
+        "flag": "https://restcountries.eu/data/lso.svg"
+    },
+    {
+        "id": "126",
+        "title": "Liberia",
+        "code": "LRD",
+        "latlng:": [
+            6.5,
+            -9.5
+        ],
+        "flag": "https://restcountries.eu/data/lbr.svg"
+    },
+    {
+        "id": "127",
+        "title": "Libya",
+        "code": "LYD",
+        "latlng:": [
+            25,
+            17
+        ],
+        "flag": "https://restcountries.eu/data/lby.svg"
+    },
+    {
+        "id": "128",
+        "title": "Liechtenstein",
+        "code": "CHF",
+        "latlng:": [
+            47.26666666,
+            9.53333333
+        ],
+        "flag": "https://restcountries.eu/data/lie.svg"
+    },
+    {
+        "id": "129",
+        "title": "Lithuania",
+        "code": "EUR",
+        "latlng:": [
+            56,
+            24
+        ],
+        "flag": "https://restcountries.eu/data/ltu.svg"
+    },
+    {
+        "id": "130",
+        "title": "Luxembourg",
+        "code": "EUR",
+        "latlng:": [
+            49.75,
+            6.16666666
+        ],
+        "flag": "https://restcountries.eu/data/lux.svg"
+    },
+    {
+        "id": "131",
+        "title": "Macao",
+        "code": "MOP",
+        "latlng:": [
+            22.16666666,
+            113.55
+        ],
+        "flag": "https://restcountries.eu/data/mac.svg"
+    },
+    {
+        "id": "132",
+        "title": "Macedonia (the former Yugoslav Republic of)",
+        "code": "MKD",
+        "latlng:": [
+            41.83333333,
+            22
+        ],
+        "flag": "https://restcountries.eu/data/mkd.svg"
+    },
+    {
+        "id": "133",
+        "title": "Madagascar",
+        "code": "MGA",
+        "latlng:": [
+            -20,
+            47
+        ],
+        "flag": "https://restcountries.eu/data/mdg.svg"
+    },
+    {
+        "id": "134",
+        "title": "Malawi",
+        "code": "MWK",
+        "latlng:": [
+            -13.5,
+            34
+        ],
+        "flag": "https://restcountries.eu/data/mwi.svg"
+    },
+    {
+        "id": "135",
+        "title": "Malaysia",
+        "code": "MYR",
+        "latlng:": [
+            2.5,
+            112.5
+        ],
+        "flag": "https://restcountries.eu/data/mys.svg"
+    },
+    {
+        "id": "136",
+        "title": "Maldives",
+        "code": "MVR",
+        "latlng:": [
+            3.25,
+            73
+        ],
+        "flag": "https://restcountries.eu/data/mdv.svg"
+    },
+    {
+        "id": "137",
+        "title": "Mali",
+        "code": "XOF",
+        "latlng:": [
+            17,
+            -4
+        ],
+        "flag": "https://restcountries.eu/data/mli.svg"
+    },
+    {
+        "id": "138",
+        "title": "Malta",
+        "code": "EUR",
+        "latlng:": [
+            35.83333333,
+            14.58333333
+        ],
+        "flag": "https://restcountries.eu/data/mlt.svg"
+    },
+    {
+        "id": "139",
+        "title": "Marshall Islands",
+        "code": "USD",
+        "latlng:": [
+            9,
+            168
+        ],
+        "flag": "https://restcountries.eu/data/mhl.svg"
+    },
+    {
+        "id": "140",
+        "title": "Martinique",
+        "code": "EUR",
+        "latlng:": [
+            14.666667,
+            -61
+        ],
+        "flag": "https://restcountries.eu/data/mtq.svg"
+    },
+    {
+        "id": "141",
+        "title": "Mauritania",
+        "code": "MRO",
+        "latlng:": [
+            20,
+            -12
+        ],
+        "flag": "https://restcountries.eu/data/mrt.svg"
+    },
+    {
+        "id": "142",
+        "title": "Mauritius",
+        "code": "MUR",
+        "latlng:": [
+            -20.28333333,
+            57.55
+        ],
+        "flag": "https://restcountries.eu/data/mus.svg"
+    },
+    {
+        "id": "143",
+        "title": "Mayotte",
+        "code": "EUR",
+        "latlng:": [
+            -12.83333333,
+            45.16666666
+        ],
+        "flag": "https://restcountries.eu/data/myt.svg"
+    },
+    {
+        "id": "144",
+        "title": "Mexico",
+        "code": "MXN",
+        "latlng:": [
+            23,
+            -102
+        ],
+        "flag": "https://restcountries.eu/data/mex.svg"
+    },
+    {
+        "id": "145",
+        "title": "Micronesia (Federated States of)",
+        "code": "null",
+        "latlng:": [
+            6.91666666,
+            158.25
+        ],
+        "flag": "https://restcountries.eu/data/fsm.svg"
+    },
+    {
+        "id": "146",
+        "title": "Moldova (Republic of)",
+        "code": "MDL",
+        "latlng:": [
+            47,
+            29
+        ],
+        "flag": "https://restcountries.eu/data/mda.svg"
+    },
+    {
+        "id": "147",
+        "title": "Monaco",
+        "code": "EUR",
+        "latlng:": [
+            43.73333333,
+            7.4
+        ],
+        "flag": "https://restcountries.eu/data/mco.svg"
+    },
+    {
+        "id": "148",
+        "title": "Mongolia",
+        "code": "MNT",
+        "latlng:": [
+            46,
+            105
+        ],
+        "flag": "https://restcountries.eu/data/mng.svg"
+    },
+    {
+        "id": "149",
+        "title": "Montenegro",
+        "code": "EUR",
+        "latlng:": [
+            42.5,
+            19.3
+        ],
+        "flag": "https://restcountries.eu/data/mne.svg"
+    },
+    {
+        "id": "150",
+        "title": "Montserrat",
+        "code": "XCD",
+        "latlng:": [
+            16.75,
+            -62.2
+        ],
+        "flag": "https://restcountries.eu/data/msr.svg"
+    },
+    {
+        "id": "151",
+        "title": "Morocco",
+        "code": "MAD",
+        "latlng:": [
+            32,
+            -5
+        ],
+        "flag": "https://restcountries.eu/data/mar.svg"
+    },
+    {
+        "id": "152",
+        "title": "Mozambique",
+        "code": "MZN",
+        "latlng:": [
+            -18.25,
+            35
+        ],
+        "flag": "https://restcountries.eu/data/moz.svg"
+    },
+    {
+        "id": "153",
+        "title": "Myanmar",
+        "code": "MMK",
+        "latlng:": [
+            22,
+            98
+        ],
+        "flag": "https://restcountries.eu/data/mmr.svg"
+    },
+    {
+        "id": "154",
+        "title": "Namibia",
+        "code": "NAD",
+        "latlng:": [
+            -22,
+            17
+        ],
+        "flag": "https://restcountries.eu/data/nam.svg"
+    },
+    {
+        "id": "155",
+        "title": "Nauru",
+        "code": "AUD",
+        "latlng:": [
+            -0.53333333,
+            166.91666666
+        ],
+        "flag": "https://restcountries.eu/data/nru.svg"
+    },
+    {
+        "id": "156",
+        "title": "Nepal",
+        "code": "NPR",
+        "latlng:": [
+            28,
+            84
+        ],
+        "flag": "https://restcountries.eu/data/npl.svg"
+    },
+    {
+        "id": "157",
+        "title": "Netherlands",
+        "code": "EUR",
+        "latlng:": [
+            52.5,
+            5.75
+        ],
+        "flag": "https://restcountries.eu/data/nld.svg"
+    },
+    {
+        "id": "158",
+        "title": "New Caledonia",
+        "code": "XPF",
+        "latlng:": [
+            -21.5,
+            165.5
+        ],
+        "flag": "https://restcountries.eu/data/ncl.svg"
+    },
+    {
+        "id": "159",
+        "title": "New Zealand",
+        "code": "NZD",
+        "latlng:": [
+            -41,
+            174
+        ],
+        "flag": "https://restcountries.eu/data/nzl.svg"
+    },
+    {
+        "id": "160",
+        "title": "Nicaragua",
+        "code": "NIO",
+        "latlng:": [
+            13,
+            -85
+        ],
+        "flag": "https://restcountries.eu/data/nic.svg"
+    },
+    {
+        "id": "161",
+        "title": "Niger",
+        "code": "XOF",
+        "latlng:": [
+            16,
+            8
+        ],
+        "flag": "https://restcountries.eu/data/ner.svg"
+    },
+    {
+        "id": "162",
+        "title": "Nigeria",
+        "code": "NGN",
+        "latlng:": [
+            10,
+            8
+        ],
+        "flag": "https://restcountries.eu/data/nga.svg"
+    },
+    {
+        "id": "163",
+        "title": "Niue",
+        "code": "NZD",
+        "latlng:": [
+            -19.03333333,
+            -169.86666666
+        ],
+        "flag": "https://restcountries.eu/data/niu.svg"
+    },
+    {
+        "id": "164",
+        "title": "Norfolk Island",
+        "code": "AUD",
+        "latlng:": [
+            -29.03333333,
+            167.95
+        ],
+        "flag": "https://restcountries.eu/data/nfk.svg"
+    },
+    {
+        "id": "166",
+        "title": "Northern Mariana Islands",
+        "code": "USD",
+        "latlng:": [
+            15.2,
+            145.75
+        ],
+        "flag": "https://restcountries.eu/data/mnp.svg"
+    },
+    {
+        "id": "167",
+        "title": "Norway",
+        "code": "NOK",
+        "latlng:": [
+            62,
+            10
+        ],
+        "flag": "https://restcountries.eu/data/nor.svg"
+    },
+    {
+        "id": "168",
+        "title": "Oman",
+        "code": "OMR",
+        "latlng:": [
+            21,
+            57
+        ],
+        "flag": "https://restcountries.eu/data/omn.svg"
+    },
+    {
+        "id": "169",
+        "title": "Pakistan",
+        "code": "PKR",
+        "latlng:": [
+            30,
+            70
+        ],
+        "flag": "https://restcountries.eu/data/pak.svg"
+    },
+    {
+        "id": "170",
+        "title": "Palau",
+        "code": "(none)",
+        "latlng:": [
+            7.5,
+            134.5
+        ],
+        "flag": "https://restcountries.eu/data/plw.svg"
+    },
+    {
+        "id": "171",
+        "title": "Palestine, State of",
+        "code": "ILS",
+        "latlng:": [
+            31.9,
+            35.2
+        ],
+        "flag": "https://restcountries.eu/data/pse.svg"
+    },
+    {
+        "id": "172",
+        "title": "Panama",
+        "code": "PAB",
+        "latlng:": [
+            9,
+            -80
+        ],
+        "flag": "https://restcountries.eu/data/pan.svg"
+    },
+    {
+        "id": "173",
+        "title": "Papua New Guinea",
+        "code": "PGK",
+        "latlng:": [
+            -6,
+            147
+        ],
+        "flag": "https://restcountries.eu/data/png.svg"
+    },
+    {
+        "id": "174",
+        "title": "Paraguay",
+        "code": "PYG",
+        "latlng:": [
+            -23,
+            -58
+        ],
+        "flag": "https://restcountries.eu/data/pry.svg"
+    },
+    {
+        "id": "175",
+        "title": "Peru",
+        "code": "PEN",
+        "latlng:": [
+            -10,
+            -76
+        ],
+        "flag": "https://restcountries.eu/data/per.svg"
+    },
+    {
+        "id": "176",
+        "title": "Philippines",
+        "code": "PHP",
+        "latlng:": [
+            13,
+            122
+        ],
+        "flag": "https://restcountries.eu/data/phl.svg"
+    },
+    {
+        "id": "177",
+        "title": "Pitcairn",
+        "code": "NZD",
+        "latlng:": [
+            -25.06666666,
+            -130.1
+        ],
+        "flag": "https://restcountries.eu/data/pcn.svg"
+    },
+    {
+        "id": "178",
+        "title": "Poland",
+        "code": "PLN",
+        "latlng:": [
+            52,
+            20
+        ],
+        "flag": "https://restcountries.eu/data/pol.svg"
+    },
+    {
+        "id": "179",
+        "title": "Portugal",
+        "code": "EUR",
+        "latlng:": [
+            39.5,
+            -8
+        ],
+        "flag": "https://restcountries.eu/data/prt.svg"
+    },
+    {
+        "id": "180",
+        "title": "Puerto Rico",
+        "code": "USD",
+        "latlng:": [
+            18.25,
+            -66.5
+        ],
+        "flag": "https://restcountries.eu/data/pri.svg"
+    },
+    {
+        "id": "181",
+        "title": "Qatar",
+        "code": "QAR",
+        "latlng:": [
+            25.5,
+            51.25
+        ],
+        "flag": "https://restcountries.eu/data/qat.svg"
+    },
+    {
+        "id": "182",
+        "title": "Republic of Kosovo",
+        "code": "EUR",
+        "latlng:": [
+            42.666667,
+            21.166667
+        ],
+        "flag": "https://restcountries.eu/data/kos.svg"
+    },
+    {
+        "id": "184",
+        "title": "Romania",
+        "code": "RON",
+        "latlng:": [
+            46,
+            25
+        ],
+        "flag": "https://restcountries.eu/data/rou.svg"
+    },
+    {
+        "id": "185",
+        "title": "Russian Federation",
+        "code": "RUB",
+        "latlng:": [
+            60,
+            100
+        ],
+        "flag": "https://restcountries.eu/data/rus.svg"
+    },
+    {
+        "id": "186",
+        "title": "Rwanda",
+        "code": "RWF",
+        "latlng:": [
+            -2,
+            30
+        ],
+        "flag": "https://restcountries.eu/data/rwa.svg"
+    },
+    {
+        "id": "183",
+        "title": "Réunion",
+        "code": "EUR",
+        "latlng:": [
+            -21.15,
+            55.5
+        ],
+        "flag": "https://restcountries.eu/data/reu.svg"
+    },
+    {
+        "id": "187",
+        "title": "Saint Barthélemy",
+        "code": "EUR",
+        "latlng:": [
+            18.5,
+            -63.41666666
+        ],
+        "flag": "https://restcountries.eu/data/blm.svg"
+    },
+    {
+        "id": "188",
+        "title": "Saint Helena, Ascension and Tristan da Cunha",
+        "code": "SHP",
+        "latlng:": [
+            -15.95,
+            -5.7
+        ],
+        "flag": "https://restcountries.eu/data/shn.svg"
+    },
+    {
+        "id": "189",
+        "title": "Saint Kitts and Nevis",
+        "code": "XCD",
+        "latlng:": [
+            17.33333333,
+            -62.75
+        ],
+        "flag": "https://restcountries.eu/data/kna.svg"
+    },
+    {
+        "id": "190",
+        "title": "Saint Lucia",
+        "code": "XCD",
+        "latlng:": [
+            13.88333333,
+            -60.96666666
+        ],
+        "flag": "https://restcountries.eu/data/lca.svg"
+    },
+    {
+        "id": "191",
+        "title": "Saint Martin (French part)",
+        "code": "EUR",
+        "latlng:": [
+            18.08333333,
+            -63.95
+        ],
+        "flag": "https://restcountries.eu/data/maf.svg"
+    },
+    {
+        "id": "192",
+        "title": "Saint Pierre and Miquelon",
+        "code": "EUR",
+        "latlng:": [
+            46.83333333,
+            -56.33333333
+        ],
+        "flag": "https://restcountries.eu/data/spm.svg"
+    },
+    {
+        "id": "193",
+        "title": "Saint Vincent and the Grenadines",
+        "code": "XCD",
+        "latlng:": [
+            13.25,
+            -61.2
+        ],
+        "flag": "https://restcountries.eu/data/vct.svg"
+    },
+    {
+        "id": "194",
+        "title": "Samoa",
+        "code": "WST",
+        "latlng:": [
+            -13.58333333,
+            -172.33333333
+        ],
+        "flag": "https://restcountries.eu/data/wsm.svg"
+    },
+    {
+        "id": "195",
+        "title": "San Marino",
+        "code": "EUR",
+        "latlng:": [
+            43.76666666,
+            12.41666666
+        ],
+        "flag": "https://restcountries.eu/data/smr.svg"
+    },
+    {
+        "id": "196",
+        "title": "Sao Tome and Principe",
+        "code": "STD",
+        "latlng:": [
+            1,
+            7
+        ],
+        "flag": "https://restcountries.eu/data/stp.svg"
+    },
+    {
+        "id": "197",
+        "title": "Saudi Arabia",
+        "code": "SAR",
+        "latlng:": [
+            25,
+            45
+        ],
+        "flag": "https://restcountries.eu/data/sau.svg"
+    },
+    {
+        "id": "198",
+        "title": "Senegal",
+        "code": "XOF",
+        "latlng:": [
+            14,
+            -14
+        ],
+        "flag": "https://restcountries.eu/data/sen.svg"
+    },
+    {
+        "id": "199",
+        "title": "Serbia",
+        "code": "RSD",
+        "latlng:": [
+            44,
+            21
+        ],
+        "flag": "https://restcountries.eu/data/srb.svg"
+    },
+    {
+        "id": "200",
+        "title": "Seychelles",
+        "code": "SCR",
+        "latlng:": [
+            -4.58333333,
+            55.66666666
+        ],
+        "flag": "https://restcountries.eu/data/syc.svg"
+    },
+    {
+        "id": "201",
+        "title": "Sierra Leone",
+        "code": "SLL",
+        "latlng:": [
+            8.5,
+            -11.5
+        ],
+        "flag": "https://restcountries.eu/data/sle.svg"
+    },
+    {
+        "id": "202",
+        "title": "Singapore",
+        "code": "BND",
+        "latlng:": [
+            1.36666666,
+            103.8
+        ],
+        "flag": "https://restcountries.eu/data/sgp.svg"
+    },
+    {
+        "id": "203",
+        "title": "Sint Maarten (Dutch part)",
+        "code": "ANG",
+        "latlng:": [
+            18.033333,
+            -63.05
+        ],
+        "flag": "https://restcountries.eu/data/sxm.svg"
+    },
+    {
+        "id": "204",
+        "title": "Slovakia",
+        "code": "EUR",
+        "latlng:": [
+            48.66666666,
+            19.5
+        ],
+        "flag": "https://restcountries.eu/data/svk.svg"
+    },
+    {
+        "id": "205",
+        "title": "Slovenia",
+        "code": "EUR",
+        "latlng:": [
+            46.11666666,
+            14.81666666
+        ],
+        "flag": "https://restcountries.eu/data/svn.svg"
+    },
+    {
+        "id": "206",
+        "title": "Solomon Islands",
+        "code": "SBD",
+        "latlng:": [
+            -8,
+            159
+        ],
+        "flag": "https://restcountries.eu/data/slb.svg"
+    },
+    {
+        "id": "207",
+        "title": "Somalia",
+        "code": "SOS",
+        "latlng:": [
+            10,
+            49
+        ],
+        "flag": "https://restcountries.eu/data/som.svg"
+    },
+    {
+        "id": "208",
+        "title": "South Africa",
+        "code": "ZAR",
+        "latlng:": [
+            -29,
+            24
+        ],
+        "flag": "https://restcountries.eu/data/zaf.svg"
+    },
+    {
+        "id": "209",
+        "title": "South Georgia and the South Sandwich Islands",
+        "code": "GBP",
+        "latlng:": [
+            -54.5,
+            -37
+        ],
+        "flag": "https://restcountries.eu/data/sgs.svg"
+    },
+    {
+        "id": "211",
+        "title": "South Sudan",
+        "code": "SSP",
+        "latlng:": [
+            7,
+            30
+        ],
+        "flag": "https://restcountries.eu/data/ssd.svg"
+    },
+    {
+        "id": "212",
+        "title": "Spain",
+        "code": "EUR",
+        "latlng:": [
+            40,
+            -4
+        ],
+        "flag": "https://restcountries.eu/data/esp.svg"
+    },
+    {
+        "id": "213",
+        "title": "Sri Lanka",
+        "code": "LKR",
+        "latlng:": [
+            7,
+            81
+        ],
+        "flag": "https://restcountries.eu/data/lka.svg"
+    },
+    {
+        "id": "214",
+        "title": "Sudan",
+        "code": "SDG",
+        "latlng:": [
+            15,
+            30
+        ],
+        "flag": "https://restcountries.eu/data/sdn.svg"
+    },
+    {
+        "id": "215",
+        "title": "Suriname",
+        "code": "SRD",
+        "latlng:": [
+            4,
+            -56
+        ],
+        "flag": "https://restcountries.eu/data/sur.svg"
+    },
+    {
+        "id": "216",
+        "title": "Svalbard and Jan Mayen",
+        "code": "NOK",
+        "latlng:": [
+            78,
+            20
+        ],
+        "flag": "https://restcountries.eu/data/sjm.svg"
+    },
+    {
+        "id": "217",
+        "title": "Swaziland",
+        "code": "SZL",
+        "latlng:": [
+            -26.5,
+            31.5
+        ],
+        "flag": "https://restcountries.eu/data/swz.svg"
+    },
+    {
+        "id": "218",
+        "title": "Sweden",
+        "code": "SEK",
+        "latlng:": [
+            62,
+            15
+        ],
+        "flag": "https://restcountries.eu/data/swe.svg"
+    },
+    {
+        "id": "219",
+        "title": "Switzerland",
+        "code": "CHF",
+        "latlng:": [
+            47,
+            8
+        ],
+        "flag": "https://restcountries.eu/data/che.svg"
+    },
+    {
+        "id": "220",
+        "title": "Syrian Arab Republic",
+        "code": "SYP",
+        "latlng:": [
+            35,
+            38
+        ],
+        "flag": "https://restcountries.eu/data/syr.svg"
+    },
+    {
+        "id": "221",
+        "title": "Taiwan",
+        "code": "TWD",
+        "latlng:": [
+            23.5,
+            121
+        ],
+        "flag": "https://restcountries.eu/data/twn.svg"
+    },
+    {
+        "id": "222",
+        "title": "Tajikistan",
+        "code": "TJS",
+        "latlng:": [
+            39,
+            71
+        ],
+        "flag": "https://restcountries.eu/data/tjk.svg"
+    },
+    {
+        "id": "223",
+        "title": "Tanzania, United Republic of",
+        "code": "TZS",
+        "latlng:": [
+            -6,
+            35
+        ],
+        "flag": "https://restcountries.eu/data/tza.svg"
+    },
+    {
+        "id": "224",
+        "title": "Thailand",
+        "code": "THB",
+        "latlng:": [
+            15,
+            100
+        ],
+        "flag": "https://restcountries.eu/data/tha.svg"
+    },
+    {
+        "id": "225",
+        "title": "Timor-Leste",
+        "code": "USD",
+        "latlng:": [
+            -8.83333333,
+            125.91666666
+        ],
+        "flag": "https://restcountries.eu/data/tls.svg"
+    },
+    {
+        "id": "226",
+        "title": "Togo",
+        "code": "XOF",
+        "latlng:": [
+            8,
+            1.16666666
+        ],
+        "flag": "https://restcountries.eu/data/tgo.svg"
+    },
+    {
+        "id": "227",
+        "title": "Tokelau",
+        "code": "NZD",
+        "latlng:": [
+            -9,
+            -172
+        ],
+        "flag": "https://restcountries.eu/data/tkl.svg"
+    },
+    {
+        "id": "228",
+        "title": "Tonga",
+        "code": "TOP",
+        "latlng:": [
+            -20,
+            -175
+        ],
+        "flag": "https://restcountries.eu/data/ton.svg"
+    },
+    {
+        "id": "229",
+        "title": "Trinidad and Tobago",
+        "code": "TTD",
+        "latlng:": [
+            11,
+            -61
+        ],
+        "flag": "https://restcountries.eu/data/tto.svg"
+    },
+    {
+        "id": "230",
+        "title": "Tunisia",
+        "code": "TND",
+        "latlng:": [
+            34,
+            9
+        ],
+        "flag": "https://restcountries.eu/data/tun.svg"
+    },
+    {
+        "id": "231",
+        "title": "Turkey",
+        "code": "TRY",
+        "latlng:": [
+            39,
+            35
+        ],
+        "flag": "https://restcountries.eu/data/tur.svg"
+    },
+    {
+        "id": "232",
+        "title": "Turkmenistan",
+        "code": "TMT",
+        "latlng:": [
+            40,
+            60
+        ],
+        "flag": "https://restcountries.eu/data/tkm.svg"
+    },
+    {
+        "id": "233",
+        "title": "Turks and Caicos Islands",
+        "code": "USD",
+        "latlng:": [
+            21.75,
+            -71.58333333
+        ],
+        "flag": "https://restcountries.eu/data/tca.svg"
+    },
+    {
+        "id": "234",
+        "title": "Tuvalu",
+        "code": "AUD",
+        "latlng:": [
+            -8,
+            178
+        ],
+        "flag": "https://restcountries.eu/data/tuv.svg"
+    },
+    {
+        "id": "235",
+        "title": "Uganda",
+        "code": "UGX",
+        "latlng:": [
+            1,
+            32
+        ],
+        "flag": "https://restcountries.eu/data/uga.svg"
+    },
+    {
+        "id": "236",
+        "title": "Ukraine",
+        "code": "UAH",
+        "latlng:": [
+            49,
+            32
+        ],
+        "flag": "https://restcountries.eu/data/ukr.svg"
+    },
+    {
+        "id": "237",
+        "title": "United Arab Emirates",
+        "code": "AED",
+        "latlng:": [
+            24,
+            54
+        ],
+        "flag": "https://restcountries.eu/data/are.svg"
+    },
+    {
+        "id": "238",
+        "title": "United Kingdom of Great Britain and Northern Ireland",
+        "code": "GBP",
+        "latlng:": [
+            54,
+            -2
+        ],
+        "flag": "https://restcountries.eu/data/gbr.svg"
+    },
+    {
+        "id": "33",
+        "title": "United States Minor Outlying Islands",
+        "code": "USD",
+        "latlng:": [],
+        "flag": "https://restcountries.eu/data/umi.svg"
+    },
+    {
+        "id": "239",
+        "title": "United States of America",
+        "code": "USD",
+        "latlng:": [
+            38,
+            -97
+        ],
+        "flag": "https://restcountries.eu/data/usa.svg"
+    },
+    {
+        "id": "240",
+        "title": "Uruguay",
+        "code": "UYU",
+        "latlng:": [
+            -33,
+            -56
+        ],
+        "flag": "https://restcountries.eu/data/ury.svg"
+    },
+    {
+        "id": "241",
+        "title": "Uzbekistan",
+        "code": "UZS",
+        "latlng:": [
+            41,
+            64
+        ],
+        "flag": "https://restcountries.eu/data/uzb.svg"
+    },
+    {
+        "id": "242",
+        "title": "Vanuatu",
+        "code": "VUV",
+        "latlng:": [
+            -16,
+            167
+        ],
+        "flag": "https://restcountries.eu/data/vut.svg"
+    },
+    {
+        "id": "243",
+        "title": "Venezuela (Bolivarian Republic of)",
+        "code": "VEF",
+        "latlng:": [
+            8,
+            -66
+        ],
+        "flag": "https://restcountries.eu/data/ven.svg"
+    },
+    {
+        "id": "244",
+        "title": "Viet Nam",
+        "code": "VND",
+        "latlng:": [
+            16.16666666,
+            107.83333333
+        ],
+        "flag": "https://restcountries.eu/data/vnm.svg"
+    },
+    {
+        "id": "34",
+        "title": "Virgin Islands (British)",
+        "code": "null",
+        "latlng:": [
+            18.431383,
+            -64.62305
+        ],
+        "flag": "https://restcountries.eu/data/vgb.svg"
+    },
+    {
+        "id": "35",
+        "title": "Virgin Islands (U.S.)",
+        "code": "USD",
+        "latlng:": [
+            18.34,
+            -64.93
+        ],
+        "flag": "https://restcountries.eu/data/vir.svg"
+    },
+    {
+        "id": "245",
+        "title": "Wallis and Futuna",
+        "code": "XPF",
+        "latlng:": [
+            -13.3,
+            -176.2
+        ],
+        "flag": "https://restcountries.eu/data/wlf.svg"
+    },
+    {
+        "id": "246",
+        "title": "Western Sahara",
+        "code": "MAD",
+        "latlng:": [
+            24.5,
+            -13
+        ],
+        "flag": "https://restcountries.eu/data/esh.svg"
+    },
+    {
+        "id": "247",
+        "title": "Yemen",
+        "code": "YER",
+        "latlng:": [
+            15,
+            48
+        ],
+        "flag": "https://restcountries.eu/data/yem.svg"
+    },
+    {
+        "id": "248",
+        "title": "Zambia",
+        "code": "ZMW",
+        "latlng:": [
+            -15,
+            30
+        ],
+        "flag": "https://restcountries.eu/data/zmb.svg"
+    },
+    {
+        "id": "249",
+        "title": "Zimbabwe",
+        "code": "BWP",
+        "latlng:": [
+            -20,
+            30
+        ],
+        "flag": "https://restcountries.eu/data/zwe.svg"
+    },
+    {
+        "id": "1",
+        "title": "Åland Islands",
+        "code": "EUR",
+        "latlng:": [
+            60.116667,
+            19.9
+        ],
+        "flag": "https://restcountries.eu/data/ala.svg"
+    }
+]
