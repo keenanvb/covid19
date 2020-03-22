@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import PropTypes from 'prop-types'
 import LandingSidenav from '../landing-sidenav/'
 
 const Navbar = () => {
@@ -23,10 +22,6 @@ const Navbar = () => {
             <Fragment> {guesLinks}</Fragment>
         </nav>
     )
-}
-
-Navbar.propTypes = {
-
 }
 
 export default connect(null, {})(Navbar)

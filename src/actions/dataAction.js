@@ -1,6 +1,6 @@
 import axios from 'axios'
 import {
-    GET_DATA, GET_COUNTRY_DATA, GET_MAP_DATA, COUNTRY_UPDATE, GET_COUNTRY_ADDITIONAL_INFO, GET_TIMESERIES_DATA, DATA_ERROR
+    GET_DATA, GET_COUNTRY_DATA, GET_MAP_DATA, COUNTRY_UPDATE, GET_COUNTRY_ADDITIONAL_INFO, GET_TIMESERIES_DATA
 } from './types';
 import { setAlert } from './index'
 
@@ -94,7 +94,6 @@ export const getCountryInfo = (country) => {
         } catch (err) {
 
             let emoji = getRandomEmoji();
-            console.log('emoji', emoji);
             dispatch(setAlert(`${country}: No Additional information available ${emoji}`, 'danger'))
         }
     }

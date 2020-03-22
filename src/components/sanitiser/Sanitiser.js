@@ -25,7 +25,6 @@ const Sanitiser = () => {
         } else {
             return `${(number)} ml`
         }
-        return number
     }
 
     let updateStep = () => {

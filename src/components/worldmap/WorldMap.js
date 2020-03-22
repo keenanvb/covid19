@@ -1,9 +1,6 @@
-import React, { Fragment, useState, useEffect, useRef } from 'react';
-import { Map, Marker, Popup, TileLayer, Circle, ZoomControl, Tooltip } from "react-leaflet";
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect, useRef } from 'react';
+import { Map, Popup, TileLayer, Circle, Tooltip } from "react-leaflet";
 import Legend from "./Legend";
-// import { Icon } from "leaflet";
-// import L from "leaflet";
 import { connect } from 'react-redux'
 import Spinner from '../layout/Spinner'
 import moment from 'moment'
@@ -13,8 +10,6 @@ import { getMapData } from '../../actions'
 
 const WorldMap = ({ data: { mapData }, getMapData }) => {
     const [activeCountry, setActiveCountry] = useState(null);
-
-    const [selectSort, setSelectSort] = useState('confirmed');
 
     let mapRef = useRef(null);
 
@@ -145,7 +140,6 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                         }</>
                 )
             case 2:
-                console.log('currentCountry', currentCountry);
                 return (
                     <>
                         <Countires currentCountry={currentCountry} />

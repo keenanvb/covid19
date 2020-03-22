@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 const Legend = () => {
     const { map } = useLeaflet();
-    console.log(map);
 
     useEffect(() => {
         const getColor = d => {
