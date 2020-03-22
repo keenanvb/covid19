@@ -8,7 +8,9 @@ const Countries = ({ currentCountry, data: { mapData } }) => {
     const [selectSort, setSelectSort] = useState('confirmed');
     const [direction, setDirection] = useState(true)
 
-    let filterList = ['confirmed', 'recovered', 'deaths', 'lastUpdate', 'direction'];
+    // let filterList = ['confirmed', 'recovered', 'deaths', 'lastUpdate', 'direction'];
+
+    let filterList = ['confirmed', 'recovered', 'deaths', 'lastUpdate'];
 
     const renderList = () => {
         let data = currentCountry.sort((x, y) => {
@@ -42,13 +44,13 @@ const Countries = ({ currentCountry, data: { mapData } }) => {
                     <div className="filter-buttons">
                         {filterList.map((filter, index) => {
 
-                            if (filter === 'direction') {
-                                return (
-                                    <div onClick={() => {
-                                        setDirection(!direction);
-                                    }} className={`btn btn-light ${filter}-left`}>{direction === true ? 'Desc' : 'Asc'}</div>
-                                )
-                            }
+                            // if (filter === 'direction') {
+                            //     return (
+                            //         <div onClick={() => {
+                            //             setDirection(!direction);
+                            //         }} className={`btn btn-light ${filter}-left`}>{direction === true ? 'Desc' : 'Asc'}</div>
+                            //     )
+                            // }
 
                             if (filter === selectSort) {
                                 return (
