@@ -201,7 +201,7 @@ img {
   margin-top: 10px;
   position: relative;
   overflow: scroll;
-  height: 60vh;
+  height: 500px;
   width: 100%;
 }
 
@@ -454,6 +454,21 @@ label {
   margin-bottom: 0.25em;  
   color: #222;  
   font-weight: lighter; 
+}
+
+.pagination ul{
+  display: flex;
+}
+
+.pagination div{
+  color: #fff;
+  /* color: var(--primary-color); */
+  padding: 0.40rem;
+  margin: 0 0.25rem;
+}
+.active-pagination{
+  background-color: #34495e;
+  /* opacity: 0.8; */
 }
 
 input { 

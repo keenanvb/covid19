@@ -3,24 +3,32 @@ import { Map, Marker, Popup, TileLayer, Circle, ZoomControl, Tooltip } from "rea
 import { Link } from 'react-router-dom'
 import Legend from "./Legend";
 // import { Icon } from "leaflet";
-import L from "leaflet";
+// import L from "leaflet";
 import { connect } from 'react-redux'
 import Spinner from '../layout/Spinner'
-import CountUp from 'react-countup';
 import moment from 'moment'
-
+import Countires from '../countries/Countires'
+import Pagination from '../countries/Pagination'
 import { getMapData } from '../../actions'
 
-// export const icon = new Icon({
-//     iconUrl: "👍",
-//     iconSize: [100, 100]
-// });
 const WorldMap = ({ data: { mapData }, getMapData }) => {
     const [activeCountry, setActiveCountry] = useState(null);
 
     const [selectSort, setSelectSort] = useState('confirmed');
 
     let mapRef = useRef(null);
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const [countriesPerPage, setCountriesPerPage] = useState(20);
+    const [activePagination, setActivePagination] = useState(1)
+
+    //Get current countries
+    const indexofLastCountry = currentPage * countriesPerPage;
+    const indexOfFirstCountry = indexofLastCountry - countriesPerPage;
+    const currentCountry = mapData.slice(indexOfFirstCountry, indexofLastCountry)
+
+    //change page
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
 
     // let setFillOpacity = (confirmed) => {
@@ -60,14 +68,6 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
     useEffect(() => {
         getMapData()
     }, [getMapData])
-
-
-    const onCountryClick = (country) => {
-        console.log('mapRef.current', mapRef.current)
-        console.log('L', L);
-        // console.log(map);
-        //flyTo([13.87992, 45.9791], 12)
-    }
 
     const [step, setStep] = useState(1);
 
@@ -143,59 +143,14 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                             ) :
                             <Spinner />
                         }</>
-                    // <Goal goals={profile.goals} prevStep={prevStep} nextStep={nextStep} />
                 )
             case 2:
+                console.log('currentCountry', currentCountry);
                 return (
                     <>
-                        {mapData.length > 0 ?
-                            (<>
-                                <>SORT BY</>
-                                <div className="filter-buttons">
-                                    {filterList.map((filter, index) => {
-                                        if (filter === selectSort) {
-                                            return (
-                                                <div onClick={() => {
-                                                    setSelectSort(`${filter}`);
-                                                }} className={`btn btn-light ${filter}-left activeFilter`}>{filter.toLowerCase()}</div>
-                                            )
-                                        } else {
-                                            return (
-                                                <div onClick={() => {
-                                                    setSelectSort(`${filter}`);
-                                                }} className={`btn btn-light ${filter}-left`}>{filter.toLowerCase()}</div>
-                                            )
-                                        }
-
-                                    })}
-
-                                    {/* <div onClick={() => {
-                                        setSelectSort('confirmed');
-                                    }} className="btn btn-light confirmed-left">Confirmed</div>
-                                    <div onClick={() => {
-                                        setSelectSort('recovered');
-                                    }} className="btn btn-light recovered-left">Recovered</div>
-                                    <div onClick={() => {
-                                        setSelectSort('deaths');
-                                    }} className="btn btn-light deaths-left">Death</div>
-                                    <div onClick={() => {
-                                        setSelectSort('lastUpdate');
-                                    }} className="btn btn-light lastUpdate-left">Last updated</div> */}
-                                </div>
-                                <div className="country-list-heading">
-                                    <div>Area</div>
-                                    <div className="confirmed">Confirmed</div>
-                                    <div className="recovered">Recovered</div>
-                                    <div className="deaths">Deaths</div>
-                                    <div>Updated</div>
-                                </div>
-                                <div className="country-list-container">
-
-                                    {renderList()}
-                                </div>
-                            </>) :
-                            <Spinner />
-                        }
+                        <Countires currentCountry={currentCountry} />
+                        <Pagination countriesPerPage={countriesPerPage} allCountries={mapData.length}
+                            paginate={paginate} activePagination={activePagination} setActivePagination={setActivePagination} />
                     </>
                 )
             default:
@@ -203,37 +158,6 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                     <div></div>
                 )
         }
-    }
-
-    let filterList = ['confirmed', 'recovered', 'deaths', 'lastUpdate'];
-
-    const renderList = () => {
-
-        let sortedData = mapData.sort((x, y) => {
-            console.log('x.selectSort', x[selectSort]);
-
-            return x[selectSort] > y[selectSort] ? 1 : -1
-        });
-
-        console.log('sortedData', sortedData);
-
-        let data = mapData.sort((x, y) => {
-            return x[selectSort] < y[selectSort] ? 1 : -1
-        }).map((country, index) => {
-            return (
-                <div key={index} className="country-list" onClick={() => {
-                    onCountryClick(country)
-                }}>
-                    <div>{country.countryRegion} {country.provinceState}</div>
-                    <div className="confirmed" >{country.confirmed}</div>
-                    <div className="recovered" >{country.recovered}</div>
-                    <div className="deaths" >{country.deaths}</div>
-                    <div>{moment(country.lastUpdate).format('DD/MM/YY hh:mm:ss')}</div>
-                </div>
-            )
-        });
-
-        return data
     }
 
     return (
