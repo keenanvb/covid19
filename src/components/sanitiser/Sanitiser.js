@@ -61,7 +61,7 @@ const Sanitiser = () => {
                     updateRange(e)
                     updateStep(e)
                 }} name='number' type="range" class="slider" min="0" max="10000" step={step}  ></input>
-                <div>Hand sanitizer available?</div>
+                <div>Hand sanitiser available?</div>
             </div>
             <div style={{ postion: 'absoulte', marginBottom: '20px' }}>
                 <div className="box">{recurring}</div>
