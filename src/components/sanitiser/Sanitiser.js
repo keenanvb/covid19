@@ -1,6 +1,10 @@
-import React, { useState } from 'react'
-
+import React, { useState, useEffect } from 'react'
+import ReactGA from 'react-ga'
 const Sanitiser = () => {
+
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname);
+    }, [])
 
     const [formData, setFormData] = useState({
         number: 0,
