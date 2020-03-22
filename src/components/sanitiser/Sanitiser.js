@@ -3,10 +3,12 @@ import React, { useState } from 'react'
 const Sanitiser = () => {
 
     const [formData, setFormData] = useState({
-        number: 1,
+        number: 0,
         recurring: 1,
-        pump: 5
+        pump: 5,
     })
+
+    const [step, setStep] = useState(25)
 
     const [options, setOptions] = useState(false)
 
@@ -23,12 +25,24 @@ const Sanitiser = () => {
         } else {
             return `${(number)} ml`
         }
+        return number
+    }
+
+    let updateStep = () => {
+        const { number } = formData
+        if (number >= 1000) {
+            setStep(250)
+        } else {
+            setStep(25)
+        }
+
     }
 
     let getDaysLeft = () => {
         const { number, recurring, pump } = formData
         let frequency = pump * recurring
-        return (number / frequency).toFixed(2);
+        let result = (number / frequency).toFixed(2)
+        return result;
     }
 
     const { number, recurring, pump } = formData
@@ -46,14 +60,15 @@ const Sanitiser = () => {
                 <div className="box">{displayText(number)}</div>
                 <input onChange={(e) => {
                     updateRange(e)
-                }} name='number' type="range" class="slider" min="25" max="10000" step="1" value={number} ></input>
+                    updateStep(e)
+                }} name='number' type="range" class="slider" min="0" max="10000" step={step}  ></input>
                 <div>Hand sanitizer available?</div>
             </div>
             <div style={{ postion: 'absoulte', marginBottom: '20px' }}>
                 <div className="box">{recurring}</div>
                 <input onChange={(e) => {
                     updateRange(e)
-                }} name='recurring' type="range" class="slider" min="1" max="100" step="1" value={recurring}></input>
+                }} name='recurring' type="range" class="slider" min="1" max="50" step="1" value={recurring}></input>
                 <div><span role="img" aria-label="">🧴</span>Frequency - How many pumps/squeezes in a day?</div>
             </div>
             <button onClick={() => {
@@ -64,7 +79,7 @@ const Sanitiser = () => {
                     <div className="box">{`${pump} ml`}</div>
                     <input onChange={(e) => {
                         updateRange(e)
-                    }} name='pump' type="range" class="slider" min="1" max="20" step="1" value={pump}></input>
+                    }} name='pump' type="range" class="slider" min="1" max="10" step="1" value={pump}></input>
                     <div><span role="img" aria-label="">🧴</span>How much is a pump/squeeze?</div>
                 </div>
                 : null}

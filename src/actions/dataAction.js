@@ -19,9 +19,10 @@ export const getData = () => {
                 type: GET_DATA,
                 payload: res.data
             })
-            dispatch(setAlert('Global stats available', 'success'))
+            // dispatch(setAlert('Global stats available', 'success'))
         } catch (err) {
             dispatch(setAlert('No stats data available', 'danger'))
+            console.log('err', err);
         }
     }
 }
@@ -41,7 +42,7 @@ export const getCountryData = (country) => {
                 type: GET_COUNTRY_DATA,
                 payload: result
             })
-            dispatch(setAlert(`${country}: stats available`, 'success'))
+            // dispatch(setAlert(`${country}: stats available`, 'success'))
         } catch (err) {
 
             let result = {
@@ -55,7 +56,6 @@ export const getCountryData = (country) => {
                 payload: result
             })
             let emoji = getRandomEmoji();
-            console.log('emoji', emoji);
             dispatch(setAlert(`${country}: No stats data available ${emoji}`, 'danger'))
         }
     }
