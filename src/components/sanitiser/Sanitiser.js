@@ -28,7 +28,7 @@ const Sanitiser = () => {
     let getDaysLeft = () => {
         const { number, recurring, pump } = formData
         let frequency = pump * recurring
-        return (number / frequency).toFixed(2);
+        return Math.round((number / frequency));
     }
 
     const { number, recurring, pump } = formData
