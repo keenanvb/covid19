@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
+import ReactGA from 'react-ga'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Landing from './components/layout/Landing'
@@ -13,6 +14,10 @@ import store from './store'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 const App = () => {
+  useEffect(() => {
+    ReactGA.initialize(process.env.REACT_GOOGLE_ANALYTICS);
+    ReactGA.pageview(window.location.pathname);
+  }, [])
 
   return (
     <Provider store={store}>

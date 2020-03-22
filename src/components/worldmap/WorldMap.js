@@ -7,11 +7,16 @@ import moment from 'moment'
 import Countires from '../countries/Countires'
 import Pagination from '../countries/Pagination'
 import { getMapData } from '../../actions'
+import ReactGA from 'react-ga'
 
 const WorldMap = ({ data: { mapData }, getMapData }) => {
     const [activeCountry, setActiveCountry] = useState(null);
 
     let mapRef = useRef(null);
+
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname);
+    }, [])
 
     const [currentPage, setCurrentPage] = useState(1);
     const [countriesPerPage, setCountriesPerPage] = useState(20);
@@ -159,9 +164,17 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
             <div className="dash-buttons">
                 <div onClick={() => {
                     setStep(1);
+                    ReactGA.event({
+                        category: 'Button',
+                        action: 'clicked for map view'
+                    })
                 }} className="btn btn-light"> Map View</div>
                 <div onClick={() => {
                     setStep(2);
+                    ReactGA.event({
+                        category: 'Button',
+                        action: 'clicked for countries'
+                    })
                 }} className="btn btn-light"> Table View</div>
             </div>
             {displaySteps()}

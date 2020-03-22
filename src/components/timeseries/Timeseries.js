@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ReactGA from 'react-ga'
 import { connect } from 'react-redux'
 import Dropdown from '../layout/Dropdown'
 import { getTimeSeriesData, countryUpdate } from '../../actions'
@@ -9,6 +10,11 @@ import {
 import Spinner from '../layout/Spinner'
 
 const Timeseries = ({ data: { timeseriesData, selectedCountryGraph }, countries }) => {
+
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname);
+    }, [])
+
     return (
         <div className="timeseries-container">
             <Dropdown title={selectedCountryGraph || 'Please select a country'} dropdownData={countries} type='timeseries' />
