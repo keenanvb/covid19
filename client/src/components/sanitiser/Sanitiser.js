@@ -76,7 +76,7 @@ const Sanitiser = () => {
             </div>
             <button onClick={() => {
                 setOptions(!options);
-            }} >Advanced Options {options ? 'Activated' : 'Deactived'}</button >
+            }} >Advanced Options</button >
             {options ?
                 <div style={{ postion: 'absoulte', marginBottom: '20px' }}>
                     <div className="box">{`${pump} ml`}</div>
