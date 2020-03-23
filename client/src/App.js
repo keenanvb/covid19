@@ -15,12 +15,9 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 const App = () => {
   useEffect(() => {
-    ReactGA.initialize(process.env.REACT_GOOGLE_ANALYTICS);
+    ReactGA.initialize(process.env.REACT_APP_REACT_GOOGLE_ANALYTICS);
     ReactGA.pageview(window.location.pathname);
   }, [])
-
-
-  console.log('process.env', process.env.TEST);
 
   return (
     <Provider store={store}>
