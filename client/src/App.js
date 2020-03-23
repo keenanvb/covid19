@@ -7,6 +7,7 @@ import WorldMap from './components/worldmap/WorldMap'
 import Timeseries from './components/timeseries/Timeseries'
 import Sanitiser from './components/sanitiser/Sanitiser'
 import Alert from './components/layout/Alert'
+import NotFound from './components/layout/NotFound'
 
 import './App.css';
 import { Provider } from 'react-redux'
@@ -37,8 +38,8 @@ const App = () => {
                   <Route path='/' exact component={Landing} />
                   <Route path='/world-map' exact component={WorldMap} />
                   <Route path='/timeseries' exact component={Timeseries} />
-                  <Route path='/ohwow' exact component={Sanitiser} />
-                  {/* <Route component={Routes} /> */}
+                  <Route path='/sanitiser' exact component={Sanitiser} />
+                  <Route component={NotFound} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>

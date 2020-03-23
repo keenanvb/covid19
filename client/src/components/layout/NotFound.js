@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 const NotFound = () => {
     return (
-        <Fragment>
+        <div className='container'>
             <h1>Page not found</h1>
-            <Link to='/' >Go home</Link>
-        </Fragment>
+            <Link to='/' >home</Link>
+        </div>
     )
 }
 
