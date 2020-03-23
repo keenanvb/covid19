@@ -6,24 +6,17 @@ import moment from 'moment'
 const Countries = ({ currentCountry, data: { mapData } }) => {
 
     const [selectSort, setSelectSort] = useState('confirmed');
-    const [direction, setDirection] = useState(true)
-
-    // let filterList = ['confirmed', 'recovered', 'deaths', 'lastUpdate', 'direction'];
 
     let filterList = ['confirmed', 'recovered', 'deaths', 'lastUpdate'];
 
     const renderList = () => {
         let data = currentCountry.sort((x, y) => {
-            if (direction) {
-                return x[selectSort] < y[selectSort] ? 1 : -1
-            } else {
-                return x[selectSort] > y[selectSort] ? 1 : -1
-            }
-
+            return x[selectSort] < y[selectSort] ? 1 : -1
         }).map((country, index) => {
             return (
                 <div key={index} className="country-list" >
-                    <div>{country.countryRegion} {country.provinceState}</div>
+                    {/* <div>{country.countryRegion} {country.provinceState}</div> */}
+                    <div>{country.combinedKey}</div>
                     <div className="confirmed" >{country.confirmed}</div>
                     <div className="recovered" >{country.recovered}</div>
                     <div className="deaths" >{country.deaths}</div>
@@ -66,19 +59,6 @@ const Countries = ({ currentCountry, data: { mapData } }) => {
                                 )
                             }
                         })}
-
-                        {/* <div onClick={() => {
-                                        setSelectSort('confirmed');
-                                    }} className="btn btn-light confirmed-left">Confirmed</div>
-                                    <div onClick={() => {
-                                        setSelectSort('recovered');
-                                    }} className="btn btn-light recovered-left">Recovered</div>
-                                    <div onClick={() => {
-                                        setSelectSort('deaths');
-                                    }} className="btn btn-light deaths-left">Death</div>
-                                    <div onClick={() => {
-                                        setSelectSort('lastUpdate');
-                                    }} className="btn btn-light lastUpdate-left">Last updated</div> */}
                     </div>
                     <div className="country-list-heading">
                         <div>Area</div>

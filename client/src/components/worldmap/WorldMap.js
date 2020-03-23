@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Map, Popup, TileLayer, Circle, Tooltip } from "react-leaflet";
 import Legend from "./Legend";
+import Top5 from "./Top5";
 import { connect } from 'react-redux'
 import Spinner from '../layout/Spinner'
 import moment from 'moment'
@@ -45,17 +46,45 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
     //     }
     // }
 
-    let setRadius = (confirmed) => {
-        if (confirmed < 2000) {
-            return 60000
-        } else if (confirmed > 2000 && confirmed < 4000) {
-            return 80000
-        } else if (confirmed > 4000 && confirmed < 8000) {
-            return 100000
-        } else if (confirmed > 8000 && confirmed < 10000) {
-            return 120000
+    const sortCountries = (sort) => {
+        let data = mapData.sort((x, y) => {
+            return x[sort] < y[sort] ? 1 : -1
+        });
+
+        return data.slice(0, 5)
+    }
+
+    let confirmed = sortCountries('confirmed');
+    // console.log('confirmed', confirmed);
+    // console.log('mapData', mapData);
+
+    let setRadius = (country) => {
+        const { deaths, countryRegion } = country
+        if (countryRegion.toLowerCase() == 'us') {
+
+            if (deaths < 2000) {
+                return 10000
+            } else if (deaths > 2000 && deaths < 4000) {
+                return 20000
+            } else if (deaths > 4000 && deaths < 8000) {
+                return 4000
+            } else if (deaths > 8000 && deaths < 10000) {
+                return 80000
+            } else {
+                return 100000
+            }
         } else {
-            return 140000
+            if (deaths < 2000) {
+                return 60000
+            } else if (deaths > 2000 && deaths < 4000) {
+                return 80000
+            } else if (deaths > 4000 && deaths < 8000) {
+                return 100000
+            } else if (deaths > 8000 && deaths < 10000) {
+                return 120000
+            } else {
+                return 140000
+            }
         }
     }
 
@@ -78,12 +107,17 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                     <>
                         {mapData.length > 0 ?
                             (
-                                <Map ref={mapRef} center={[-18.4, 33.9]} zoom={2} animate={true} >
+                                <Map ref={mapRef} center={[-22.93, 30.55]} zoom={3} animate={true} >
                                     <TileLayer
                                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                                     />
                                     <Legend />
+                                    <Top5 countries={sortCountries('deaths')} title={'Deaths'} />
+                                    <Top5 countries={sortCountries('recovered')} title={'Recovered'} />
+                                    <Top5 countries={sortCountries('confirmed')} title={'Confirmed'} />
+
+
                                     {mapData.map((country, index) => (
                                         // <Marker
                                         //     key={index}
@@ -104,7 +138,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                             ]}
 
                                             // radius={85000}
-                                            radius={setRadius(country.confirmed)}
+                                            radius={setRadius(country)}
                                             fillColor={setFillColour(country.confirmed)}
                                             // fillColor={'#f03'}
                                             weight={0}
@@ -113,7 +147,9 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                             onClick={() => {
                                                 setActiveCountry(country);
                                             }} >
-                                            <Tooltip>{country.countryRegion} {country.provinceState ? <span>{country.provinceState}</span> : null}</Tooltip>
+                                            <Tooltip>
+                                                <p>{country.combinedKey}</p>
+                                            </Tooltip>
                                         </Circle>
 
                                         // </Marker>
@@ -130,12 +166,14 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                             }}
                                         >
                                             <div>
-                                                <h2>{activeCountry.countryRegion}</h2>
-                                                {activeCountry.provinceState ? <span>{activeCountry.provinceState}</span> : null}
+                                                {/* <h2>{activeCountry.countryRegion}</h2> */}
+                                                <h2>{activeCountry.combinedKey}</h2>
                                                 <p className="">last update: {moment(activeCountry.lastUpdate).format('DD/MM/YY hh:mm:ss a')}</p>
                                                 <p className="confirmed">Confirmed: {activeCountry.confirmed}</p>
                                                 <p className="recovered">Recovered: {activeCountry.recovered}</p>
                                                 <p className="deaths">Deaths: {activeCountry.deaths}</p>
+                                                {/* <p className="">People Tested: {activeCountry.peopleTested ? activeCountry.peopleTested : 'Info not available'}</p>
+                                                <p className="">Incident Rate: {activeCountry.incidentRate ? activeCountry.peopleTested : 'Info not available'}</p> */}
                                             </div>
                                         </Popup>
                                     )}
