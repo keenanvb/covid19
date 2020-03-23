@@ -87,7 +87,7 @@ const Landing = ({ data: { data,
                         <h3>Languages</h3>
                         <div>{countryInfo.languages.map((language) => `${language.name} `)}</div>
                     </div>
-                    <div className="stats-status">
+                    {/* <div className="stats-status">
                         <h3>Region</h3>
                         <div>{countryInfo.region}</div>
                     </div>
@@ -100,7 +100,7 @@ const Landing = ({ data: { data,
                     <div className="stats-status">
                         <h3>Subregion</h3>
                         <div>{countryInfo.subregion}</div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         )
