@@ -64,14 +64,14 @@ const Sanitiser = () => {
                 <input onChange={(e) => {
                     updateRange(e)
                     updateStep(e)
-                }} name='number' type="range" class="slider" min="0" max="10000" step={step}  ></input>
+                }} name='number' type="range" className="slider" min="0" max="10000" step={step}  ></input>
                 <div>Hand sanitiser available?</div>
             </div>
             <div style={{ postion: 'absoulte', marginBottom: '20px' }}>
                 <div className="box">{recurring}</div>
                 <input onChange={(e) => {
                     updateRange(e)
-                }} name='recurring' type="range" class="slider" min="1" max="50" step="1" value={recurring}></input>
+                }} name='recurring' type="range" className="slider" min="1" max="50" step="1" value={recurring}></input>
                 <div><span role="img" aria-label="">🧴</span>Frequency - How many pumps/squeezes in a day?</div>
             </div>
             <button onClick={() => {
@@ -82,7 +82,7 @@ const Sanitiser = () => {
                     <div className="box">{`${pump} ml`}</div>
                     <input onChange={(e) => {
                         updateRange(e)
-                    }} name='pump' type="range" class="slider" min="1" max="10" step="1" value={pump}></input>
+                    }} name='pump' type="range" className="slider" min="1" max="10" step="1" value={pump}></input>
                     <div><span role="img" aria-label="">🧴</span>How much is a pump/squeeze?</div>
                 </div>
                 : null}

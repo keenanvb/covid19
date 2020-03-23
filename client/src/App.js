@@ -19,6 +19,9 @@ const App = () => {
     ReactGA.pageview(window.location.pathname);
   }, [])
 
+
+  console.log('process.env', process.env.TEST);
+
   return (
     <Provider store={store}>
       <Router>
