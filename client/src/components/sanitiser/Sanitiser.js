@@ -9,7 +9,7 @@ const Sanitiser = () => {
     const [formData, setFormData] = useState({
         number: 0,
         recurring: 1,
-        pump: 5,
+        pump: 2,
     })
 
     const [step, setStep] = useState(25)
@@ -52,7 +52,7 @@ const Sanitiser = () => {
 
 
     return (
-        <div className='container'>
+        <div className='container sanitiser'>
             {/* <div className="alert-banner">
                 <span role="img" aria-label="">🤦‍♂️</span>DO NOT HOARD HAND SANITISER <span role="img" aria-label="">🤦‍♀️</span>
             </div> */}
