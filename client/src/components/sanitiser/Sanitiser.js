@@ -57,7 +57,7 @@ const Sanitiser = () => {
                 <span role="img" aria-label="">🤦‍♂️</span>DO NOT HOARD HAND SANITISER <span role="img" aria-label="">🤦‍♀️</span>
             </div> */}
             <div className="box-medium">
-                <h2>Days left: {getDaysLeft()}</h2>
+                <h2><span role="img" aria-label="">🧴</span>Days left: {getDaysLeft()}</h2>
             </div>
             <div style={{ postion: 'absoulte', marginBottom: '20px' }}>
                 <div className="box">{displayText(number)}</div>
@@ -72,7 +72,7 @@ const Sanitiser = () => {
                 <input onChange={(e) => {
                     updateRange(e)
                 }} name='recurring' type="range" className="slider" min="1" max="50" step="1" value={recurring}></input>
-                <div><span role="img" aria-label="">🧴</span>Frequency - How many pumps/squeezes in a day?</div>
+                <div>Frequency - How many pumps/squeezes in a day?</div>
             </div>
             <button onClick={() => {
                 setOptions(!options);
@@ -83,7 +83,7 @@ const Sanitiser = () => {
                     <input onChange={(e) => {
                         updateRange(e)
                     }} name='pump' type="range" className="slider" min="1" max="10" step="1" value={pump}></input>
-                    <div><span role="img" aria-label="">🧴</span>How much is a pump/squeeze?</div>
+                    <div>How much is a pump/squeeze?</div>
                 </div>
                 : null}
         </div>
