@@ -1,6 +1,6 @@
 /* Global Styles */
 :root {
-  --primary-color: #7ed6df;
+  --primary-color: #fff;
   --secondary-color: #e67e22; 
   --dark-color: #343a40;
   --light-color: #f4f4f4;
@@ -766,6 +766,7 @@ input:checked[type="checkbox"]:before{
   display: flex;
   width: 250px;
   flex-direction: column;
+
   height:150px;
   line-height: 10px;
   color: #555;
