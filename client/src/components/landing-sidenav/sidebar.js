@@ -29,7 +29,7 @@ const Sidebar = ({ sidebar, close }) => {
                             link
                         </a>
                     </div>
-                    <div>
+                    {/* <div>
                         <a href='https://github.com/pomber/covid19' target='_blank' rel='noopener noreferrer'>
                             <i style={{ color: '#211F1F' }} className='fab fa-github fa-1x' />
                         </a>
@@ -37,7 +37,7 @@ const Sidebar = ({ sidebar, close }) => {
                         <a href='https://github.com/pomber/covid19' target='_blank' rel='noopener noreferrer'>
                             link
                         </a>
-                    </div>
+                    </div> */}
                     <div>
                         REST Countries - Additional country information
                     <a href='https://restcountries.eu/' target='_blank' rel='noopener noreferrer'>

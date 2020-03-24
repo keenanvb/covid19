@@ -199,7 +199,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
 
     return (
         <div className="world-map-container">
-            <div className="dash-buttons">
+            {/* <div className="dash-buttons">
                 <div onClick={() => {
                     setStep(1);
                     ReactGA.event({
@@ -214,7 +214,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                         action: 'clicked for countries'
                     })
                 }} className="btn btn-light"> Table View</div>
-            </div>
+            </div> */}
             {displaySteps()}
         </div>
     );
