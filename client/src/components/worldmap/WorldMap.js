@@ -89,7 +89,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
     }
 
     let setFillColour = (confirmed) => {
-        return confirmed > 10000 ? "#800026" : confirmed > 5000 ? "#BD0026" : confirmed > 2000
+        return confirmed > 100000 ? "#800026" : confirmed > 5000 ? "#BD0026" : confirmed > 2000
             ? "#E31A1C" : confirmed > 1000 ? "#FC4E2A" : confirmed > 500 ? "#FD8D3C" : confirmed > 200
                 ? "#FEB24C" : confirmed > 100 ? "#FED976" : "#FFEDA0";
     }
