@@ -19,14 +19,14 @@ const Sidebar = ({ sidebar, close }) => {
             </button>
             <div className="container">
                 <div className="about">
-                    <h2>About<div className="lead">This Project was built to provide information. All data sources come from a 3rd party API </div></h2>
+                    <h2>About<div className="lead">All data sources come from a 3rd party API </div></h2>
                     <div>
                         <a href='https://github.com/mathdroid/covid-19-api' target='_blank' rel='noopener noreferrer'>
                             <i style={{ color: '#211F1F' }} className='fab fa-github fa-1x' />
                         </a>
                         Data source: mathdriod - covid-19-api
-                        <a href='https://github.com/mathdroid/covid-19-api' target='_blank' rel='noopener noreferrer'>
-                            - Link
+                        <a style={{ textDecoration: 'underline' }} href='https://github.com/mathdroid/covid-19-api' target='_blank' rel='noopener noreferrer'>
+                            - LINK
                         </a>
                     </div>
                     {/* <div>
@@ -42,15 +42,21 @@ const Sidebar = ({ sidebar, close }) => {
                         <a href='https://github.com/dsfsi/covid19za' target='_blank' rel='noopener noreferrer'>
                             <i style={{ color: '#211F1F' }} className='fab fa-github fa-1x' />
                         </a>
-                        Data source: Coronavirus COVID-19 (2019-nCoV) Data Repository for South Africa
-                        <a href='https://raw.githubusercontent.com/dsfsi/covid19za/master/data/covid19za_timeline_confirmed.csv' target='_blank' rel='noopener noreferrer'>
-                            - Link
+                        Data source: Coronavirus COVID-19 (2019-nCoV) Data Repository for South Africa - maintained and hosted by
+                        <a style={{ textDecoration: 'underline' }} href='https://github.com/dsfsi/covid19za' target='_blank' rel='noopener noreferrer'>
+                            DSFSI
+                        </a> research group at the University of Pretoria
+                        <a style={{ textDecoration: 'underline' }} href='https://raw.githubusercontent.com/dsfsi/covid19za/master/data/covid19za_timeline_confirmed.csv' target='_blank' rel='noopener noreferrer'>
+                            - DATA SOURCE
+                        </a>
+                        <a style={{ textDecoration: 'underline' }} href='https://github.com/dsfsi/covid19za' target='_blank' rel='noopener noreferrer'>
+                            - REPO
                         </a>
                     </div>
                     <div>
                         REST Countries - Additional country information
-                    <a href='https://restcountries.eu/' target='_blank' rel='noopener noreferrer'>
-                            - Link
+                    <a style={{ textDecoration: 'underline' }} href='https://restcountries.eu/' target='_blank' rel='noopener noreferrer'>
+                            - LINK
                         </a>
                     </div>
                 </div>
