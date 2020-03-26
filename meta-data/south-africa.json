@@ -1,0 +1,77 @@
+{
+    "metadata": {
+        "source": "https://raw.githubusercontent.com/dsfsi/covid19za/master/data/covid19za_timeline_confirmed.csv"
+    },
+    "provinces": {
+        "EC": {
+            "provinceFullName": "Eastern Cape",
+            "position": [
+                -32.2968,
+                26.4194
+            ]
+        },
+        "FS": {
+            "provinceFullName": "Free State",
+            "position": [
+                -28.4541,
+                26.7968
+            ]
+        },
+        "GP": {
+            "provinceFullName": "Gauteng",
+            "position": [
+                -26.2708,
+                28.1123
+            ]
+        },
+        "KZN": {
+            "provinceFullName": "KwaZulu-Natal",
+            "position": [
+                -28.5306,
+                30.8958
+            ]
+        },
+        "LP": {
+            "provinceFullName": "Limpopo",
+            "position": [
+                -23.4013,
+                29.4179
+            ]
+        },
+        "MP": {
+            "provinceFullName": "Mpumalanga",
+            "position": [
+                -25.5653,
+                30.5279
+            ]
+        },
+        "NC": {
+            "provinceFullName": "Northern Cape",
+            "position": [
+                -29.7091,
+                21.3211
+            ]
+        },
+        "NW": {
+            "provinceFullName": "North-West",
+            "position": [
+                -26.6639,
+                25.2838
+            ]
+        },
+        "WC": {
+            "provinceFullName": "Western Cape",
+            "position": [
+                -33.4930,
+                20.5804
+            ]
+        },
+        "UNK": {
+            "provinceFullName": "Unknow Case",
+            "position": [
+                -35.56,
+                17.48
+            ]
+        }
+    }
+}

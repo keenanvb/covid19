@@ -5,6 +5,12 @@ const app = express();
 //Init middleware
 app.use(express.json({ extended: false }));
 
+//Routes
+const maps = require('./routes/api/maps');
+
+//use Routes
+app.use('/api/maps', maps);
+
 //serve static assets in production
 if (process.env.NODE_ENV === 'production') {
     //set static folder

@@ -1,6 +1,6 @@
 import {
     GET_DATA, GET_COUNTRY_DATA, GET_MAP_DATA,
-    COUNTRY_UPDATE, GET_COUNTRY_ADDITIONAL_INFO, GET_TIMESERIES_DATA
+    COUNTRY_UPDATE, GET_COUNTRY_ADDITIONAL_INFO, GET_TIMESERIES_DATA, GET_MAP_DATA_SOUTH_AFRICA
 } from '../actions/types';
 
 const INITIAL_STATE = {
@@ -8,6 +8,7 @@ const INITIAL_STATE = {
     countryData: null,
     selectedCountry: '',
     mapData: [],
+    southAfricaData: null,
     countryAdditionalInfo: null,
     timeseriesData: [],
     selectedCountryGraph: '',
@@ -26,6 +27,8 @@ export default (state = INITIAL_STATE, action) => {
             return { ...state, countryData: payload, loading: false }
         case GET_MAP_DATA:
             return { ...state, mapData: payload, loading: false }
+        case GET_MAP_DATA_SOUTH_AFRICA:
+            return { ...state, southAfricaData: payload, loading: false }
         case GET_TIMESERIES_DATA:
             return { ...state, timeseriesData: payload, loading: false }
         case COUNTRY_UPDATE:

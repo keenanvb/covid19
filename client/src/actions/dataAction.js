@@ -1,6 +1,7 @@
 import axios from 'axios'
 import {
-    GET_DATA, GET_COUNTRY_DATA, GET_MAP_DATA, COUNTRY_UPDATE, GET_COUNTRY_ADDITIONAL_INFO, GET_TIMESERIES_DATA
+    GET_DATA, GET_COUNTRY_DATA, GET_MAP_DATA, COUNTRY_UPDATE, GET_COUNTRY_ADDITIONAL_INFO, GET_TIMESERIES_DATA,
+    GET_MAP_DATA_SOUTH_AFRICA
 } from './types';
 import { setAlert } from './index'
 
@@ -143,3 +144,24 @@ export const countryUpdate = ({ prop, value }) => {
         payload: { prop, value }
     };
 };
+
+
+export const getMapDataSouthAfrica = () => {
+    return async (dispatch) => {
+        try {
+            const res = await axios.get('api/maps/south-africa');
+
+            dispatch({
+                type: GET_MAP_DATA_SOUTH_AFRICA,
+                payload: res.data
+            })
+            // dispatch(setAlert('Map data available', 'success'))
+        } catch (err) {
+            dispatch({
+                type: GET_MAP_DATA_SOUTH_AFRICA,
+                payload: []
+            })
+            dispatch(setAlert('Map data not available', 'danger'))
+        }
+    }
+}

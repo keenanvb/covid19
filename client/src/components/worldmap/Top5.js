@@ -3,7 +3,6 @@ import L from "leaflet";
 import { useEffect } from "react";
 
 const Legend = ({ countries, title }) => {
-    // console.log('countryList', countryList);
 
     const getColor = d => {
         if (d.toLowerCase() == 'confirmed') {
@@ -36,8 +35,6 @@ const Legend = ({ countries, title }) => {
             labels.push(`<h3>Top 5 Country ${title}</h3>`)
             for (let i = 0; i < countries.length; i++) {
                 let area = countries[i];
-
-                console.log('area', area);
                 let num = i + 1
                 labels.push(
                     '<i style="backgroundColor:' +

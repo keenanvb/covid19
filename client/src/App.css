@@ -223,8 +223,18 @@ img {
 .leaflet-container {
   width: 100%;
   height: 75vh;
-  z-index: 0;
+  /* z-index: 0;  Removed alert*/
+  opacity: 0;
+  animation: fadeInLeaflet ease forwards 2s;
 }
+
+@keyframes fadeInLeaflet {
+  to {opacity: 1;}
+}
+
+/* .leaflet-control-layers-base{
+  z-index: 100 !important;
+} */
 
 
 .stats-container{
@@ -482,7 +492,7 @@ label {
   /* opacity: 0.8; */
 }
 
-input { 
+.search-country { 
   width: 250px;
   padding: 10px 10px; 
   border-radius: 5px; 
@@ -669,10 +679,6 @@ input:checked[type="checkbox"]:before{
     width: 120px;
   }
 
-  .top5{
-    display: none !important;
-  }
-
 .filter-buttons{
   flex-wrap: wrap;
 }
@@ -773,11 +779,14 @@ input:checked[type="checkbox"]:before{
 
 .top5 {
   display: flex;
-  width: 250px;
   flex-direction: column;
   height:130px;
   line-height: 10px;
   color: #555;
+}
+
+.top5-row{
+  cursor: pointer;
 }
 
 .top5 i {
