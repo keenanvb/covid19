@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Landing from './components/layout/Landing'
 import WorldMap from './components/worldmap/WorldMap'
+import SAMap from './components/worldmap/SAMap'
 import Timeseries from './components/timeseries/Timeseries'
 import Sanitiser from './components/sanitiser/Sanitiser'
 import Alert from './components/layout/Alert'
@@ -37,6 +38,7 @@ const App = () => {
                   {/* <Switch> */}
                   <Route path='/' exact component={Landing} />
                   <Route path='/world-map' exact component={WorldMap} />
+                  <Route path='/south-africa' exact component={SAMap} />
                   <Route path='/timeseries' exact component={Timeseries} />
                   <Route path='/sanitiser' exact component={Sanitiser} />
                   <Route component={NotFound} />

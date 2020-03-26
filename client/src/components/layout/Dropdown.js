@@ -54,6 +54,7 @@ const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountr
             <div className="country-input">
                 <span role="img" aria-label="">🗺️</span>
                 <input
+                    className="search-country"
                     placeholder='Search'
                     autoComplete="on"
                     type="text"

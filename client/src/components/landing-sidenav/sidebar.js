@@ -26,7 +26,7 @@ const Sidebar = ({ sidebar, close }) => {
                         </a>
                         Data source: mathdriod - covid-19-api
                         <a href='https://github.com/mathdroid/covid-19-api' target='_blank' rel='noopener noreferrer'>
-                            link
+                            - Link
                         </a>
                     </div>
                     {/* <div>
@@ -39,9 +39,18 @@ const Sidebar = ({ sidebar, close }) => {
                         </a>
                     </div> */}
                     <div>
+                        <a href='https://github.com/dsfsi/covid19za' target='_blank' rel='noopener noreferrer'>
+                            <i style={{ color: '#211F1F' }} className='fab fa-github fa-1x' />
+                        </a>
+                        Data source: Coronavirus COVID-19 (2019-nCoV) Data Repository for South Africa
+                        <a href='https://raw.githubusercontent.com/dsfsi/covid19za/master/data/covid19za_timeline_confirmed.csv' target='_blank' rel='noopener noreferrer'>
+                            - Link
+                        </a>
+                    </div>
+                    <div>
                         REST Countries - Additional country information
                     <a href='https://restcountries.eu/' target='_blank' rel='noopener noreferrer'>
-                            link
+                            - Link
                         </a>
                     </div>
                 </div>

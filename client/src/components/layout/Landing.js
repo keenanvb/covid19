@@ -62,7 +62,6 @@ const Landing = ({ data: { data,
 
     let displayCountryAdditionalInfo = () => {
         let countryInfo = countryAdditionalInfo[0]
-        console.log('countryInfo', countryInfo);
         return (
             <div className="stats-container">
                 {/* <h2>Global Statistics</h2> */}

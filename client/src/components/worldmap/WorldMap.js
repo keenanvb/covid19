@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Map, Popup, TileLayer, Circle, Tooltip } from "react-leaflet";
-import Legend from "./Legend";
-import Top5 from "./Top5";
+import { Map, Popup, TileLayer, Circle, Tooltip, WMSTileLayer, LayersControl, FeatureGroup } from "react-leaflet";
+import { PrintControl, baseMaps, downloadOptions, printOptions, getColor, getNumber } from './mapSettings'
+import Control from 'react-leaflet-control';
 import { connect } from 'react-redux'
 import Spinner from '../layout/Spinner'
 import moment from 'moment'
@@ -11,11 +11,18 @@ import { getMapData } from '../../actions'
 import ReactGA from 'react-ga'
 
 const WorldMap = ({ data: { mapData }, getMapData }) => {
-    const [activeCountry, setActiveCountry] = useState(null);
 
+    const [step, setStep] = useState(1);
+    const [activeCountry, setActiveCountry] = useState(null);
     let mapRef = useRef(null);
 
+
+    const [showLegend, setShowLegend] = useState(true);
+    const [showTop5, setShowTop5] = useState(false);
+
+
     useEffect(() => {
+        getMapData()
         ReactGA.pageview(window.location.pathname);
     }, [])
 
@@ -46,6 +53,49 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
     //     }
     // }
 
+    let renderBaseLayerControl = () => {
+        return (
+            <LayersControl position="topright">
+                {baseMaps.map(({ name, url, attribution, type, layer, format, checked = false }) => {
+                    return name === 'OpenStreet Map' ? (
+                        <LayersControl.BaseLayer key={name} name={name} checked={checked} >
+                            <WMSTileLayer
+                                layers={layer}
+                                format={format}
+                                transparent={false}
+                                url={url}
+                                attribution={attribution}
+                            />
+                        </LayersControl.BaseLayer>
+                    ) : (
+                            <LayersControl.BaseLayer key={name} name={name} checked={checked} >
+                                <TileLayer
+                                    attribution={attribution}
+                                    url={url}
+                                />
+                            </LayersControl.BaseLayer>
+                        );
+                })}
+                <LayersControl.BaseLayer name="ImageryLabels" >
+                    <FeatureGroup>
+                        <TileLayer
+                            attribution="Esri, DigitalGlobe, GeoEye, i-cubed, USDA, USGS, AEX, Getmapping, Aerogrid, IGN, IGP, swisstopo, and the GIS User Community"
+                            url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+                        />
+                        <TileLayer
+                            attribution=""
+                            url="http://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}"
+                        />
+                        <TileLayer
+                            attribution=""
+                            url="http://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}"
+                        />
+                    </FeatureGroup>
+                </LayersControl.BaseLayer>
+            </LayersControl>
+        );
+    }
+
     const sortCountries = (sort) => {
         let data = mapData.sort((x, y) => {
             return x[sort] < y[sort] ? 1 : -1
@@ -54,9 +104,63 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
         return data.slice(0, 5)
     }
 
-    let confirmed = sortCountries('confirmed');
-    // console.log('confirmed', confirmed);
-    // console.log('mapData', mapData);
+    let displayLegend = () => {
+        const grades = [0, 100, 200, 500, 1000, 2000, 5000, 10000];
+        let from;
+        let to;
+
+        return (
+            <Control position="bottomright" >
+                <div className="info legend">
+                    <h3>Confirmed Cases</h3>
+                    {grades.map((grade, index) => {
+                        from = grades[index];
+                        to = grades[index + 1];
+
+                        return (<div key={{ index }}><i style={{ background: `${getColor(from + 1)}` }}></i>{`${from}`}{`${(to) ? `-${to}` : '+'}`} </div>)
+                    })}
+                </div>
+            </Control>
+        )
+    }
+
+
+    let displayTop5 = (countries, title) => {
+        return (
+            <Control position="bottomleft" >
+                <div className="info top5">
+                    <h3>{`Top 5 ${title}`}</h3>
+                    {countries.map((country, index) => {
+                        let number = getNumber(title, country)
+                        const { lat, long, combinedKey } = country
+                        let activeCountry = country
+                        return (<div className="top5-row"
+                            onClick={() => {
+
+                                const map = mapRef.current.leafletElement
+                                // map.setView([lat, long], 4, {
+                                //     "animate": true,
+                                //     "pan": {
+                                //         "duration": 4
+                                //     }
+                                // });
+                                map.flyTo([lat, long], 8, {
+                                    "animate": true,
+                                    "pan": {
+                                        "duration": 8
+                                    }
+                                })
+                                setTimeout(() => {
+                                    setActiveCountry(activeCountry);
+                                }, 2000)
+                            }}
+                            key={{ index }} style={{ marginTop: '10px' }}>{index + 1} {combinedKey} {number}</div>)
+                    })}
+                </div>
+            </Control>
+        )
+    }
+
 
     let setRadius = (country) => {
         const { deaths, countryRegion } = country
@@ -67,7 +171,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
             } else if (deaths > 2000 && deaths < 4000) {
                 return 20000
             } else if (deaths > 4000 && deaths < 8000) {
-                return 4000
+                return 40000
             } else if (deaths > 8000 && deaths < 10000) {
                 return 80000
             } else {
@@ -94,11 +198,6 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                 ? "#FEB24C" : confirmed > 100 ? "#FED976" : "#FFEDA0";
     }
 
-    useEffect(() => {
-        getMapData()
-    }, [getMapData])
-
-    const [step, setStep] = useState(1);
 
     let displaySteps = () => {
         switch (step) {
@@ -108,16 +207,33 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                         {mapData.length > 0 ?
                             (
                                 <Map ref={mapRef} center={[-22.93, 30.55]} zoom={3} animate={true} >
+                                    <Control position="topright" >
+                                        <button
+                                            onClick={() => setShowLegend(!showLegend)}
+                                        >
+                                            {showLegend ? 'Hide Legend' : 'Show Legend'}
+                                        </button>
+                                    </Control>
+                                    <Control position="topright" >
+                                        <button
+                                            onClick={() => setShowTop5(!showTop5)}
+                                        >
+                                            {showTop5 ? 'Hide Top 5' : 'Show Top 5'}
+                                        </button>
+                                    </Control>
+                                    {renderBaseLayerControl()}
                                     <TileLayer
                                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                                     />
-                                    <Legend />
-                                    <Top5 countries={sortCountries('deaths')} title={'Deaths'} />
-                                    <Top5 countries={sortCountries('recovered')} title={'Recovered'} />
-                                    <Top5 countries={sortCountries('confirmed')} title={'Confirmed'} />
-
-
+                                    {showLegend ? displayLegend() : null}
+                                    {/* <Top5 countries={sortCountries('deaths')} title={'Deaths'} /> //removed */}
+                                    {showTop5 ?
+                                        displayTop5(sortCountries('deaths'), 'Deaths') : null}
+                                    {showTop5 ?
+                                        displayTop5(sortCountries('recovered'), 'Recovered') : null}
+                                    {showTop5 ?
+                                        displayTop5(sortCountries('confirmed'), 'Confirmed') : null}
                                     {mapData.map((country, index) => (
                                         // <Marker
                                         //     key={index}
@@ -177,6 +293,8 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                             </div>
                                         </Popup>
                                     )}
+                                    <PrintControl  {...printOptions} />
+                                    <PrintControl {...downloadOptions} />
                                 </Map>
                             ) :
                             <Spinner />

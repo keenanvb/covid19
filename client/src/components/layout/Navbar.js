@@ -8,8 +8,11 @@ const Navbar = () => {
     const guesLinks = (
         <ul>
             <li ><Link to="/world-map"><span role="img" aria-label="">🌍</span></Link></li>
+            <li ><Link to="/south-africa"><span role="img" aria-label="">🇿🇦</span></Link></li>
             {/* <li ><Link to="/timeseries"><span role="img" aria-label="">📈 </span></Link></li> */}
             <li ><Link to="/sanitiser"><span role="img" aria-label="">🧴</span></Link></li>
+
+
         </ul>
     );
 
