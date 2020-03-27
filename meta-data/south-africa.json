@@ -1,7 +1,5 @@
 {
-    "metadata": {
-        "source": "https://raw.githubusercontent.com/dsfsi/covid19za/master/data/covid19za_timeline_confirmed.csv"
-    },
+    "metadata": {},
     "provinces": {
         "EC": {
             "provinceFullName": "Eastern Cape",

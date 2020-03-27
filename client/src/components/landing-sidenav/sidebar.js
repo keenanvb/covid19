@@ -29,15 +29,6 @@ const Sidebar = ({ sidebar, close }) => {
                             - LINK
                         </a>
                     </div>
-                    {/* <div>
-                        <a href='https://github.com/pomber/covid19' target='_blank' rel='noopener noreferrer'>
-                            <i style={{ color: '#211F1F' }} className='fab fa-github fa-1x' />
-                        </a>
-                        Data source: pomber - covid19
-                        <a href='https://github.com/pomber/covid19' target='_blank' rel='noopener noreferrer'>
-                            link
-                        </a>
-                    </div> */}
                     <div>
                         <a href='https://github.com/dsfsi/covid19za' target='_blank' rel='noopener noreferrer'>
                             <i style={{ color: '#211F1F' }} className='fab fa-github fa-1x' />
@@ -46,9 +37,6 @@ const Sidebar = ({ sidebar, close }) => {
                         <a style={{ textDecoration: 'underline' }} href='https://github.com/dsfsi/covid19za' target='_blank' rel='noopener noreferrer'>
                             DSFSI
                         </a> research group at the University of Pretoria
-                        <a style={{ textDecoration: 'underline' }} href='https://raw.githubusercontent.com/dsfsi/covid19za/master/data/covid19za_timeline_confirmed.csv' target='_blank' rel='noopener noreferrer'>
-                            - DATA SOURCE
-                        </a>
                         <a style={{ textDecoration: 'underline' }} href='https://github.com/dsfsi/covid19za' target='_blank' rel='noopener noreferrer'>
                             - REPO
                         </a>
