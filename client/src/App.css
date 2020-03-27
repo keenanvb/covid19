@@ -79,6 +79,10 @@ body {
   color: #27ae60
 }
 
+.active{
+  color: #2980b9
+}
+
 .deaths{
   color: #c0392b
 }
@@ -763,11 +767,13 @@ input:checked[type="checkbox"]:before{
   color: #777;
 }
 
-.legend {
+.legend, .total {
   text-align: left;
   line-height: 18px;
   color: #555;
 }
+
+
 
 .legend i {
   width: 18px;

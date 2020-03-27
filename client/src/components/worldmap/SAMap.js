@@ -70,9 +70,8 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
         let top5array = []
         Object.keys(southAfricaData).map((provice, index) => {
             let data = southAfricaData[provice];
-
             if (data.info !== undefined) {
-                let count = data.count
+                let count = parseInt(data.mapProvinceCount.count)
                 let { provinceFullName, position } = data.info;
                 top5array.push({
                     provinceFullName, count, position, info: data.info
@@ -85,6 +84,19 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
         });
 
         return top5sort.slice(0, 5)
+    }
+
+    let getTotalConfirmedCases = () => {
+        let total = 0;
+        Object.keys(southAfricaData).map((provice, index) => {
+            let data = southAfricaData[provice];
+            if (data.info !== undefined) {
+                let count = parseInt(data.mapProvinceCount.count)
+                total += count
+            }
+        })
+
+        return total
     }
 
     // let setFillOpacity = (confirmed) => {
@@ -205,15 +217,19 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                         {showTop5 ? displayTop5() : null}
                         {showLegend ? displayLegend() : null}
                         {renderBaseLayerControl()}
+                        <Control position="bottomright" >
+                            <div className="info total">
+                                <h3>{`Total Confirmed Cases: ${getTotalConfirmedCases()}`}</h3>
+                            </div>
+                        </Control>
                         <TileLayer
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         />
                         {Object.keys(southAfricaData).map((provice, index) => {
                             let data = southAfricaData[provice];
-                            let count = data.count;
-
                             if (data.info !== undefined) {
+                                let count = parseInt(data.mapProvinceCount.count);
                                 let { provinceFullName, position } = data.info;
                                 return (
                                     <Circle //Marker
@@ -254,7 +270,7 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                             >
                                 <div>
                                     <h2>{activeCountry.info.provinceFullName}</h2>
-                                    <h2>Confirmed: {activeCountry.count}</h2>
+                                    <h2>Confirmed: {activeCountry.mapProvinceCount.count}</h2>
                                 </div>
                             </Popup>
                         )}

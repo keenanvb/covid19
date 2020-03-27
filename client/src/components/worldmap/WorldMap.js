@@ -286,6 +286,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                                 <h2>{activeCountry.combinedKey}</h2>
                                                 <p className="">last update: {moment(activeCountry.lastUpdate).format('DD/MM/YY hh:mm:ss a')}</p>
                                                 <p className="confirmed">Confirmed: {activeCountry.confirmed}</p>
+                                                <p className="active">Active: {activeCountry.active}</p>
                                                 <p className="recovered">Recovered: {activeCountry.recovered}</p>
                                                 <p className="deaths">Deaths: {activeCountry.deaths}</p>
                                                 {/* <p className="">People Tested: {activeCountry.peopleTested ? activeCountry.peopleTested : 'Info not available'}</p>

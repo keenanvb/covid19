@@ -31,6 +31,11 @@ export const getData = () => {
 export const getCountryData = (country) => {
     return async (dispatch) => {
         try {
+
+            if (country == 'United States of America') {
+                country = 'US'
+            }
+
             const res = await axios.get(`https://covid19.mathdro.id/api/countries/${country}`);
 
             let result = {

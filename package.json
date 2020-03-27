@@ -10,6 +10,7 @@
     "client": "npm start --prefix ./client",
     "heroku-postbuild": "npm run install-client && npm run build",
     "dev": "NODE_ENV=development concurrently \"npm run server\" \"npm run client\"",
+    "local-start-prod": "NODE_ENV=production node server",
     "start": "node server"
   },
   "author": "",
