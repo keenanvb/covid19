@@ -8,6 +8,8 @@ import moment from 'moment'
 import { getMapDataSouthAfrica } from '../../actions'
 import ReactGA from 'react-ga'
 import CountUp from 'react-countup';
+import FullscreenControl from 'react-leaflet-fullscreen';
+import 'react-leaflet-fullscreen/dist/styles.css'
 
 const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) => {
     const [activeCountry, setActiveCountry] = useState(null);
@@ -221,6 +223,7 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                                 <h3>{`Confirmed Cases: ${getTotalConfirmedCases()}`}</h3>
                             </div>
                         </Control> */}
+                        <FullscreenControl position="topleft" />
                         <TileLayer
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
