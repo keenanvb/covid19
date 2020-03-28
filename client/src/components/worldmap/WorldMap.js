@@ -39,12 +39,6 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
     //change page
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-    const fullscreen = () => {
-        const map = mapRef.current.leafletElement
-        console.log('map', map);
-        // let check = map.isFullscreen();
-        // console.log('check', check)
-    }
     // let setFillOpacity = (confirmed) => {
     //     if (confirmed < 2000) {
     //         return 0.4
