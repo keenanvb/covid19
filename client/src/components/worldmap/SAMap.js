@@ -74,7 +74,7 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                 let count = parseInt(data.mapProvinceCount.count)
                 let { provinceFullName, position } = data.info;
                 top5array.push({
-                    provinceFullName, count, position, info: data.info
+                    provinceFullName, count, position, info: data.info, data
                 })
             }
         })
@@ -141,8 +141,7 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                 <div className="info top5">
                     <h3>Top 5</h3>
                     {provices.map((provice, index) => {
-                        const { position, provinceFullName, count } = provice
-                        const activeProvice = provice
+                        const { position, provinceFullName, count, data } = provice
                         return (
                             <div className="top5-row" onClick={() => {
                                 const map = mapRef.current.leafletElement
@@ -165,7 +164,7 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                                         "duration": 8
                                     }
                                 })
-                                setActiveCountry(activeProvice);
+                                setActiveCountry(data);
                             }} style={{ marginTop: '8px' }}>{`${index + 1} - ${provinceFullName} ${count}`}</div>
                         )
                     })}
@@ -217,9 +216,9 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                         {showTop5 ? displayTop5() : null}
                         {showLegend ? displayLegend() : null}
                         {renderBaseLayerControl()}
-                        <Control position="bottomright" >
+                        <Control position="bottomleft" >
                             <div className="info total">
-                                <h3>{`Total Confirmed Cases: ${getTotalConfirmedCases()}`}</h3>
+                                <h3>{`Confirmed Cases: ${getTotalConfirmedCases()}`}</h3>
                             </div>
                         </Control>
                         <TileLayer

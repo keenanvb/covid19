@@ -9,13 +9,14 @@ import Countires from '../countries/Countires'
 import Pagination from '../countries/Pagination'
 import { getMapData } from '../../actions'
 import ReactGA from 'react-ga'
+import FullscreenControl from 'react-leaflet-fullscreen';
+import 'react-leaflet-fullscreen/dist/styles.css'
 
 const WorldMap = ({ data: { mapData }, getMapData }) => {
 
     const [step, setStep] = useState(1);
     const [activeCountry, setActiveCountry] = useState(null);
     let mapRef = useRef(null);
-
 
     const [showLegend, setShowLegend] = useState(true);
     const [showTop5, setShowTop5] = useState(false);
@@ -38,7 +39,12 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
     //change page
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-
+    const fullscreen = () => {
+        const map = mapRef.current.leafletElement
+        console.log('map', map);
+        // let check = map.isFullscreen();
+        // console.log('check', check)
+    }
     // let setFillOpacity = (confirmed) => {
     //     if (confirmed < 2000) {
     //         return 0.4
@@ -207,6 +213,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                         {mapData.length > 0 ?
                             (
                                 <Map ref={mapRef} center={[-22.93, 30.55]} zoom={3} animate={true} >
+                                    <FullscreenControl position="topleft" />
                                     <Control position="topright" >
                                         <button
                                             onClick={() => setShowLegend(!showLegend)}
