@@ -181,7 +181,7 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
         return (
             <Control position="bottomright" >
                 <div className="info legend">
-                    <h3>Confirmed Cases</h3>
+                    <h3>Cases</h3>
                     {grades.map((grade, index) => {
                         from = grades[index];
                         to = grades[index + 1];
@@ -269,7 +269,7 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                             >
                                 <div>
                                     <h2>{activeCountry.info.provinceFullName}</h2>
-                                    <h2>Confirmed: {activeCountry.mapProvinceCount.count}</h2>
+                                    <h2>{activeCountry.mapProvinceCount.count}</h2>
                                 </div>
                             </Popup>
                         )}
