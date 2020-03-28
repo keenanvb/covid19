@@ -216,11 +216,11 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                         {showTop5 ? displayTop5() : null}
                         {showLegend ? displayLegend() : null}
                         {renderBaseLayerControl()}
-                        <Control position="bottomleft" >
+                        {/* <Control position="bottomleft" >
                             <div className="info total">
                                 <h3>{`Confirmed Cases: ${getTotalConfirmedCases()}`}</h3>
                             </div>
-                        </Control>
+                        </Control> */}
                         <TileLayer
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
