@@ -1,19 +1,24 @@
 const express = require('express');
 const path = require('path')
 const app = express();
-
+const sslRedirect = require('heroku-ssl-redirect');
 //Init middleware
 app.use(express.json({ extended: false }));
 
 
 //Force https
+// if (process.env.NODE_ENV === 'production') {
+//     app.use((req, res, next) => {
+//         if (req.header('x-forwarded-proto') !== 'https')
+//             res.redirect(`https://${req.header('host')}${req.url}`)
+//         else
+//             next()
+//     })
+// }
+
+// enable ssl redirect
 if (process.env.NODE_ENV === 'production') {
-    app.use((req, res, next) => {
-        if (req.header('x-forwarded-proto') !== 'https')
-            res.redirect(`https://${req.header('host')}${req.url}`)
-        else
-            next()
-    })
+    app.use(sslRedirect());
 }
 
 //Routes

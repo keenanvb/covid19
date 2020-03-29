@@ -18,7 +18,8 @@
   "dependencies": {
     "axios": "^0.19.2",
     "csvtojson": "^2.0.10",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "heroku-ssl-redirect": "0.0.4"
   },
   "devDependencies": {
     "concurrently": "^4.1.1",
