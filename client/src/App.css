@@ -61,10 +61,10 @@ body {
     box-shadow: 0 0 0 0 rgb(230, 126, 34,.7);
   }
   40%{
-    box-shadow: 0 0 0 25px rgb(230, 126, 34,0);
+    box-shadow: 0 0 0 18px rgb(230, 126, 34,0);
   }
   80%{
-    box-shadow: 0 0 0 25px rgb(230, 126, 34,0);
+    box-shadow: 0 0 0 18px rgb(230, 126, 34,0);
   }
   100%{
     box-shadow: 0 0 0 0 rgb(230, 126, 34,0);
@@ -696,6 +696,12 @@ input:checked[type="checkbox"]:before{
   transition: 1s;
 }
 
+/* .south-africa-info, .south-africa-hover-info{
+  position: absolute;
+  left: 80px;
+  top:20px;
+  z-index: 1000;
+} */
 
 /* Mobile Styles */
 @media (max-width: 700px) {
