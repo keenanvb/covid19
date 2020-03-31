@@ -231,42 +231,45 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                         displayTop5(sortCountries('recovered'), 'Recovered') : null}
                                     {showTop5 ?
                                         displayTop5(sortCountries('confirmed'), 'Confirmed') : null}
-                                    {mapData.map((country, index) => (
-                                        // <Marker
-                                        //     key={index}
-                                        //     position={[
-                                        //         country.lat,
-                                        //         country.long
-                                        //     ]}
-                                        //     onClick={() => {
-                                        //         setActiveCountry(country);
-                                        //     }}
-                                        //     icon={icon}
-                                        // >
-                                        <Circle //Marker
-                                            key={index}
-                                            center={[ // position
-                                                country.lat,
-                                                country.long
-                                            ]}
+                                    {mapData.map((country, index) => {
+                                        if (country.lat && country.long) {
+                                            // <Marker
+                                            //     key={index}
+                                            //     position={[
+                                            //         country.lat,
+                                            //         country.long
+                                            //     ]}
+                                            //     onClick={() => {
+                                            //         setActiveCountry(country);
+                                            //     }}
+                                            //     icon={icon}
+                                            // >
+                                            return (<Circle //Marker
+                                                key={index}
+                                                center={[ // position
+                                                    country.lat,
+                                                    country.long
+                                                ]}
 
-                                            // radius={85000}
-                                            radius={setRadius(country)}
-                                            fillColor={setFillColour(country.confirmed)}
-                                            // fillColor={'#f03'}
-                                            weight={0}
-                                            fillOpacity={0.8}
-                                            // fillOpacity={setFillOpacity(country.confirmed)}
-                                            onClick={() => {
-                                                setActiveCountry(country);
-                                            }} >
-                                            <Tooltip>
-                                                <p>{country.combinedKey}</p>
-                                            </Tooltip>
-                                        </Circle>
+                                                // radius={85000}
+                                                radius={setRadius(country)}
+                                                fillColor={setFillColour(country.confirmed)}
+                                                // fillColor={'#f03'}
+                                                weight={0}
+                                                fillOpacity={0.8}
+                                                // fillOpacity={setFillOpacity(country.confirmed)}
+                                                onClick={() => {
+                                                    setActiveCountry(country);
+                                                }} >
+                                                <Tooltip>
+                                                    <p>{country.combinedKey}</p>
+                                                </Tooltip>
+                                            </Circle>)
 
-                                        // </Marker>
-                                    ))}
+                                            // </Marker>
+                                        }
+
+                                    })}
 
                                     {activeCountry && (
                                         <Popup
