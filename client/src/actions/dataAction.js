@@ -96,7 +96,7 @@ export const getCountryInfo = (country) => {
                 type: GET_COUNTRY_ADDITIONAL_INFO,
                 payload: res.data
             })
-            dispatch(setAlert('Additional information available', 'success'))
+            // dispatch(setAlert('Additional information available', 'success'))
         } catch (err) {
 
             let emoji = getRandomEmoji();

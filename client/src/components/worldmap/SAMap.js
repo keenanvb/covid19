@@ -1,23 +1,25 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Map, Popup, TileLayer, Circle, Tooltip, WMSTileLayer, LayersControl, FeatureGroup } from "react-leaflet";
+import { Map, Popup, TileLayer, Circle, Tooltip, WMSTileLayer, LayersControl, FeatureGroup, GeoJSON } from "react-leaflet";
 import { PrintControl, baseMaps, downloadOptions, printOptions, getColor } from './mapSettings'
 import Control from 'react-leaflet-control';
 import { connect } from 'react-redux'
 import Spinner from '../layout/Spinner'
-import moment from 'moment'
 import { getMapDataSouthAfrica } from '../../actions'
 import ReactGA from 'react-ga'
-import CountUp from 'react-countup';
 import FullscreenControl from 'react-leaflet-fullscreen';
 import 'react-leaflet-fullscreen/dist/styles.css'
+import sageojson from './south-africa-geo.json'
+import L from "leaflet";
+import { LocationIcon, GridIcon, CircleIcon } from '../../icons'
 
 const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) => {
-    const [activeCountry, setActiveCountry] = useState(null);
-
-    const [showLegend, setShowLegend] = useState(true);
-    const [showTop5, setShowTop5] = useState(false);
 
     let mapRef = useRef(null);
+    const [activeCountry, setActiveCountry] = useState(null);
+    const [showLegend, setShowLegend] = useState(true);
+    const [showTop5, setShowTop5] = useState(false);
+    const [showDiffMap, setDiffMap] = useState(true);
+    // const [selected, setSelected] = useState({}); // mobile not working for touch
 
     useEffect(() => {
         getMapDataSouthAfrica()
@@ -175,6 +177,80 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
         )
     }
 
+    const resetHighlight = (e) => {
+        let provinceAbbreviation = e.target.feature.properties.SHORT
+        const provinceData = southAfricaData[provinceAbbreviation]
+        let layer = e.target;
+        // setSelected({});
+        layer.setStyle({
+            weight: 2,
+            color: provinceData ? setFillColour(provinceData.mapProvinceCount.count) : 'black',
+            dashArray: "",
+            opacity: 1,
+            fillOpacity: 0.8
+        });
+    }
+
+    const highlightFeature = (e) => {
+        var layer = e.target;
+        const { NAME, NAME2 } = e.target.feature.properties;
+        let provinceAbbreviation = e.target.feature.properties.SHORT
+        const provinceData = southAfricaData[provinceAbbreviation]
+
+        // setSelected({
+        //     province: `${NAME}, ${NAME2}`,
+        //     count: provinceData.mapProvinceCount.count
+        // });
+
+        layer.setStyle({
+            weight: 2,
+            dashArray: "1",
+            fillOpacity: 1
+        });
+        if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+            layer.bringToFront();
+        }
+    }
+
+    const zoomToFeature = (e) => {
+        const map = mapRef.current.leafletElement
+        map.fitBounds(e.target.getBounds());
+    }
+
+    const onEachFeature = (feature, layer) => {
+        if (feature.properties && feature.properties.NAME2) {
+            let province = feature.properties.NAME2;
+            let provinceAbbreviation = feature.properties.SHORT
+            const provinceData = southAfricaData[provinceAbbreviation]
+
+            layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+                click: zoomToFeature
+            });
+
+
+            layer.setStyle({
+                weight: 2,
+                color: provinceData ? setFillColour(provinceData.mapProvinceCount.count) : 'black',
+                dashArray: "3",
+                opacity: 1,
+                fillOpacity: 0.8
+            });
+
+            layer.bindTooltip(`
+                <div>
+                    <h3 >
+                        ${province}
+                    </h3>
+                    <div >
+                    Cases: ${provinceData.mapProvinceCount.count}
+                    </div>
+                </div>
+            `);
+        }
+    }
+
     let displayLegend = () => {
         const grades = [0, 100, 200, 500, 1000, 2000, 5000, 10000];
         let from;
@@ -200,13 +276,40 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
         <div className="world-map-container">
             {southAfricaData !== null ?
                 (
-                    <Map ref={mapRef} center={[-30.00, 25.00]} zoom={5} animate={true} >
-                        <Control position="topright" >
+                    <Map ref={mapRef} center={[-30.00, 25.00]} zoom={5} animate={true}>
+                        {/* <Control position="topright" >
                             <button
                                 onClick={() => setShowLegend(!showLegend)}
                             >
                                 {showLegend ? 'Hide Legend' : 'Show Legend'}
                             </button>
+                        </Control> */}
+                        {/* {!selected.province && (
+                            <div className="south-africa-hover-info"><strong>Hover over an Area</strong></div>
+                        )}
+                        {selected.province && (
+                            <div className="south-africa-info">
+                                <strong>{selected.province}</strong>
+                                <span>{` ${selected.count}`}</span>
+                            </div>
+                        )} */}
+                        <Control position="topright" >
+                            <button
+                                onClick={() => setDiffMap(!showDiffMap)}
+                            >
+                                {showDiffMap ? <GridIcon /> : <CircleIcon />}
+                            </button>
+                            <button
+                                onClick={() => {
+                                    const map = mapRef.current.leafletElement
+                                    map.flyTo([-30.00, 25.00], 5, {
+                                        "animate": true,
+                                        "pan": {
+                                            "duration": 8
+                                        }
+                                    })
+                                }}
+                            ><LocationIcon /></button>
                         </Control>
                         <Control position="topright" >
                             <button
@@ -228,57 +331,60 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         />
-                        {Object.keys(southAfricaData).map((provice, index) => {
-                            let data = southAfricaData[provice];
-                            if (data.info !== undefined) {
-                                let count = parseInt(data.mapProvinceCount.count);
-                                let { provinceFullName, position } = data.info;
-                                return (
-                                    <Circle //Marker
-                                        key={index}
-                                        center={[ // position
-                                            position[0],
-                                            position[1]
+
+                        {showDiffMap ?
+
+                            <>{Object.keys(southAfricaData).map((provice, index) => {
+                                let data = southAfricaData[provice];
+                                if (data.info !== undefined) {
+                                    let count = parseInt(data.mapProvinceCount.count);
+                                    let { provinceFullName, position } = data.info;
+                                    return (
+                                        <Circle //Marker
+                                            key={index}
+                                            center={[ // position
+                                                position[0],
+                                                position[1]
+                                            ]}
+
+                                            // radius={85000}
+                                            radius={setRadius(count)}
+                                            fillColor={setFillColour(count)}
+                                            // fillColor={'#f03'}
+                                            weight={0}
+                                            fillOpacity={0.6}
+                                            // fillOpacity={setFillOpacity(country.confirmed)}
+                                            onClick={() => {
+                                                setActiveCountry(data);
+                                            }} >
+                                            <Tooltip>
+                                                <p>{provinceFullName}</p>
+                                            </Tooltip>
+                                        </Circle>
+                                    )
+                                } else {
+                                    return null
+                                }
+                            })}
+                                {activeCountry && (
+                                    <Popup
+                                        position={[
+                                            activeCountry.info.position[0],
+                                            activeCountry.info.position[1]
                                         ]}
-
-                                        // radius={85000}
-                                        radius={setRadius(count)}
-                                        fillColor={setFillColour(count)}
-                                        // fillColor={'#f03'}
-                                        weight={0}
-                                        fillOpacity={0.6}
-                                        // fillOpacity={setFillOpacity(country.confirmed)}
-                                        onClick={() => {
-                                            setActiveCountry(data);
-                                        }} >
-                                        <Tooltip>
-                                            <p>{provinceFullName}</p>
-                                        </Tooltip>
-                                    </Circle>
-                                )
-                            } else {
-                                return null
-                            }
-                        })}
-                        {activeCountry && (
-                            <Popup
-                                position={[
-                                    activeCountry.info.position[0],
-                                    activeCountry.info.position[1]
-                                ]}
-                                onClose={() => {
-                                    setActiveCountry(null);
-                                }}
-                            >
-                                <div>
-                                    <h2>{activeCountry.info.provinceFullName}</h2>
-                                    <h2>{activeCountry.mapProvinceCount.count}</h2>
-                                </div>
-                            </Popup>
-                        )}
-
-
-                        <PrintControl  {...printOptions} />
+                                        onClose={() => {
+                                            setActiveCountry(null);
+                                        }}
+                                    >
+                                        <div>
+                                            <h2>{activeCountry.info.provinceFullName}</h2>
+                                            <h2>{activeCountry.mapProvinceCount.count}</h2>
+                                        </div>
+                                    </Popup>
+                                )}</> :
+                            <GeoJSON data={sageojson} onEachFeature={onEachFeature} />
+                        }
+                        {/* <PrintControl  {...printOptions} /> */}
                         <PrintControl {...downloadOptions} />
 
                     </Map>

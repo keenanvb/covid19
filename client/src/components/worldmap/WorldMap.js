@@ -13,11 +13,9 @@ import FullscreenControl from 'react-leaflet-fullscreen';
 import 'react-leaflet-fullscreen/dist/styles.css'
 
 const WorldMap = ({ data: { mapData }, getMapData }) => {
-
+    let mapRef = useRef(null);
     const [step, setStep] = useState(1);
     const [activeCountry, setActiveCountry] = useState(null);
-    let mapRef = useRef(null);
-
     const [showLegend, setShowLegend] = useState(true);
     const [showTop5, setShowTop5] = useState(false);
 
@@ -210,16 +208,14 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                     <FullscreenControl position="topleft" />
                                     <Control position="topright" >
                                         <button
-                                            onClick={() => setShowLegend(!showLegend)}
-                                        >
-                                            {showLegend ? 'Hide Legend' : 'Show Legend'}
-                                        </button>
-                                    </Control>
-                                    <Control position="topright" >
-                                        <button
                                             onClick={() => setShowTop5(!showTop5)}
                                         >
                                             {showTop5 ? 'Hide Top 5' : 'Show Top 5'}
+                                        </button>
+                                        <button
+                                            onClick={() => setShowLegend(!showLegend)}
+                                        >
+                                            {showLegend ? 'Hide Legend' : 'Show Legend'}
                                         </button>
                                     </Control>
                                     {renderBaseLayerControl()}
@@ -295,7 +291,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                             </div>
                                         </Popup>
                                     )}
-                                    <PrintControl  {...printOptions} />
+                                    {/* <PrintControl  {...printOptions} /> */}
                                     <PrintControl {...downloadOptions} />
                                 </Map>
                             ) :

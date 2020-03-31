@@ -107,12 +107,12 @@ export const baseMaps = [
     //     attribution: 'Esri, USGS, NOAA',
     //     type: 'tile'
     // },
-    {
-        name: 'ArcGIS World Imagery Clarity',
-        url: 'https://clarity.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-        attribution: 'Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community',
-        type: 'tile'
-    },
+    // {
+    //     name: 'ArcGIS World Imagery Clarity',
+    //     url: 'https://clarity.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    //     attribution: 'Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community',
+    //     type: 'tile'
+    // },
     {
         name: 'ArcGIS World Imagery Firefly',
         url: 'https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/{z}/{y}/{x}',
