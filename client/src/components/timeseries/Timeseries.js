@@ -1,32 +1,38 @@
 import React, { useEffect } from 'react'
 import ReactGA from 'react-ga'
 import { connect } from 'react-redux'
-import Dropdown from '../layout/Dropdown'
-import { getTimeSeriesData, countryUpdate } from '../../actions'
 import {
     AreaChart, XAxis, YAxis, CartesianGrid, Tooltip,
     Area, Legend, ResponsiveContainer
 } from 'recharts'
 import Spinner from '../layout/Spinner'
+import { isMobile } from '../../utils'
 
-const Timeseries = ({ data: { timeseriesData, selectedCountryGraph }, countries }) => {
+const Timeseries = ({ data: { timeseriesData, selectedCountryGraph } }) => {
 
     useEffect(() => {
         ReactGA.pageview(window.location.pathname);
-    }, [])
+    }, []);
+
+
+    let isMobileFlag = isMobile();
+
+    let timeseriesHeight = 500;
+
+    if (isMobileFlag) {
+        timeseriesHeight = 300
+    }
 
     return (
         <div className="timeseries-container">
-            <Dropdown title={selectedCountryGraph || 'Please select a country'} dropdownData={countries} type='timeseries' />
             {timeseriesData.length > 0 ?
                 <>
                     <h3 style={{
                         display: 'flex',
                         justifyContent: 'center'
                     }}>{selectedCountryGraph}</h3>
-                    <ResponsiveContainer width="100%" height={650}>
-                        <AreaChart data={timeseriesData}
-                            margin={{ top: 10, right: 30, left: 0, bottom: 250 }}>
+                    <ResponsiveContainer width="100%" height={timeseriesHeight}>
+                        <AreaChart margin={{ top: 10, right: 10, left: 0, bottom: 10 }} data={timeseriesData}>
                             <defs>
                                 <linearGradient id="confirmed" x1="0" y1="0" x2="0" y2="1">
                                     <stop offset="5%" stopColor="#f39c12" stopOpacity={0.8} />
@@ -44,9 +50,7 @@ const Timeseries = ({ data: { timeseriesData, selectedCountryGraph }, countries 
                             <XAxis dataKey="date" />
                             <YAxis />
                             <CartesianGrid strokeDasharray="3 3" />
-                            <Tooltip
-                                wrapperStyle={{ backgroundColor: "red" }}
-                            />
+                            <Tooltip />
                             <Area type="monotone" dataKey="confirmed" stroke="#f39c12" fillOpacity={1} fill="url(#confirmed)" />
                             <Area type="monotone" dataKey="recovered" stroke="#27ae60" fillOpacity={1} fill="url(#recovered)" />
                             <Area type="monotone" dataKey="deaths" stroke="#c0392b" fillOpacity={1} fill="url(#deaths)" />
@@ -62,10 +66,9 @@ const Timeseries = ({ data: { timeseriesData, selectedCountryGraph }, countries 
 
 const mapStateToProps = (state) => {
     return {
-        data: state.data,
-        countries: state.countries
+        data: state.data
     }
 }
 
 
-export default connect(mapStateToProps, { getTimeSeriesData, countryUpdate })(Timeseries)
+export default connect(mapStateToProps, {})(Timeseries)

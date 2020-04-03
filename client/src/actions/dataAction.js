@@ -108,6 +108,9 @@ export const getCountryInfo = (country) => {
 export const getTimeSeriesData = (country) => {
     return async (dispatch) => {
         try {
+            if (country == 'United States of America') {
+                country = 'US'
+            }
             const res = await axios.get(`https://pomber.github.io/covid19/timeseries.json`);
             let result = res.data[country].map(({ date, confirmed, recovered, deaths }) => {
                 return {
@@ -122,7 +125,7 @@ export const getTimeSeriesData = (country) => {
                 type: GET_TIMESERIES_DATA,
                 payload: result
             })
-            dispatch(setAlert(`${country}: Timeseries data available`, 'success'))
+            // dispatch(setAlert(`${country}: Timeseries data available`, 'success'))
         } catch (err) {
             dispatch({
                 type: GET_TIMESERIES_DATA,
