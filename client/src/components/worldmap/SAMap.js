@@ -169,7 +169,10 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                                     }
                                 })
                                 setActiveCountry(data);
-                            }} style={{ marginTop: '8px' }}>{`${index + 1} - ${provinceFullName} ${count}`}</div>
+                            }}>
+                                <div> {`${index + 1} ${provinceFullName}`}</div>
+                                <div className="top5-count">{`${count}`}</div>
+                            </div>
                         )
                     })}
                 </div>

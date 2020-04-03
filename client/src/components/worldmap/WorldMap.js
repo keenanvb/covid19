@@ -152,7 +152,10 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                     setActiveCountry(activeCountry);
                                 }, 2000)
                             }}
-                            key={{ index }} style={{ marginTop: '10px' }}>{index + 1} {combinedKey} {number}</div>)
+                            key={{ index }} style={{ marginTop: '10px' }}>
+                            <div> {`${index + 1} ${combinedKey}`}</div>
+                            <div className={`top5-count ${title.toLowerCase()}`}>{`${number}`}</div>
+                        </div>)
                     })}
                 </div>
             </Control>

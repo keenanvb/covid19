@@ -870,13 +870,25 @@ input:checked[type="checkbox"]:before{
 .top5 {
   display: flex;
   flex-direction: column;
-  height:130px;
+  /* height:130px; */
+  /* width: 200px; */
   line-height: 10px;
   color: #555;
 }
 
+.top5 div{
+  margin-top: 5px;
+}
+
 .top5-row{
+  display: flex;
+  flex-direction: row;
   cursor: pointer;
+  justify-content: space-between;
+}
+
+.top5-count{
+  padding-left: 8px;
 }
 
 .top5 i {
