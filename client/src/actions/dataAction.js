@@ -87,10 +87,16 @@ export const getMapData = () => {
     }
 }
 
-export const getCountryInfo = (country) => {
+export const getCountryInfo = (code) => {
     return async (dispatch) => {
         try {
-            const res = await axios.get(`https://restcountries.eu/rest/v2/name/${country}`);
+
+            // if (country === 'Korea, South') {
+            //     country = 'Korea (Republic of)'
+            // }
+
+            // const res = await axios.get(`https://restcountries.eu/rest/v2/name/${country}`);
+            const res = await axios.get(`https://restcountries.eu/rest/v2/alpha?codes=${code}`);
 
             dispatch({
                 type: GET_COUNTRY_ADDITIONAL_INFO,
@@ -100,7 +106,7 @@ export const getCountryInfo = (country) => {
         } catch (err) {
 
             let emoji = getRandomEmoji();
-            dispatch(setAlert(`${country}: No Additional information available ${emoji}`, 'danger'))
+            dispatch(setAlert(` No Additional information available ${emoji}`, 'danger'))
         }
     }
 }
