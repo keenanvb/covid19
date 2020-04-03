@@ -67,7 +67,7 @@ const Landing = ({ data: { data,
         return (
             <div className="stats-container">
                 {/* <h2>Global Statistics</h2> */}
-                <span>{countryInfo.name}</span>
+                <span>{selectedCountry}</span>
                 <div className="status-block status-wrap">
                     <div className="stats-status">
                         <h3>{}</h3>

@@ -2,2498 +2,2986 @@
     {
         "id": "0",
         "title": "Afghanistan",
-        "code": "AFN",
+        "currency_code": "AFN",
         "latlng:": [
             33,
             65
         ],
-        "flag": "https://restcountries.eu/data/afg.svg"
+        "flag": "https://restcountries.eu/data/afg.svg",
+        "ISO_2": "AF",
+        "ISO_3": "AFG"
     },
     {
         "id": "2",
         "title": "Albania",
-        "code": "ALL",
+        "currency_code": "ALL",
         "latlng:": [
             41,
             20
         ],
-        "flag": "https://restcountries.eu/data/alb.svg"
+        "flag": "https://restcountries.eu/data/alb.svg",
+        "ISO_2": "AL",
+        "ISO_3": "ALB"
     },
     {
         "id": "3",
         "title": "Algeria",
-        "code": "DZD",
+        "currency_code": "DZD",
         "latlng:": [
             28,
             3
         ],
-        "flag": "https://restcountries.eu/data/dza.svg"
+        "flag": "https://restcountries.eu/data/dza.svg",
+        "ISO_2": "DZ",
+        "ISO_3": "DZA"
     },
     {
         "id": "4",
         "title": "American Samoa",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             -14.33333333,
             -170
         ],
-        "flag": "https://restcountries.eu/data/asm.svg"
+        "flag": "https://restcountries.eu/data/asm.svg",
+        "ISO_2": "AS",
+        "ISO_3": "ASM"
     },
     {
         "id": "5",
         "title": "Andorra",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             42.5,
             1.5
         ],
-        "flag": "https://restcountries.eu/data/and.svg"
+        "flag": "https://restcountries.eu/data/and.svg",
+        "ISO_2": "AD",
+        "ISO_3": "AND"
     },
     {
         "id": "6",
         "title": "Angola",
-        "code": "AOA",
+        "currency_code": "AOA",
         "latlng:": [
             -12.5,
             18.5
         ],
-        "flag": "https://restcountries.eu/data/ago.svg"
+        "flag": "https://restcountries.eu/data/ago.svg",
+        "ISO_2": "AO",
+        "ISO_3": "AGO"
     },
     {
         "id": "7",
         "title": "Anguilla",
-        "code": "XCD",
+        "currency_code": "XCD",
         "latlng:": [
             18.25,
             -63.16666666
         ],
-        "flag": "https://restcountries.eu/data/aia.svg"
+        "flag": "https://restcountries.eu/data/aia.svg",
+        "ISO_2": "AI",
+        "ISO_3": "AIA"
     },
     {
         "id": "8",
         "title": "Antarctica",
-        "code": "AUD",
+        "currency_code": "AUD",
         "latlng:": [
             -74.65,
             4.48
         ],
-        "flag": "https://restcountries.eu/data/ata.svg"
+        "flag": "https://restcountries.eu/data/ata.svg",
+        "ISO_2": "AQ",
+        "ISO_3": "ATA"
     },
     {
         "id": "9",
         "title": "Antigua and Barbuda",
-        "code": "XCD",
+        "currency_code": "XCD",
         "latlng:": [
             17.05,
             -61.8
         ],
-        "flag": "https://restcountries.eu/data/atg.svg"
+        "flag": "https://restcountries.eu/data/atg.svg",
+        "ISO_2": "AG",
+        "ISO_3": "ATG"
     },
     {
         "id": "10",
         "title": "Argentina",
-        "code": "ARS",
+        "currency_code": "ARS",
         "latlng:": [
             -34,
             -64
         ],
-        "flag": "https://restcountries.eu/data/arg.svg"
+        "flag": "https://restcountries.eu/data/arg.svg",
+        "ISO_2": "AR",
+        "ISO_3": "ARG"
     },
     {
         "id": "11",
         "title": "Armenia",
-        "code": "AMD",
+        "currency_code": "AMD",
         "latlng:": [
             40,
             45
         ],
-        "flag": "https://restcountries.eu/data/arm.svg"
+        "flag": "https://restcountries.eu/data/arm.svg",
+        "ISO_2": "AM",
+        "ISO_3": "ARM"
     },
     {
         "id": "12",
         "title": "Aruba",
-        "code": "AWG",
+        "currency_code": "AWG",
         "latlng:": [
             12.5,
             -69.96666666
         ],
-        "flag": "https://restcountries.eu/data/abw.svg"
+        "flag": "https://restcountries.eu/data/abw.svg",
+        "ISO_2": "AW",
+        "ISO_3": "ABW"
     },
     {
         "id": "13",
         "title": "Australia",
-        "code": "AUD",
+        "currency_code": "AUD",
         "latlng:": [
             -27,
             133
         ],
-        "flag": "https://restcountries.eu/data/aus.svg"
+        "flag": "https://restcountries.eu/data/aus.svg",
+        "ISO_2": "AU",
+        "ISO_3": "AUS"
     },
     {
         "id": "14",
         "title": "Austria",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             47.33333333,
             13.33333333
         ],
-        "flag": "https://restcountries.eu/data/aut.svg"
+        "flag": "https://restcountries.eu/data/aut.svg",
+        "ISO_2": "AT",
+        "ISO_3": "AUT"
     },
     {
         "id": "15",
         "title": "Azerbaijan",
-        "code": "AZN",
+        "currency_code": "AZN",
         "latlng:": [
             40.5,
             47.5
         ],
-        "flag": "https://restcountries.eu/data/aze.svg"
+        "flag": "https://restcountries.eu/data/aze.svg",
+        "ISO_2": "AZ",
+        "ISO_3": "AZE"
     },
     {
         "id": "16",
         "title": "Bahamas",
-        "code": "BSD",
+        "currency_code": "BSD",
         "latlng:": [
             24.25,
             -76
         ],
-        "flag": "https://restcountries.eu/data/bhs.svg"
+        "flag": "https://restcountries.eu/data/bhs.svg",
+        "ISO_2": "BS",
+        "ISO_3": "BHS"
     },
     {
         "id": "17",
         "title": "Bahrain",
-        "code": "BHD",
+        "currency_code": "BHD",
         "latlng:": [
             26,
             50.55
         ],
-        "flag": "https://restcountries.eu/data/bhr.svg"
+        "flag": "https://restcountries.eu/data/bhr.svg",
+        "ISO_2": "BH",
+        "ISO_3": "BHR"
     },
     {
         "id": "18",
         "title": "Bangladesh",
-        "code": "BDT",
+        "currency_code": "BDT",
         "latlng:": [
             24,
             90
         ],
-        "flag": "https://restcountries.eu/data/bgd.svg"
+        "flag": "https://restcountries.eu/data/bgd.svg",
+        "ISO_2": "BD",
+        "ISO_3": "BGD"
     },
     {
         "id": "19",
         "title": "Barbados",
-        "code": "BBD",
+        "currency_code": "BBD",
         "latlng:": [
             13.16666666,
             -59.53333333
         ],
-        "flag": "https://restcountries.eu/data/brb.svg"
+        "flag": "https://restcountries.eu/data/brb.svg",
+        "ISO_2": "BB",
+        "ISO_3": "BRB"
     },
     {
         "id": "20",
         "title": "Belarus",
-        "code": "BYN",
+        "currency_code": "BYN",
         "latlng:": [
             53,
             28
         ],
-        "flag": "https://restcountries.eu/data/blr.svg"
+        "flag": "https://restcountries.eu/data/blr.svg",
+        "ISO_2": "BY",
+        "ISO_3": "BLR"
     },
     {
         "id": "21",
         "title": "Belgium",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             50.83333333,
             4
         ],
-        "flag": "https://restcountries.eu/data/bel.svg"
+        "flag": "https://restcountries.eu/data/bel.svg",
+        "ISO_2": "BE",
+        "ISO_3": "BEL"
     },
     {
         "id": "22",
         "title": "Belize",
-        "code": "BZD",
+        "currency_code": "BZD",
         "latlng:": [
             17.25,
             -88.75
         ],
-        "flag": "https://restcountries.eu/data/blz.svg"
+        "flag": "https://restcountries.eu/data/blz.svg",
+        "ISO_2": "BZ",
+        "ISO_3": "BLZ"
     },
     {
         "id": "23",
         "title": "Benin",
-        "code": "XOF",
+        "currency_code": "XOF",
         "latlng:": [
             9.5,
             2.25
         ],
-        "flag": "https://restcountries.eu/data/ben.svg"
+        "flag": "https://restcountries.eu/data/ben.svg",
+        "ISO_2": "BJ",
+        "ISO_3": "BEN"
     },
     {
         "id": "24",
         "title": "Bermuda",
-        "code": "BMD",
+        "currency_code": "BMD",
         "latlng:": [
             32.33333333,
             -64.75
         ],
-        "flag": "https://restcountries.eu/data/bmu.svg"
+        "flag": "https://restcountries.eu/data/bmu.svg",
+        "ISO_2": "BM",
+        "ISO_3": "BMU"
     },
     {
         "id": "25",
         "title": "Bhutan",
-        "code": "BTN",
+        "currency_code": "BTN",
         "latlng:": [
             27.5,
             90.5
         ],
-        "flag": "https://restcountries.eu/data/btn.svg"
+        "flag": "https://restcountries.eu/data/btn.svg",
+        "ISO_2": "BT",
+        "ISO_3": "BTN"
     },
     {
         "id": "26",
         "title": "Bolivia (Plurinational State of)",
-        "code": "BOB",
+        "currency_code": "BOB",
         "latlng:": [
             -17,
             -65
         ],
-        "flag": "https://restcountries.eu/data/bol.svg"
+        "flag": "https://restcountries.eu/data/bol.svg",
+        "ISO_2": "BO",
+        "ISO_3": "BOL"
     },
     {
         "id": "27",
         "title": "Bonaire, Sint Eustatius and Saba",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             12.15,
             -68.266667
         ],
-        "flag": "https://restcountries.eu/data/bes.svg"
+        "flag": "https://restcountries.eu/data/bes.svg",
+        "ISO_2": "BQ",
+        "ISO_3": "BES"
     },
     {
         "id": "28",
         "title": "Bosnia and Herzegovina",
-        "code": "BAM",
+        "currency_code": "BAM",
         "latlng:": [
             44,
             18
         ],
-        "flag": "https://restcountries.eu/data/bih.svg"
+        "flag": "https://restcountries.eu/data/bih.svg",
+        "ISO_2": "BA",
+        "ISO_3": "BIH"
     },
     {
         "id": "29",
         "title": "Botswana",
-        "code": "BWP",
+        "currency_code": "BWP",
         "latlng:": [
             -22,
             24
         ],
-        "flag": "https://restcountries.eu/data/bwa.svg"
+        "flag": "https://restcountries.eu/data/bwa.svg",
+        "ISO_2": "BW",
+        "ISO_3": "BWA"
     },
     {
         "id": "30",
         "title": "Bouvet Island",
-        "code": "NOK",
+        "currency_code": "NOK",
         "latlng:": [
             -54.43333333,
             3.4
         ],
-        "flag": "https://restcountries.eu/data/bvt.svg"
+        "flag": "https://restcountries.eu/data/bvt.svg",
+        "ISO_2": "BV",
+        "ISO_3": "BVT"
     },
     {
         "id": "31",
         "title": "Brazil",
-        "code": "BRL",
+        "currency_code": "BRL",
         "latlng:": [
             -10,
             -55
         ],
-        "flag": "https://restcountries.eu/data/bra.svg"
+        "flag": "https://restcountries.eu/data/bra.svg",
+        "ISO_2": "BR",
+        "ISO_3": "BRA"
     },
     {
         "id": "32",
         "title": "British Indian Ocean Territory",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             -6,
             71.5
         ],
-        "flag": "https://restcountries.eu/data/iot.svg"
+        "flag": "https://restcountries.eu/data/iot.svg",
+        "ISO_2": "IO",
+        "ISO_3": "IOT"
     },
     {
         "id": "36",
-        "title": "Brunei Darussalam",
-        "code": "BND",
+        "title": "Brunei",
+        "currency_code": "BND",
         "latlng:": [
             4.5,
             114.66666666
         ],
-        "flag": "https://restcountries.eu/data/brn.svg"
+        "flag": "https://restcountries.eu/data/brn.svg",
+        "ISO_2": "BN",
+        "ISO_3": "BRN"
     },
     {
         "id": "37",
         "title": "Bulgaria",
-        "code": "BGN",
+        "currency_code": "BGN",
         "latlng:": [
             43,
             25
         ],
-        "flag": "https://restcountries.eu/data/bgr.svg"
+        "flag": "https://restcountries.eu/data/bgr.svg",
+        "ISO_2": "BG",
+        "ISO_3": "BGR"
     },
     {
         "id": "38",
         "title": "Burkina Faso",
-        "code": "XOF",
+        "currency_code": "XOF",
         "latlng:": [
             13,
             -2
         ],
-        "flag": "https://restcountries.eu/data/bfa.svg"
+        "flag": "https://restcountries.eu/data/bfa.svg",
+        "ISO_2": "BF",
+        "ISO_3": "BFA"
     },
     {
         "id": "39",
         "title": "Burundi",
-        "code": "BIF",
+        "currency_code": "BIF",
         "latlng:": [
             -3.5,
             30
         ],
-        "flag": "https://restcountries.eu/data/bdi.svg"
+        "flag": "https://restcountries.eu/data/bdi.svg",
+        "ISO_2": "BI",
+        "ISO_3": "BDI"
     },
     {
         "id": "43",
         "title": "Cabo Verde",
-        "code": "CVE",
+        "currency_code": "CVE",
         "latlng:": [
             16,
             -24
         ],
-        "flag": "https://restcountries.eu/data/cpv.svg"
+        "flag": "https://restcountries.eu/data/cpv.svg",
+        "ISO_2": "CV",
+        "ISO_3": "CPV"
     },
     {
         "id": "40",
         "title": "Cambodia",
-        "code": "KHR",
+        "currency_code": "KHR",
         "latlng:": [
             13,
             105
         ],
-        "flag": "https://restcountries.eu/data/khm.svg"
+        "flag": "https://restcountries.eu/data/khm.svg",
+        "ISO_2": "KH",
+        "ISO_3": "KHM"
     },
     {
         "id": "41",
         "title": "Cameroon",
-        "code": "XAF",
+        "currency_code": "XAF",
         "latlng:": [
             6,
             12
         ],
-        "flag": "https://restcountries.eu/data/cmr.svg"
+        "flag": "https://restcountries.eu/data/cmr.svg",
+        "ISO_2": "CM",
+        "ISO_3": "CMR"
     },
     {
         "id": "42",
         "title": "Canada",
-        "code": "CAD",
+        "currency_code": "CAD",
         "latlng:": [
             60,
             -95
         ],
-        "flag": "https://restcountries.eu/data/can.svg"
+        "flag": "https://restcountries.eu/data/can.svg",
+        "ISO_2": "CA",
+        "ISO_3": "CAN"
     },
     {
         "id": "44",
         "title": "Cayman Islands",
-        "code": "KYD",
+        "currency_code": "KYD",
         "latlng:": [
             19.5,
             -80.5
         ],
-        "flag": "https://restcountries.eu/data/cym.svg"
+        "flag": "https://restcountries.eu/data/cym.svg",
+        "ISO_2": "KY",
+        "ISO_3": "CYM"
     },
     {
         "id": "45",
         "title": "Central African Republic",
-        "code": "XAF",
+        "currency_code": "XAF",
         "latlng:": [
             7,
             21
         ],
-        "flag": "https://restcountries.eu/data/caf.svg"
+        "flag": "https://restcountries.eu/data/caf.svg",
+        "ISO_2": "CF",
+        "ISO_3": "CAF"
     },
     {
         "id": "46",
         "title": "Chad",
-        "code": "XAF",
+        "currency_code": "XAF",
         "latlng:": [
             15,
             19
         ],
-        "flag": "https://restcountries.eu/data/tcd.svg"
+        "flag": "https://restcountries.eu/data/tcd.svg",
+        "ISO_2": "TD",
+        "ISO_3": "TCD"
     },
     {
         "id": "47",
         "title": "Chile",
-        "code": "CLP",
+        "currency_code": "CLP",
         "latlng:": [
             -30,
             -71
         ],
-        "flag": "https://restcountries.eu/data/chl.svg"
+        "flag": "https://restcountries.eu/data/chl.svg",
+        "ISO_2": "CL",
+        "ISO_3": "CHL"
     },
     {
         "id": "48",
         "title": "China",
-        "code": "CNY",
+        "currency_code": "CNY",
         "latlng:": [
             35,
             105
         ],
-        "flag": "https://restcountries.eu/data/chn.svg"
+        "flag": "https://restcountries.eu/data/chn.svg",
+        "ISO_2": "CN",
+        "ISO_3": "CHN"
     },
     {
         "id": "49",
         "title": "Christmas Island",
-        "code": "AUD",
+        "currency_code": "AUD",
         "latlng:": [
             -10.5,
             105.66666666
         ],
-        "flag": "https://restcountries.eu/data/cxr.svg"
+        "flag": "https://restcountries.eu/data/cxr.svg",
+        "ISO_2": "CX",
+        "ISO_3": "CXR"
     },
     {
         "id": "50",
         "title": "Cocos (Keeling) Islands",
-        "code": "AUD",
+        "currency_code": "AUD",
         "latlng:": [
             -12.5,
             96.83333333
         ],
-        "flag": "https://restcountries.eu/data/cck.svg"
+        "flag": "https://restcountries.eu/data/cck.svg",
+        "ISO_2": "CC",
+        "ISO_3": "CCK"
     },
     {
         "id": "51",
         "title": "Colombia",
-        "code": "COP",
+        "currency_code": "COP",
         "latlng:": [
             4,
             -72
         ],
-        "flag": "https://restcountries.eu/data/col.svg"
+        "flag": "https://restcountries.eu/data/col.svg",
+        "ISO_2": "CO",
+        "ISO_3": "COL"
     },
     {
         "id": "52",
         "title": "Comoros",
-        "code": "KMF",
+        "currency_code": "KMF",
         "latlng:": [
             -12.16666666,
             44.25
         ],
-        "flag": "https://restcountries.eu/data/com.svg"
+        "flag": "https://restcountries.eu/data/com.svg",
+        "ISO_2": "KM",
+        "ISO_3": "COM"
     },
     {
         "id": "53",
         "title": "Congo",
-        "code": "XAF",
+        "currency_code": "XAF",
         "latlng:": [
             -1,
             15
         ],
-        "flag": "https://restcountries.eu/data/cog.svg"
+        "flag": "https://restcountries.eu/data/cog.svg",
+        "ISO_2": "CG",
+        "ISO_3": "COG"
     },
     {
         "id": "54",
-        "title": "Congo (Democratic Republic of the)",
-        "code": "CDF",
+        "title": "Democratic Republic of the Congo",
+        "currency_code": "CDF",
         "latlng:": [
             0,
             25
         ],
-        "flag": "https://restcountries.eu/data/cod.svg"
+        "flag": "https://restcountries.eu/data/cod.svg",
+        "ISO_2": "CD",
+        "ISO_3": "COD"
     },
     {
         "id": "55",
         "title": "Cook Islands",
-        "code": "NZD",
+        "currency_code": "NZD",
         "latlng:": [
             -21.23333333,
             -159.76666666
         ],
-        "flag": "https://restcountries.eu/data/cok.svg"
+        "flag": "https://restcountries.eu/data/cok.svg",
+        "ISO_2": "CK",
+        "ISO_3": "COK"
     },
     {
         "id": "56",
         "title": "Costa Rica",
-        "code": "CRC",
+        "currency_code": "CRC",
         "latlng:": [
             10,
             -84
         ],
-        "flag": "https://restcountries.eu/data/cri.svg"
+        "flag": "https://restcountries.eu/data/cri.svg",
+        "ISO_2": "CR",
+        "ISO_3": "CRI"
     },
     {
         "id": "57",
         "title": "Croatia",
-        "code": "HRK",
+        "currency_code": "HRK",
         "latlng:": [
             45.16666666,
             15.5
         ],
-        "flag": "https://restcountries.eu/data/hrv.svg"
+        "flag": "https://restcountries.eu/data/hrv.svg",
+        "ISO_2": "HR",
+        "ISO_3": "HRV"
     },
     {
         "id": "58",
         "title": "Cuba",
-        "code": "CUC",
+        "currency_code": "CUC",
         "latlng:": [
             21.5,
             -80
         ],
-        "flag": "https://restcountries.eu/data/cub.svg"
+        "flag": "https://restcountries.eu/data/cub.svg",
+        "ISO_2": "CU",
+        "ISO_3": "CUB"
     },
     {
         "id": "59",
         "title": "Curaçao",
-        "code": "ANG",
+        "currency_code": "ANG",
         "latlng:": [
             12.116667,
             -68.933333
         ],
-        "flag": "https://restcountries.eu/data/cuw.svg"
+        "flag": "https://restcountries.eu/data/cuw.svg",
+        "ISO_2": "CW",
+        "ISO_3": "CUW"
     },
     {
         "id": "60",
         "title": "Cyprus",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             35,
             33
         ],
-        "flag": "https://restcountries.eu/data/cyp.svg"
+        "flag": "https://restcountries.eu/data/cyp.svg",
+        "ISO_2": "CY",
+        "ISO_3": "CYP"
     },
     {
         "id": "61",
         "title": "Czech Republic",
-        "code": "CZK",
+        "currency_code": "CZK",
         "latlng:": [
             49.75,
             15.5
         ],
-        "flag": "https://restcountries.eu/data/cze.svg"
+        "flag": "https://restcountries.eu/data/cze.svg",
+        "ISO_2": "CZ",
+        "ISO_3": "CZE"
     },
     {
         "id": "106",
         "title": "Côte d'Ivoire",
-        "code": "XOF",
+        "currency_code": "XOF",
         "latlng:": [
             8,
             -5
         ],
-        "flag": "https://restcountries.eu/data/civ.svg"
+        "flag": "https://restcountries.eu/data/civ.svg",
+        "ISO_2": "CI",
+        "ISO_3": "CIV"
     },
     {
         "id": "62",
         "title": "Denmark",
-        "code": "DKK",
+        "currency_code": "DKK",
         "latlng:": [
             56,
             10
         ],
-        "flag": "https://restcountries.eu/data/dnk.svg"
+        "flag": "https://restcountries.eu/data/dnk.svg",
+        "ISO_2": "DK",
+        "ISO_3": "DNK"
     },
     {
         "id": "63",
         "title": "Djibouti",
-        "code": "DJF",
+        "currency_code": "DJF",
         "latlng:": [
             11.5,
             43
         ],
-        "flag": "https://restcountries.eu/data/dji.svg"
+        "flag": "https://restcountries.eu/data/dji.svg",
+        "ISO_2": "DJ",
+        "ISO_3": "DJI"
     },
     {
         "id": "64",
         "title": "Dominica",
-        "code": "XCD",
+        "currency_code": "XCD",
         "latlng:": [
             15.41666666,
             -61.33333333
         ],
-        "flag": "https://restcountries.eu/data/dma.svg"
+        "flag": "https://restcountries.eu/data/dma.svg",
+        "ISO_2": "DM",
+        "ISO_3": "DMA"
     },
     {
         "id": "65",
         "title": "Dominican Republic",
-        "code": "DOP",
+        "currency_code": "DOP",
         "latlng:": [
             19,
             -70.66666666
         ],
-        "flag": "https://restcountries.eu/data/dom.svg"
+        "flag": "https://restcountries.eu/data/dom.svg",
+        "ISO_2": "DO",
+        "ISO_3": "DOM"
     },
     {
         "id": "66",
         "title": "Ecuador",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             -2,
             -77.5
         ],
-        "flag": "https://restcountries.eu/data/ecu.svg"
+        "flag": "https://restcountries.eu/data/ecu.svg",
+        "ISO_2": "EC",
+        "ISO_3": "ECU"
     },
     {
         "id": "67",
         "title": "Egypt",
-        "code": "EGP",
+        "currency_code": "EGP",
         "latlng:": [
             27,
             30
         ],
-        "flag": "https://restcountries.eu/data/egy.svg"
+        "flag": "https://restcountries.eu/data/egy.svg",
+        "ISO_2": "EG",
+        "ISO_3": "EGY"
     },
     {
         "id": "68",
         "title": "El Salvador",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             13.83333333,
             -88.91666666
         ],
-        "flag": "https://restcountries.eu/data/slv.svg"
+        "flag": "https://restcountries.eu/data/slv.svg",
+        "ISO_2": "SV",
+        "ISO_3": "SLV"
     },
     {
         "id": "69",
         "title": "Equatorial Guinea",
-        "code": "XAF",
+        "currency_code": "XAF",
         "latlng:": [
             2,
             10
         ],
-        "flag": "https://restcountries.eu/data/gnq.svg"
+        "flag": "https://restcountries.eu/data/gnq.svg",
+        "ISO_2": "GQ",
+        "ISO_3": "GNQ"
     },
     {
         "id": "70",
         "title": "Eritrea",
-        "code": "ERN",
+        "currency_code": "ERN",
         "latlng:": [
             15,
             39
         ],
-        "flag": "https://restcountries.eu/data/eri.svg"
+        "flag": "https://restcountries.eu/data/eri.svg",
+        "ISO_2": "ER",
+        "ISO_3": "ERI"
     },
     {
         "id": "71",
         "title": "Estonia",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             59,
             26
         ],
-        "flag": "https://restcountries.eu/data/est.svg"
+        "flag": "https://restcountries.eu/data/est.svg",
+        "ISO_2": "EE",
+        "ISO_3": "EST"
     },
     {
         "id": "72",
         "title": "Ethiopia",
-        "code": "ETB",
+        "currency_code": "ETB",
         "latlng:": [
             8,
             38
         ],
-        "flag": "https://restcountries.eu/data/eth.svg"
+        "flag": "https://restcountries.eu/data/eth.svg",
+        "ISO_2": "ET",
+        "ISO_3": "ETH"
     },
     {
         "id": "73",
         "title": "Falkland Islands (Malvinas)",
-        "code": "FKP",
+        "currency_code": "FKP",
         "latlng:": [
             -51.75,
             -59
         ],
-        "flag": "https://restcountries.eu/data/flk.svg"
+        "flag": "https://restcountries.eu/data/flk.svg",
+        "ISO_2": "FK",
+        "ISO_3": "FLK"
     },
     {
         "id": "74",
         "title": "Faroe Islands",
-        "code": "DKK",
+        "currency_code": "DKK",
         "latlng:": [
             62,
             -7
         ],
-        "flag": "https://restcountries.eu/data/fro.svg"
+        "flag": "https://restcountries.eu/data/fro.svg",
+        "ISO_2": "FO",
+        "ISO_3": "FRO"
     },
     {
         "id": "75",
         "title": "Fiji",
-        "code": "FJD",
+        "currency_code": "FJD",
         "latlng:": [
             -18,
             175
         ],
-        "flag": "https://restcountries.eu/data/fji.svg"
+        "flag": "https://restcountries.eu/data/fji.svg",
+        "ISO_2": "FJ",
+        "ISO_3": "FJI"
     },
     {
         "id": "76",
         "title": "Finland",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             64,
             26
         ],
-        "flag": "https://restcountries.eu/data/fin.svg"
+        "flag": "https://restcountries.eu/data/fin.svg",
+        "ISO_2": "FI",
+        "ISO_3": "FIN"
     },
     {
         "id": "77",
         "title": "France",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             46,
             2
         ],
-        "flag": "https://restcountries.eu/data/fra.svg"
+        "flag": "https://restcountries.eu/data/fra.svg",
+        "ISO_2": "FR",
+        "ISO_3": "FRA"
     },
     {
         "id": "78",
         "title": "French Guiana",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             4,
             -53
         ],
-        "flag": "https://restcountries.eu/data/guf.svg"
+        "flag": "https://restcountries.eu/data/guf.svg",
+        "ISO_2": "GF",
+        "ISO_3": "GUF"
     },
     {
         "id": "79",
         "title": "French Polynesia",
-        "code": "XPF",
+        "currency_code": "XPF",
         "latlng:": [
             -15,
             -140
         ],
-        "flag": "https://restcountries.eu/data/pyf.svg"
+        "flag": "https://restcountries.eu/data/pyf.svg",
+        "ISO_2": "PF",
+        "ISO_3": "PYF"
     },
     {
         "id": "80",
         "title": "French Southern Territories",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             -49.25,
             69.167
         ],
-        "flag": "https://restcountries.eu/data/atf.svg"
+        "flag": "https://restcountries.eu/data/atf.svg",
+        "ISO_2": "TF",
+        "ISO_3": "ATF"
     },
     {
         "id": "81",
         "title": "Gabon",
-        "code": "XAF",
+        "currency_code": "XAF",
         "latlng:": [
             -1,
             11.75
         ],
-        "flag": "https://restcountries.eu/data/gab.svg"
+        "flag": "https://restcountries.eu/data/gab.svg",
+        "ISO_2": "GA",
+        "ISO_3": "GAB"
     },
     {
         "id": "82",
         "title": "Gambia",
-        "code": "GMD",
+        "currency_code": "GMD",
         "latlng:": [
             13.46666666,
             -16.56666666
         ],
-        "flag": "https://restcountries.eu/data/gmb.svg"
+        "flag": "https://restcountries.eu/data/gmb.svg",
+        "ISO_2": "GM",
+        "ISO_3": "GMB"
     },
     {
         "id": "83",
         "title": "Georgia",
-        "code": "GEL",
+        "currency_code": "GEL",
         "latlng:": [
             42,
             43.5
         ],
-        "flag": "https://restcountries.eu/data/geo.svg"
+        "flag": "https://restcountries.eu/data/geo.svg",
+        "ISO_2": "GE",
+        "ISO_3": "GEO"
     },
     {
         "id": "84",
         "title": "Germany",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             51,
             9
         ],
-        "flag": "https://restcountries.eu/data/deu.svg"
+        "flag": "https://restcountries.eu/data/deu.svg",
+        "ISO_2": "DE",
+        "ISO_3": "DEU"
     },
     {
         "id": "85",
         "title": "Ghana",
-        "code": "GHS",
+        "currency_code": "GHS",
         "latlng:": [
             8,
             -2
         ],
-        "flag": "https://restcountries.eu/data/gha.svg"
+        "flag": "https://restcountries.eu/data/gha.svg",
+        "ISO_2": "GH",
+        "ISO_3": "GHA"
     },
     {
         "id": "86",
         "title": "Gibraltar",
-        "code": "GIP",
+        "currency_code": "GIP",
         "latlng:": [
             36.13333333,
             -5.35
         ],
-        "flag": "https://restcountries.eu/data/gib.svg"
+        "flag": "https://restcountries.eu/data/gib.svg",
+        "ISO_2": "GI",
+        "ISO_3": "GIB"
     },
     {
         "id": "87",
         "title": "Greece",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             39,
             22
         ],
-        "flag": "https://restcountries.eu/data/grc.svg"
+        "flag": "https://restcountries.eu/data/grc.svg",
+        "ISO_2": "GR",
+        "ISO_3": "GRC"
     },
     {
         "id": "88",
         "title": "Greenland",
-        "code": "DKK",
+        "currency_code": "DKK",
         "latlng:": [
             72,
             -40
         ],
-        "flag": "https://restcountries.eu/data/grl.svg"
+        "flag": "https://restcountries.eu/data/grl.svg",
+        "ISO_2": "GL",
+        "ISO_3": "GRL"
     },
     {
         "id": "89",
         "title": "Grenada",
-        "code": "XCD",
+        "currency_code": "XCD",
         "latlng:": [
             12.11666666,
             -61.66666666
         ],
-        "flag": "https://restcountries.eu/data/grd.svg"
+        "flag": "https://restcountries.eu/data/grd.svg",
+        "ISO_2": "GD",
+        "ISO_3": "GRD"
     },
     {
         "id": "90",
         "title": "Guadeloupe",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             16.25,
             -61.583333
         ],
-        "flag": "https://restcountries.eu/data/glp.svg"
+        "flag": "https://restcountries.eu/data/glp.svg",
+        "ISO_2": "GP",
+        "ISO_3": "GLP"
     },
     {
         "id": "91",
         "title": "Guam",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             13.46666666,
             144.78333333
         ],
-        "flag": "https://restcountries.eu/data/gum.svg"
+        "flag": "https://restcountries.eu/data/gum.svg",
+        "ISO_2": "GU",
+        "ISO_3": "GUM"
     },
     {
         "id": "92",
         "title": "Guatemala",
-        "code": "GTQ",
+        "currency_code": "GTQ",
         "latlng:": [
             15.5,
             -90.25
         ],
-        "flag": "https://restcountries.eu/data/gtm.svg"
+        "flag": "https://restcountries.eu/data/gtm.svg",
+        "ISO_2": "GT",
+        "ISO_3": "GTM"
     },
     {
         "id": "93",
         "title": "Guernsey",
-        "code": "GBP",
+        "currency_code": "GBP",
         "latlng:": [
             49.46666666,
             -2.58333333
         ],
-        "flag": "https://restcountries.eu/data/ggy.svg"
+        "flag": "https://restcountries.eu/data/ggy.svg",
+        "ISO_2": "GG",
+        "ISO_3": "GGY"
     },
     {
         "id": "94",
         "title": "Guinea",
-        "code": "GNF",
+        "currency_code": "GNF",
         "latlng:": [
             11,
             -10
         ],
-        "flag": "https://restcountries.eu/data/gin.svg"
+        "flag": "https://restcountries.eu/data/gin.svg",
+        "ISO_2": "GN",
+        "ISO_3": "GIN"
     },
     {
         "id": "95",
         "title": "Guinea-Bissau",
-        "code": "XOF",
+        "currency_code": "XOF",
         "latlng:": [
             12,
             -15
         ],
-        "flag": "https://restcountries.eu/data/gnb.svg"
+        "flag": "https://restcountries.eu/data/gnb.svg",
+        "ISO_2": "GW",
+        "ISO_3": "GNB"
     },
     {
         "id": "96",
         "title": "Guyana",
-        "code": "GYD",
+        "currency_code": "GYD",
         "latlng:": [
             5,
             -59
         ],
-        "flag": "https://restcountries.eu/data/guy.svg"
+        "flag": "https://restcountries.eu/data/guy.svg",
+        "ISO_2": "GY",
+        "ISO_3": "GUY"
     },
     {
         "id": "97",
         "title": "Haiti",
-        "code": "HTG",
+        "currency_code": "HTG",
         "latlng:": [
             19,
             -72.41666666
         ],
-        "flag": "https://restcountries.eu/data/hti.svg"
+        "flag": "https://restcountries.eu/data/hti.svg",
+        "ISO_2": "HT",
+        "ISO_3": "HTI"
     },
     {
         "id": "98",
         "title": "Heard Island and McDonald Islands",
-        "code": "AUD",
+        "currency_code": "AUD",
         "latlng:": [
             -53.1,
             72.51666666
         ],
-        "flag": "https://restcountries.eu/data/hmd.svg"
+        "flag": "https://restcountries.eu/data/hmd.svg",
+        "ISO_2": "HM",
+        "ISO_3": "HMD"
     },
     {
         "id": "99",
         "title": "Holy See",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             41.9,
             12.45
         ],
-        "flag": "https://restcountries.eu/data/vat.svg"
+        "flag": "https://restcountries.eu/data/vat.svg",
+        "ISO_2": "VA",
+        "ISO_3": "VAT"
     },
     {
         "id": "100",
         "title": "Honduras",
-        "code": "HNL",
+        "currency_code": "HNL",
         "latlng:": [
             15,
             -86.5
         ],
-        "flag": "https://restcountries.eu/data/hnd.svg"
+        "flag": "https://restcountries.eu/data/hnd.svg",
+        "ISO_2": "HN",
+        "ISO_3": "HND"
     },
     {
         "id": "101",
         "title": "Hong Kong",
-        "code": "HKD",
+        "currency_code": "HKD",
         "latlng:": [
             22.25,
             114.16666666
         ],
-        "flag": "https://restcountries.eu/data/hkg.svg"
+        "flag": "https://restcountries.eu/data/hkg.svg",
+        "ISO_2": "HK",
+        "ISO_3": "HKG"
     },
     {
         "id": "102",
         "title": "Hungary",
-        "code": "HUF",
+        "currency_code": "HUF",
         "latlng:": [
             47,
             20
         ],
-        "flag": "https://restcountries.eu/data/hun.svg"
+        "flag": "https://restcountries.eu/data/hun.svg",
+        "ISO_2": "HU",
+        "ISO_3": "HUN"
     },
     {
         "id": "103",
         "title": "Iceland",
-        "code": "ISK",
+        "currency_code": "ISK",
         "latlng:": [
             65,
             -18
         ],
-        "flag": "https://restcountries.eu/data/isl.svg"
+        "flag": "https://restcountries.eu/data/isl.svg",
+        "ISO_2": "IS",
+        "ISO_3": "ISL"
     },
     {
         "id": "104",
         "title": "India",
-        "code": "INR",
+        "currency_code": "INR",
         "latlng:": [
             20,
             77
         ],
-        "flag": "https://restcountries.eu/data/ind.svg"
+        "flag": "https://restcountries.eu/data/ind.svg",
+        "ISO_2": "IN",
+        "ISO_3": "IND"
     },
     {
         "id": "105",
         "title": "Indonesia",
-        "code": "IDR",
+        "currency_code": "IDR",
         "latlng:": [
             -5,
             120
         ],
-        "flag": "https://restcountries.eu/data/idn.svg"
+        "flag": "https://restcountries.eu/data/idn.svg",
+        "ISO_2": "ID",
+        "ISO_3": "IDN"
     },
     {
         "id": "107",
-        "title": "Iran (Islamic Republic of)",
-        "code": "IRR",
+        "title": "Iran",
+        "currency_code": "IRR",
         "latlng:": [
             32,
             53
         ],
-        "flag": "https://restcountries.eu/data/irn.svg"
+        "flag": "https://restcountries.eu/data/irn.svg",
+        "ISO_2": "IR",
+        "ISO_3": "IRN"
     },
     {
         "id": "108",
         "title": "Iraq",
-        "code": "IQD",
+        "currency_code": "IQD",
         "latlng:": [
             33,
             44
         ],
-        "flag": "https://restcountries.eu/data/irq.svg"
+        "flag": "https://restcountries.eu/data/irq.svg",
+        "ISO_2": "IQ",
+        "ISO_3": "IRQ"
     },
     {
         "id": "109",
         "title": "Ireland",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             53,
             -8
         ],
-        "flag": "https://restcountries.eu/data/irl.svg"
+        "flag": "https://restcountries.eu/data/irl.svg",
+        "ISO_2": "IE",
+        "ISO_3": "IRL"
     },
     {
         "id": "110",
         "title": "Isle of Man",
-        "code": "GBP",
+        "currency_code": "GBP",
         "latlng:": [
             54.25,
             -4.5
         ],
-        "flag": "https://restcountries.eu/data/imn.svg"
+        "flag": "https://restcountries.eu/data/imn.svg",
+        "ISO_2": "IM",
+        "ISO_3": "IMN"
     },
     {
         "id": "111",
         "title": "Israel",
-        "code": "ILS",
+        "currency_code": "ILS",
         "latlng:": [
             31.5,
             34.75
         ],
-        "flag": "https://restcountries.eu/data/isr.svg"
+        "flag": "https://restcountries.eu/data/isr.svg",
+        "ISO_2": "IL",
+        "ISO_3": "ISR"
     },
     {
         "id": "112",
         "title": "Italy",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             42.83333333,
             12.83333333
         ],
-        "flag": "https://restcountries.eu/data/ita.svg"
+        "flag": "https://restcountries.eu/data/ita.svg",
+        "ISO_2": "IT",
+        "ISO_3": "ITA"
     },
     {
         "id": "113",
         "title": "Jamaica",
-        "code": "JMD",
+        "currency_code": "JMD",
         "latlng:": [
             18.25,
             -77.5
         ],
-        "flag": "https://restcountries.eu/data/jam.svg"
+        "flag": "https://restcountries.eu/data/jam.svg",
+        "ISO_2": "JM",
+        "ISO_3": "JAM"
     },
     {
         "id": "114",
         "title": "Japan",
-        "code": "JPY",
+        "currency_code": "JPY",
         "latlng:": [
             36,
             138
         ],
-        "flag": "https://restcountries.eu/data/jpn.svg"
+        "flag": "https://restcountries.eu/data/jpn.svg",
+        "ISO_2": "JP",
+        "ISO_3": "JPN"
     },
     {
         "id": "115",
         "title": "Jersey",
-        "code": "GBP",
+        "currency_code": "GBP",
         "latlng:": [
             49.25,
             -2.16666666
         ],
-        "flag": "https://restcountries.eu/data/jey.svg"
+        "flag": "https://restcountries.eu/data/jey.svg",
+        "ISO_2": "JE",
+        "ISO_3": "JEY"
     },
     {
         "id": "116",
         "title": "Jordan",
-        "code": "JOD",
+        "currency_code": "JOD",
         "latlng:": [
             31,
             36
         ],
-        "flag": "https://restcountries.eu/data/jor.svg"
+        "flag": "https://restcountries.eu/data/jor.svg",
+        "ISO_2": "JO",
+        "ISO_3": "JOR"
     },
     {
         "id": "117",
         "title": "Kazakhstan",
-        "code": "KZT",
+        "currency_code": "KZT",
         "latlng:": [
             48,
             68
         ],
-        "flag": "https://restcountries.eu/data/kaz.svg"
+        "flag": "https://restcountries.eu/data/kaz.svg",
+        "ISO_2": "KZ",
+        "ISO_3": "KAZ"
     },
     {
         "id": "118",
         "title": "Kenya",
-        "code": "KES",
+        "currency_code": "KES",
         "latlng:": [
             1,
             38
         ],
-        "flag": "https://restcountries.eu/data/ken.svg"
+        "flag": "https://restcountries.eu/data/ken.svg",
+        "ISO_2": "KE",
+        "ISO_3": "KEN"
     },
     {
         "id": "119",
         "title": "Kiribati",
-        "code": "AUD",
+        "currency_code": "AUD",
         "latlng:": [
             1.41666666,
             173
         ],
-        "flag": "https://restcountries.eu/data/kir.svg"
-    },
-    {
-        "id": "165",
-        "title": "Korea (Democratic People's Republic of)",
-        "code": "KPW",
-        "latlng:": [
-            40,
-            127
-        ],
-        "flag": "https://restcountries.eu/data/prk.svg"
+        "flag": "https://restcountries.eu/data/kir.svg",
+        "ISO_2": "KI",
+        "ISO_3": "KIR"
     },
     {
         "id": "210",
-        "title": "Korea (Republic of)",
-        "code": "KRW",
+        "title": "Korea, South",
+        "currency_code": "KRW",
         "latlng:": [
             37,
             127.5
         ],
-        "flag": "https://restcountries.eu/data/kor.svg"
+        "flag": "https://restcountries.eu/data/kor.svg",
+        "ISO_2": "KR",
+        "ISO_3": "KOR"
     },
     {
         "id": "120",
         "title": "Kuwait",
-        "code": "KWD",
+        "currency_code": "KWD",
         "latlng:": [
             29.5,
             45.75
         ],
-        "flag": "https://restcountries.eu/data/kwt.svg"
+        "flag": "https://restcountries.eu/data/kwt.svg",
+        "ISO_2": "KW",
+        "ISO_3": "KWT"
     },
     {
         "id": "121",
         "title": "Kyrgyzstan",
-        "code": "KGS",
+        "currency_code": "KGS",
         "latlng:": [
             41,
             75
         ],
-        "flag": "https://restcountries.eu/data/kgz.svg"
+        "flag": "https://restcountries.eu/data/kgz.svg",
+        "ISO_2": "KG",
+        "ISO_3": "KGZ"
     },
     {
         "id": "122",
         "title": "Lao People's Democratic Republic",
-        "code": "LAK",
+        "currency_code": "LAK",
         "latlng:": [
             18,
             105
         ],
-        "flag": "https://restcountries.eu/data/lao.svg"
+        "flag": "https://restcountries.eu/data/lao.svg",
+        "ISO_2": "LA",
+        "ISO_3": "LAO"
     },
     {
         "id": "123",
         "title": "Latvia",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             57,
             25
         ],
-        "flag": "https://restcountries.eu/data/lva.svg"
+        "flag": "https://restcountries.eu/data/lva.svg",
+        "ISO_2": "LV",
+        "ISO_3": "LVA"
     },
     {
         "id": "124",
         "title": "Lebanon",
-        "code": "LBP",
+        "currency_code": "LBP",
         "latlng:": [
             33.83333333,
             35.83333333
         ],
-        "flag": "https://restcountries.eu/data/lbn.svg"
+        "flag": "https://restcountries.eu/data/lbn.svg",
+        "ISO_2": "LB",
+        "ISO_3": "LBN"
     },
     {
         "id": "125",
         "title": "Lesotho",
-        "code": "LSL",
+        "currency_code": "LSL",
         "latlng:": [
             -29.5,
             28.5
         ],
-        "flag": "https://restcountries.eu/data/lso.svg"
+        "flag": "https://restcountries.eu/data/lso.svg",
+        "ISO_2": "LS",
+        "ISO_3": "LSO"
     },
     {
         "id": "126",
         "title": "Liberia",
-        "code": "LRD",
+        "currency_code": "LRD",
         "latlng:": [
             6.5,
             -9.5
         ],
-        "flag": "https://restcountries.eu/data/lbr.svg"
+        "flag": "https://restcountries.eu/data/lbr.svg",
+        "ISO_2": "LR",
+        "ISO_3": "LBR"
     },
     {
         "id": "127",
         "title": "Libya",
-        "code": "LYD",
+        "currency_code": "LYD",
         "latlng:": [
             25,
             17
         ],
-        "flag": "https://restcountries.eu/data/lby.svg"
+        "flag": "https://restcountries.eu/data/lby.svg",
+        "ISO_2": "LY",
+        "ISO_3": "LBY"
     },
     {
         "id": "128",
         "title": "Liechtenstein",
-        "code": "CHF",
+        "currency_code": "CHF",
         "latlng:": [
             47.26666666,
             9.53333333
         ],
-        "flag": "https://restcountries.eu/data/lie.svg"
+        "flag": "https://restcountries.eu/data/lie.svg",
+        "ISO_2": "LI",
+        "ISO_3": "LIE"
     },
     {
         "id": "129",
         "title": "Lithuania",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             56,
             24
         ],
-        "flag": "https://restcountries.eu/data/ltu.svg"
+        "flag": "https://restcountries.eu/data/ltu.svg",
+        "ISO_2": "LT",
+        "ISO_3": "LTU"
     },
     {
         "id": "130",
         "title": "Luxembourg",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             49.75,
             6.16666666
         ],
-        "flag": "https://restcountries.eu/data/lux.svg"
+        "flag": "https://restcountries.eu/data/lux.svg",
+        "ISO_2": "LU",
+        "ISO_3": "LUX"
     },
     {
         "id": "131",
         "title": "Macao",
-        "code": "MOP",
+        "currency_code": "MOP",
         "latlng:": [
             22.16666666,
             113.55
         ],
-        "flag": "https://restcountries.eu/data/mac.svg"
+        "flag": "https://restcountries.eu/data/mac.svg",
+        "ISO_2": "MO",
+        "ISO_3": "MAC"
     },
     {
         "id": "132",
-        "title": "Macedonia (the former Yugoslav Republic of)",
-        "code": "MKD",
+        "title": "Macedonia",
+        "currency_code": "MKD",
         "latlng:": [
             41.83333333,
             22
         ],
-        "flag": "https://restcountries.eu/data/mkd.svg"
+        "flag": "https://restcountries.eu/data/mkd.svg",
+        "ISO_2": "MK",
+        "ISO_3": "MKD"
     },
     {
         "id": "133",
         "title": "Madagascar",
-        "code": "MGA",
+        "currency_code": "MGA",
         "latlng:": [
             -20,
             47
         ],
-        "flag": "https://restcountries.eu/data/mdg.svg"
+        "flag": "https://restcountries.eu/data/mdg.svg",
+        "ISO_2": "MG",
+        "ISO_3": "MDG"
     },
     {
         "id": "134",
         "title": "Malawi",
-        "code": "MWK",
+        "currency_code": "MWK",
         "latlng:": [
             -13.5,
             34
         ],
-        "flag": "https://restcountries.eu/data/mwi.svg"
+        "flag": "https://restcountries.eu/data/mwi.svg",
+        "ISO_2": "MW",
+        "ISO_3": "MWI"
     },
     {
         "id": "135",
         "title": "Malaysia",
-        "code": "MYR",
+        "currency_code": "MYR",
         "latlng:": [
             2.5,
             112.5
         ],
-        "flag": "https://restcountries.eu/data/mys.svg"
+        "flag": "https://restcountries.eu/data/mys.svg",
+        "ISO_2": "MY",
+        "ISO_3": "MYS"
     },
     {
         "id": "136",
         "title": "Maldives",
-        "code": "MVR",
+        "currency_code": "MVR",
         "latlng:": [
             3.25,
             73
         ],
-        "flag": "https://restcountries.eu/data/mdv.svg"
+        "flag": "https://restcountries.eu/data/mdv.svg",
+        "ISO_2": "MV",
+        "ISO_3": "MDV"
     },
     {
         "id": "137",
         "title": "Mali",
-        "code": "XOF",
+        "currency_code": "XOF",
         "latlng:": [
             17,
             -4
         ],
-        "flag": "https://restcountries.eu/data/mli.svg"
+        "flag": "https://restcountries.eu/data/mli.svg",
+        "ISO_2": "ML",
+        "ISO_3": "MLI"
     },
     {
         "id": "138",
         "title": "Malta",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             35.83333333,
             14.58333333
         ],
-        "flag": "https://restcountries.eu/data/mlt.svg"
+        "flag": "https://restcountries.eu/data/mlt.svg",
+        "ISO_2": "MT",
+        "ISO_3": "MLT"
     },
     {
         "id": "139",
         "title": "Marshall Islands",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             9,
             168
         ],
-        "flag": "https://restcountries.eu/data/mhl.svg"
+        "flag": "https://restcountries.eu/data/mhl.svg",
+        "ISO_2": "MH",
+        "ISO_3": "MHL"
     },
     {
         "id": "140",
         "title": "Martinique",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             14.666667,
             -61
         ],
-        "flag": "https://restcountries.eu/data/mtq.svg"
+        "flag": "https://restcountries.eu/data/mtq.svg",
+        "ISO_2": "MQ",
+        "ISO_3": "MTQ"
     },
     {
         "id": "141",
         "title": "Mauritania",
-        "code": "MRO",
+        "currency_code": "MRO",
         "latlng:": [
             20,
             -12
         ],
-        "flag": "https://restcountries.eu/data/mrt.svg"
+        "flag": "https://restcountries.eu/data/mrt.svg",
+        "ISO_2": "MR",
+        "ISO_3": "MRT"
     },
     {
         "id": "142",
         "title": "Mauritius",
-        "code": "MUR",
+        "currency_code": "MUR",
         "latlng:": [
             -20.28333333,
             57.55
         ],
-        "flag": "https://restcountries.eu/data/mus.svg"
+        "flag": "https://restcountries.eu/data/mus.svg",
+        "ISO_2": "MU",
+        "ISO_3": "MUS"
     },
     {
         "id": "143",
         "title": "Mayotte",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             -12.83333333,
             45.16666666
         ],
-        "flag": "https://restcountries.eu/data/myt.svg"
+        "flag": "https://restcountries.eu/data/myt.svg",
+        "ISO_2": "YT",
+        "ISO_3": "MYT"
     },
     {
         "id": "144",
         "title": "Mexico",
-        "code": "MXN",
+        "currency_code": "MXN",
         "latlng:": [
             23,
             -102
         ],
-        "flag": "https://restcountries.eu/data/mex.svg"
+        "flag": "https://restcountries.eu/data/mex.svg",
+        "ISO_2": "MX",
+        "ISO_3": "MEX"
     },
     {
         "id": "145",
         "title": "Micronesia (Federated States of)",
-        "code": "null",
+        "currency_code": "null",
         "latlng:": [
             6.91666666,
             158.25
         ],
-        "flag": "https://restcountries.eu/data/fsm.svg"
+        "flag": "https://restcountries.eu/data/fsm.svg",
+        "ISO_2": "FM",
+        "ISO_3": "FSM"
     },
     {
         "id": "146",
-        "title": "Moldova (Republic of)",
-        "code": "MDL",
+        "title": "Moldova",
+        "currency_code": "MDL",
         "latlng:": [
             47,
             29
         ],
-        "flag": "https://restcountries.eu/data/mda.svg"
+        "flag": "https://restcountries.eu/data/mda.svg",
+        "ISO_2": "MD",
+        "ISO_3": "MDA"
     },
     {
         "id": "147",
         "title": "Monaco",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             43.73333333,
             7.4
         ],
-        "flag": "https://restcountries.eu/data/mco.svg"
+        "flag": "https://restcountries.eu/data/mco.svg",
+        "ISO_2": "MC",
+        "ISO_3": "MCO"
     },
     {
         "id": "148",
         "title": "Mongolia",
-        "code": "MNT",
+        "currency_code": "MNT",
         "latlng:": [
             46,
             105
         ],
-        "flag": "https://restcountries.eu/data/mng.svg"
+        "flag": "https://restcountries.eu/data/mng.svg",
+        "ISO_2": "MN",
+        "ISO_3": "MNG"
     },
     {
         "id": "149",
         "title": "Montenegro",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             42.5,
             19.3
         ],
-        "flag": "https://restcountries.eu/data/mne.svg"
+        "flag": "https://restcountries.eu/data/mne.svg",
+        "ISO_2": "ME",
+        "ISO_3": "MNE"
     },
     {
         "id": "150",
         "title": "Montserrat",
-        "code": "XCD",
+        "currency_code": "XCD",
         "latlng:": [
             16.75,
             -62.2
         ],
-        "flag": "https://restcountries.eu/data/msr.svg"
+        "flag": "https://restcountries.eu/data/msr.svg",
+        "ISO_2": "MS",
+        "ISO_3": "MSR"
     },
     {
         "id": "151",
         "title": "Morocco",
-        "code": "MAD",
+        "currency_code": "MAD",
         "latlng:": [
             32,
             -5
         ],
-        "flag": "https://restcountries.eu/data/mar.svg"
+        "flag": "https://restcountries.eu/data/mar.svg",
+        "ISO_2": "MA",
+        "ISO_3": "MAR"
     },
     {
         "id": "152",
         "title": "Mozambique",
-        "code": "MZN",
+        "currency_code": "MZN",
         "latlng:": [
             -18.25,
             35
         ],
-        "flag": "https://restcountries.eu/data/moz.svg"
+        "flag": "https://restcountries.eu/data/moz.svg",
+        "ISO_2": "MZ",
+        "ISO_3": "MOZ"
     },
     {
         "id": "153",
         "title": "Myanmar",
-        "code": "MMK",
+        "currency_code": "MMK",
         "latlng:": [
             22,
             98
         ],
-        "flag": "https://restcountries.eu/data/mmr.svg"
+        "flag": "https://restcountries.eu/data/mmr.svg",
+        "ISO_2": "MM",
+        "ISO_3": "MMR"
     },
     {
         "id": "154",
         "title": "Namibia",
-        "code": "NAD",
+        "currency_code": "NAD",
         "latlng:": [
             -22,
             17
         ],
-        "flag": "https://restcountries.eu/data/nam.svg"
+        "flag": "https://restcountries.eu/data/nam.svg",
+        "ISO_2": "NA",
+        "ISO_3": "NAM"
     },
     {
         "id": "155",
         "title": "Nauru",
-        "code": "AUD",
+        "currency_code": "AUD",
         "latlng:": [
             -0.53333333,
             166.91666666
         ],
-        "flag": "https://restcountries.eu/data/nru.svg"
+        "flag": "https://restcountries.eu/data/nru.svg",
+        "ISO_2": "NR",
+        "ISO_3": "NRU"
     },
     {
         "id": "156",
         "title": "Nepal",
-        "code": "NPR",
+        "currency_code": "NPR",
         "latlng:": [
             28,
             84
         ],
-        "flag": "https://restcountries.eu/data/npl.svg"
+        "flag": "https://restcountries.eu/data/npl.svg",
+        "ISO_2": "NP",
+        "ISO_3": "NPL"
     },
     {
         "id": "157",
         "title": "Netherlands",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             52.5,
             5.75
         ],
-        "flag": "https://restcountries.eu/data/nld.svg"
+        "flag": "https://restcountries.eu/data/nld.svg",
+        "ISO_2": "NL",
+        "ISO_3": "NLD"
     },
     {
         "id": "158",
         "title": "New Caledonia",
-        "code": "XPF",
+        "currency_code": "XPF",
         "latlng:": [
             -21.5,
             165.5
         ],
-        "flag": "https://restcountries.eu/data/ncl.svg"
+        "flag": "https://restcountries.eu/data/ncl.svg",
+        "ISO_2": "NC",
+        "ISO_3": "NCL"
     },
     {
         "id": "159",
         "title": "New Zealand",
-        "code": "NZD",
+        "currency_code": "NZD",
         "latlng:": [
             -41,
             174
         ],
-        "flag": "https://restcountries.eu/data/nzl.svg"
+        "flag": "https://restcountries.eu/data/nzl.svg",
+        "ISO_2": "NZ",
+        "ISO_3": "NZL"
     },
     {
         "id": "160",
         "title": "Nicaragua",
-        "code": "NIO",
+        "currency_code": "NIO",
         "latlng:": [
             13,
             -85
         ],
-        "flag": "https://restcountries.eu/data/nic.svg"
+        "flag": "https://restcountries.eu/data/nic.svg",
+        "ISO_2": "NI",
+        "ISO_3": "NIC"
     },
     {
         "id": "161",
         "title": "Niger",
-        "code": "XOF",
+        "currency_code": "XOF",
         "latlng:": [
             16,
             8
         ],
-        "flag": "https://restcountries.eu/data/ner.svg"
+        "flag": "https://restcountries.eu/data/ner.svg",
+        "ISO_2": "NE",
+        "ISO_3": "NER"
     },
     {
         "id": "162",
         "title": "Nigeria",
-        "code": "NGN",
+        "currency_code": "NGN",
         "latlng:": [
             10,
             8
         ],
-        "flag": "https://restcountries.eu/data/nga.svg"
+        "flag": "https://restcountries.eu/data/nga.svg",
+        "ISO_2": "NG",
+        "ISO_3": "NGA"
     },
     {
         "id": "163",
         "title": "Niue",
-        "code": "NZD",
+        "currency_code": "NZD",
         "latlng:": [
             -19.03333333,
             -169.86666666
         ],
-        "flag": "https://restcountries.eu/data/niu.svg"
+        "flag": "https://restcountries.eu/data/niu.svg",
+        "ISO_2": "NU",
+        "ISO_3": "NIU"
     },
     {
         "id": "164",
         "title": "Norfolk Island",
-        "code": "AUD",
+        "currency_code": "AUD",
         "latlng:": [
             -29.03333333,
             167.95
         ],
-        "flag": "https://restcountries.eu/data/nfk.svg"
+        "flag": "https://restcountries.eu/data/nfk.svg",
+        "ISO_2": "NF",
+        "ISO_3": "NFK"
     },
     {
         "id": "166",
         "title": "Northern Mariana Islands",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             15.2,
             145.75
         ],
-        "flag": "https://restcountries.eu/data/mnp.svg"
+        "flag": "https://restcountries.eu/data/mnp.svg",
+        "ISO_2": "MP",
+        "ISO_3": "MNP"
     },
     {
         "id": "167",
         "title": "Norway",
-        "code": "NOK",
+        "currency_code": "NOK",
         "latlng:": [
             62,
             10
         ],
-        "flag": "https://restcountries.eu/data/nor.svg"
+        "flag": "https://restcountries.eu/data/nor.svg",
+        "ISO_2": "NO",
+        "ISO_3": "NOR"
     },
     {
         "id": "168",
         "title": "Oman",
-        "code": "OMR",
+        "currency_code": "OMR",
         "latlng:": [
             21,
             57
         ],
-        "flag": "https://restcountries.eu/data/omn.svg"
+        "flag": "https://restcountries.eu/data/omn.svg",
+        "ISO_2": "OM",
+        "ISO_3": "OMN"
     },
     {
         "id": "169",
         "title": "Pakistan",
-        "code": "PKR",
+        "currency_code": "PKR",
         "latlng:": [
             30,
             70
         ],
-        "flag": "https://restcountries.eu/data/pak.svg"
+        "flag": "https://restcountries.eu/data/pak.svg",
+        "ISO_2": "PK",
+        "ISO_3": "PAK"
     },
     {
         "id": "170",
         "title": "Palau",
-        "code": "(none)",
+        "currency_code": "(none)",
         "latlng:": [
             7.5,
             134.5
         ],
-        "flag": "https://restcountries.eu/data/plw.svg"
+        "flag": "https://restcountries.eu/data/plw.svg",
+        "ISO_2": "PW",
+        "ISO_3": "PLW"
     },
     {
         "id": "171",
         "title": "Palestine, State of",
-        "code": "ILS",
+        "currency_code": "ILS",
         "latlng:": [
             31.9,
             35.2
         ],
-        "flag": "https://restcountries.eu/data/pse.svg"
+        "flag": "https://restcountries.eu/data/pse.svg",
+        "ISO_2": "PS",
+        "ISO_3": "PSE"
     },
     {
         "id": "172",
         "title": "Panama",
-        "code": "PAB",
+        "currency_code": "PAB",
         "latlng:": [
             9,
             -80
         ],
-        "flag": "https://restcountries.eu/data/pan.svg"
+        "flag": "https://restcountries.eu/data/pan.svg",
+        "ISO_2": "PA",
+        "ISO_3": "PAN"
     },
     {
         "id": "173",
         "title": "Papua New Guinea",
-        "code": "PGK",
+        "currency_code": "PGK",
         "latlng:": [
             -6,
             147
         ],
-        "flag": "https://restcountries.eu/data/png.svg"
+        "flag": "https://restcountries.eu/data/png.svg",
+        "ISO_2": "PG",
+        "ISO_3": "PNG"
     },
     {
         "id": "174",
         "title": "Paraguay",
-        "code": "PYG",
+        "currency_code": "PYG",
         "latlng:": [
             -23,
             -58
         ],
-        "flag": "https://restcountries.eu/data/pry.svg"
+        "flag": "https://restcountries.eu/data/pry.svg",
+        "ISO_2": "PY",
+        "ISO_3": "PRY"
     },
     {
         "id": "175",
         "title": "Peru",
-        "code": "PEN",
+        "currency_code": "PEN",
         "latlng:": [
             -10,
             -76
         ],
-        "flag": "https://restcountries.eu/data/per.svg"
+        "flag": "https://restcountries.eu/data/per.svg",
+        "ISO_2": "PE",
+        "ISO_3": "PER"
     },
     {
         "id": "176",
         "title": "Philippines",
-        "code": "PHP",
+        "currency_code": "PHP",
         "latlng:": [
             13,
             122
         ],
-        "flag": "https://restcountries.eu/data/phl.svg"
+        "flag": "https://restcountries.eu/data/phl.svg",
+        "ISO_2": "PH",
+        "ISO_3": "PHL"
     },
     {
         "id": "177",
         "title": "Pitcairn",
-        "code": "NZD",
+        "currency_code": "NZD",
         "latlng:": [
             -25.06666666,
             -130.1
         ],
-        "flag": "https://restcountries.eu/data/pcn.svg"
+        "flag": "https://restcountries.eu/data/pcn.svg",
+        "ISO_2": "PN",
+        "ISO_3": "PCN"
     },
     {
         "id": "178",
         "title": "Poland",
-        "code": "PLN",
+        "currency_code": "PLN",
         "latlng:": [
             52,
             20
         ],
-        "flag": "https://restcountries.eu/data/pol.svg"
+        "flag": "https://restcountries.eu/data/pol.svg",
+        "ISO_2": "PL",
+        "ISO_3": "POL"
     },
     {
         "id": "179",
         "title": "Portugal",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             39.5,
             -8
         ],
-        "flag": "https://restcountries.eu/data/prt.svg"
+        "flag": "https://restcountries.eu/data/prt.svg",
+        "ISO_2": "PT",
+        "ISO_3": "PRT"
     },
     {
         "id": "180",
         "title": "Puerto Rico",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             18.25,
             -66.5
         ],
-        "flag": "https://restcountries.eu/data/pri.svg"
+        "flag": "https://restcountries.eu/data/pri.svg",
+        "ISO_2": "PR",
+        "ISO_3": "PRI"
     },
     {
         "id": "181",
         "title": "Qatar",
-        "code": "QAR",
+        "currency_code": "QAR",
         "latlng:": [
             25.5,
             51.25
         ],
-        "flag": "https://restcountries.eu/data/qat.svg"
+        "flag": "https://restcountries.eu/data/qat.svg",
+        "ISO_2": "QA",
+        "ISO_3": "QAT"
     },
     {
         "id": "182",
         "title": "Republic of Kosovo",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             42.666667,
             21.166667
         ],
-        "flag": "https://restcountries.eu/data/kos.svg"
+        "flag": "https://restcountries.eu/data/kos.svg",
+        "ISO_2": "XK",
+        "ISO_3": "KOS"
     },
     {
         "id": "184",
         "title": "Romania",
-        "code": "RON",
+        "currency_code": "RON",
         "latlng:": [
             46,
             25
         ],
-        "flag": "https://restcountries.eu/data/rou.svg"
+        "flag": "https://restcountries.eu/data/rou.svg",
+        "ISO_2": "RO",
+        "ISO_3": "ROU"
     },
     {
         "id": "185",
         "title": "Russian Federation",
-        "code": "RUB",
+        "currency_code": "RUB",
         "latlng:": [
             60,
             100
         ],
-        "flag": "https://restcountries.eu/data/rus.svg"
+        "flag": "https://restcountries.eu/data/rus.svg",
+        "ISO_2": "RU",
+        "ISO_3": "RUS"
     },
     {
         "id": "186",
         "title": "Rwanda",
-        "code": "RWF",
+        "currency_code": "RWF",
         "latlng:": [
             -2,
             30
         ],
-        "flag": "https://restcountries.eu/data/rwa.svg"
+        "flag": "https://restcountries.eu/data/rwa.svg",
+        "ISO_2": "RW",
+        "ISO_3": "RWA"
     },
     {
         "id": "183",
         "title": "Réunion",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             -21.15,
             55.5
         ],
-        "flag": "https://restcountries.eu/data/reu.svg"
+        "flag": "https://restcountries.eu/data/reu.svg",
+        "ISO_2": "RE",
+        "ISO_3": "REU"
     },
     {
         "id": "187",
         "title": "Saint Barthélemy",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             18.5,
             -63.41666666
         ],
-        "flag": "https://restcountries.eu/data/blm.svg"
+        "flag": "https://restcountries.eu/data/blm.svg",
+        "ISO_2": "BL",
+        "ISO_3": "BLM"
     },
     {
         "id": "188",
         "title": "Saint Helena, Ascension and Tristan da Cunha",
-        "code": "SHP",
+        "currency_code": "SHP",
         "latlng:": [
             -15.95,
             -5.7
         ],
-        "flag": "https://restcountries.eu/data/shn.svg"
+        "flag": "https://restcountries.eu/data/shn.svg",
+        "ISO_2": "SH",
+        "ISO_3": "SHN"
     },
     {
         "id": "189",
         "title": "Saint Kitts and Nevis",
-        "code": "XCD",
+        "currency_code": "XCD",
         "latlng:": [
             17.33333333,
             -62.75
         ],
-        "flag": "https://restcountries.eu/data/kna.svg"
+        "flag": "https://restcountries.eu/data/kna.svg",
+        "ISO_2": "KN",
+        "ISO_3": "KNA"
     },
     {
         "id": "190",
         "title": "Saint Lucia",
-        "code": "XCD",
+        "currency_code": "XCD",
         "latlng:": [
             13.88333333,
             -60.96666666
         ],
-        "flag": "https://restcountries.eu/data/lca.svg"
+        "flag": "https://restcountries.eu/data/lca.svg",
+        "ISO_2": "LC",
+        "ISO_3": "LCA"
     },
     {
         "id": "191",
         "title": "Saint Martin (French part)",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             18.08333333,
             -63.95
         ],
-        "flag": "https://restcountries.eu/data/maf.svg"
+        "flag": "https://restcountries.eu/data/maf.svg",
+        "ISO_2": "MF",
+        "ISO_3": "MAF"
     },
     {
         "id": "192",
         "title": "Saint Pierre and Miquelon",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             46.83333333,
             -56.33333333
         ],
-        "flag": "https://restcountries.eu/data/spm.svg"
+        "flag": "https://restcountries.eu/data/spm.svg",
+        "ISO_2": "PM",
+        "ISO_3": "SPM"
     },
     {
         "id": "193",
         "title": "Saint Vincent and the Grenadines",
-        "code": "XCD",
+        "currency_code": "XCD",
         "latlng:": [
             13.25,
             -61.2
         ],
-        "flag": "https://restcountries.eu/data/vct.svg"
+        "flag": "https://restcountries.eu/data/vct.svg",
+        "ISO_2": "VC",
+        "ISO_3": "VCT"
     },
     {
         "id": "194",
         "title": "Samoa",
-        "code": "WST",
+        "currency_code": "WST",
         "latlng:": [
             -13.58333333,
             -172.33333333
         ],
-        "flag": "https://restcountries.eu/data/wsm.svg"
+        "flag": "https://restcountries.eu/data/wsm.svg",
+        "ISO_2": "WS",
+        "ISO_3": "WSM"
     },
     {
         "id": "195",
         "title": "San Marino",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             43.76666666,
             12.41666666
         ],
-        "flag": "https://restcountries.eu/data/smr.svg"
+        "flag": "https://restcountries.eu/data/smr.svg",
+        "ISO_2": "SM",
+        "ISO_3": "SMR"
     },
     {
         "id": "196",
         "title": "Sao Tome and Principe",
-        "code": "STD",
+        "currency_code": "STD",
         "latlng:": [
             1,
             7
         ],
-        "flag": "https://restcountries.eu/data/stp.svg"
+        "flag": "https://restcountries.eu/data/stp.svg",
+        "ISO_2": "ST",
+        "ISO_3": "STP"
     },
     {
         "id": "197",
         "title": "Saudi Arabia",
-        "code": "SAR",
+        "currency_code": "SAR",
         "latlng:": [
             25,
             45
         ],
-        "flag": "https://restcountries.eu/data/sau.svg"
+        "flag": "https://restcountries.eu/data/sau.svg",
+        "ISO_2": "SA",
+        "ISO_3": "SAU"
     },
     {
         "id": "198",
         "title": "Senegal",
-        "code": "XOF",
+        "currency_code": "XOF",
         "latlng:": [
             14,
             -14
         ],
-        "flag": "https://restcountries.eu/data/sen.svg"
+        "flag": "https://restcountries.eu/data/sen.svg",
+        "ISO_2": "SN",
+        "ISO_3": "SEN"
     },
     {
         "id": "199",
         "title": "Serbia",
-        "code": "RSD",
+        "currency_code": "RSD",
         "latlng:": [
             44,
             21
         ],
-        "flag": "https://restcountries.eu/data/srb.svg"
+        "flag": "https://restcountries.eu/data/srb.svg",
+        "ISO_2": "RS",
+        "ISO_3": "SRB"
     },
     {
         "id": "200",
         "title": "Seychelles",
-        "code": "SCR",
+        "currency_code": "SCR",
         "latlng:": [
             -4.58333333,
             55.66666666
         ],
-        "flag": "https://restcountries.eu/data/syc.svg"
+        "flag": "https://restcountries.eu/data/syc.svg",
+        "ISO_2": "SC",
+        "ISO_3": "SYC"
     },
     {
         "id": "201",
         "title": "Sierra Leone",
-        "code": "SLL",
+        "currency_code": "SLL",
         "latlng:": [
             8.5,
             -11.5
         ],
-        "flag": "https://restcountries.eu/data/sle.svg"
+        "flag": "https://restcountries.eu/data/sle.svg",
+        "ISO_2": "SL",
+        "ISO_3": "SLE"
     },
     {
         "id": "202",
         "title": "Singapore",
-        "code": "BND",
+        "currency_code": "BND",
         "latlng:": [
             1.36666666,
             103.8
         ],
-        "flag": "https://restcountries.eu/data/sgp.svg"
+        "flag": "https://restcountries.eu/data/sgp.svg",
+        "ISO_2": "SG",
+        "ISO_3": "SGP"
     },
     {
         "id": "203",
         "title": "Sint Maarten (Dutch part)",
-        "code": "ANG",
+        "currency_code": "ANG",
         "latlng:": [
             18.033333,
             -63.05
         ],
-        "flag": "https://restcountries.eu/data/sxm.svg"
+        "flag": "https://restcountries.eu/data/sxm.svg",
+        "ISO_2": "SX",
+        "ISO_3": "SXM"
     },
     {
         "id": "204",
         "title": "Slovakia",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             48.66666666,
             19.5
         ],
-        "flag": "https://restcountries.eu/data/svk.svg"
+        "flag": "https://restcountries.eu/data/svk.svg",
+        "ISO_2": "SK",
+        "ISO_3": "SVK"
     },
     {
         "id": "205",
         "title": "Slovenia",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             46.11666666,
             14.81666666
         ],
-        "flag": "https://restcountries.eu/data/svn.svg"
+        "flag": "https://restcountries.eu/data/svn.svg",
+        "ISO_2": "SI",
+        "ISO_3": "SVN"
     },
     {
         "id": "206",
         "title": "Solomon Islands",
-        "code": "SBD",
+        "currency_code": "SBD",
         "latlng:": [
             -8,
             159
         ],
-        "flag": "https://restcountries.eu/data/slb.svg"
+        "flag": "https://restcountries.eu/data/slb.svg",
+        "ISO_2": "SB",
+        "ISO_3": "SLB"
     },
     {
         "id": "207",
         "title": "Somalia",
-        "code": "SOS",
+        "currency_code": "SOS",
         "latlng:": [
             10,
             49
         ],
-        "flag": "https://restcountries.eu/data/som.svg"
+        "flag": "https://restcountries.eu/data/som.svg",
+        "ISO_2": "SO",
+        "ISO_3": "SOM"
     },
     {
         "id": "208",
         "title": "South Africa",
-        "code": "ZAR",
+        "currency_code": "ZAR",
         "latlng:": [
             -29,
             24
         ],
-        "flag": "https://restcountries.eu/data/zaf.svg"
+        "flag": "https://restcountries.eu/data/zaf.svg",
+        "ISO_2": "ZA",
+        "ISO_3": "ZAF"
     },
     {
         "id": "209",
         "title": "South Georgia and the South Sandwich Islands",
-        "code": "GBP",
+        "currency_code": "GBP",
         "latlng:": [
             -54.5,
             -37
         ],
-        "flag": "https://restcountries.eu/data/sgs.svg"
+        "flag": "https://restcountries.eu/data/sgs.svg",
+        "ISO_2": "GS",
+        "ISO_3": "SGS"
     },
     {
         "id": "211",
         "title": "South Sudan",
-        "code": "SSP",
+        "currency_code": "SSP",
         "latlng:": [
             7,
             30
         ],
-        "flag": "https://restcountries.eu/data/ssd.svg"
+        "flag": "https://restcountries.eu/data/ssd.svg",
+        "ISO_2": "SS",
+        "ISO_3": "SSD"
     },
     {
         "id": "212",
         "title": "Spain",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             40,
             -4
         ],
-        "flag": "https://restcountries.eu/data/esp.svg"
+        "flag": "https://restcountries.eu/data/esp.svg",
+        "ISO_2": "ES",
+        "ISO_3": "ESP"
     },
     {
         "id": "213",
         "title": "Sri Lanka",
-        "code": "LKR",
+        "currency_code": "LKR",
         "latlng:": [
             7,
             81
         ],
-        "flag": "https://restcountries.eu/data/lka.svg"
+        "flag": "https://restcountries.eu/data/lka.svg",
+        "ISO_2": "LK",
+        "ISO_3": "LKA"
     },
     {
         "id": "214",
         "title": "Sudan",
-        "code": "SDG",
+        "currency_code": "SDG",
         "latlng:": [
             15,
             30
         ],
-        "flag": "https://restcountries.eu/data/sdn.svg"
+        "flag": "https://restcountries.eu/data/sdn.svg",
+        "ISO_2": "SD",
+        "ISO_3": "SDN"
     },
     {
         "id": "215",
         "title": "Suriname",
-        "code": "SRD",
+        "currency_code": "SRD",
         "latlng:": [
             4,
             -56
         ],
-        "flag": "https://restcountries.eu/data/sur.svg"
+        "flag": "https://restcountries.eu/data/sur.svg",
+        "ISO_2": "SR",
+        "ISO_3": "SUR"
     },
     {
         "id": "216",
         "title": "Svalbard and Jan Mayen",
-        "code": "NOK",
+        "currency_code": "NOK",
         "latlng:": [
             78,
             20
         ],
-        "flag": "https://restcountries.eu/data/sjm.svg"
+        "flag": "https://restcountries.eu/data/sjm.svg",
+        "ISO_2": "SJ",
+        "ISO_3": "SJM"
     },
     {
         "id": "217",
         "title": "Swaziland",
-        "code": "SZL",
+        "currency_code": "SZL",
         "latlng:": [
             -26.5,
             31.5
         ],
-        "flag": "https://restcountries.eu/data/swz.svg"
+        "flag": "https://restcountries.eu/data/swz.svg",
+        "ISO_2": "SZ",
+        "ISO_3": "SWZ"
     },
     {
         "id": "218",
         "title": "Sweden",
-        "code": "SEK",
+        "currency_code": "SEK",
         "latlng:": [
             62,
             15
         ],
-        "flag": "https://restcountries.eu/data/swe.svg"
+        "flag": "https://restcountries.eu/data/swe.svg",
+        "ISO_2": "SE",
+        "ISO_3": "SWE"
     },
     {
         "id": "219",
         "title": "Switzerland",
-        "code": "CHF",
+        "currency_code": "CHF",
         "latlng:": [
             47,
             8
         ],
-        "flag": "https://restcountries.eu/data/che.svg"
+        "flag": "https://restcountries.eu/data/che.svg",
+        "ISO_2": "CH",
+        "ISO_3": "CHE"
     },
     {
         "id": "220",
         "title": "Syrian Arab Republic",
-        "code": "SYP",
+        "currency_code": "SYP",
         "latlng:": [
             35,
             38
         ],
-        "flag": "https://restcountries.eu/data/syr.svg"
+        "flag": "https://restcountries.eu/data/syr.svg",
+        "ISO_2": "SY",
+        "ISO_3": "SYR"
     },
     {
         "id": "221",
         "title": "Taiwan",
-        "code": "TWD",
+        "currency_code": "TWD",
         "latlng:": [
             23.5,
             121
         ],
-        "flag": "https://restcountries.eu/data/twn.svg"
+        "flag": "https://restcountries.eu/data/twn.svg",
+        "ISO_2": "TW",
+        "ISO_3": "TWN"
     },
     {
         "id": "222",
         "title": "Tajikistan",
-        "code": "TJS",
+        "currency_code": "TJS",
         "latlng:": [
             39,
             71
         ],
-        "flag": "https://restcountries.eu/data/tjk.svg"
+        "flag": "https://restcountries.eu/data/tjk.svg",
+        "ISO_2": "TJ",
+        "ISO_3": "TJK"
     },
     {
         "id": "223",
-        "title": "Tanzania, United Republic of",
-        "code": "TZS",
+        "title": "Tanzania",
+        "currency_code": "TZS",
         "latlng:": [
             -6,
             35
         ],
-        "flag": "https://restcountries.eu/data/tza.svg"
+        "flag": "https://restcountries.eu/data/tza.svg",
+        "ISO_2": "TZ",
+        "ISO_3": "TZA"
     },
     {
         "id": "224",
         "title": "Thailand",
-        "code": "THB",
+        "currency_code": "THB",
         "latlng:": [
             15,
             100
         ],
-        "flag": "https://restcountries.eu/data/tha.svg"
+        "flag": "https://restcountries.eu/data/tha.svg",
+        "ISO_2": "TH",
+        "ISO_3": "THA"
     },
     {
         "id": "225",
         "title": "Timor-Leste",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             -8.83333333,
             125.91666666
         ],
-        "flag": "https://restcountries.eu/data/tls.svg"
+        "flag": "https://restcountries.eu/data/tls.svg",
+        "ISO_2": "TL",
+        "ISO_3": "TLS"
     },
     {
         "id": "226",
         "title": "Togo",
-        "code": "XOF",
+        "currency_code": "XOF",
         "latlng:": [
             8,
             1.16666666
         ],
-        "flag": "https://restcountries.eu/data/tgo.svg"
+        "flag": "https://restcountries.eu/data/tgo.svg",
+        "ISO_2": "TG",
+        "ISO_3": "TGO"
     },
     {
         "id": "227",
         "title": "Tokelau",
-        "code": "NZD",
+        "currency_code": "NZD",
         "latlng:": [
             -9,
             -172
         ],
-        "flag": "https://restcountries.eu/data/tkl.svg"
+        "flag": "https://restcountries.eu/data/tkl.svg",
+        "ISO_2": "TK",
+        "ISO_3": "TKL"
     },
     {
         "id": "228",
         "title": "Tonga",
-        "code": "TOP",
+        "currency_code": "TOP",
         "latlng:": [
             -20,
             -175
         ],
-        "flag": "https://restcountries.eu/data/ton.svg"
+        "flag": "https://restcountries.eu/data/ton.svg",
+        "ISO_2": "TO",
+        "ISO_3": "TON"
     },
     {
         "id": "229",
         "title": "Trinidad and Tobago",
-        "code": "TTD",
+        "currency_code": "TTD",
         "latlng:": [
             11,
             -61
         ],
-        "flag": "https://restcountries.eu/data/tto.svg"
+        "flag": "https://restcountries.eu/data/tto.svg",
+        "ISO_2": "TT",
+        "ISO_3": "TTO"
     },
     {
         "id": "230",
         "title": "Tunisia",
-        "code": "TND",
+        "currency_code": "TND",
         "latlng:": [
             34,
             9
         ],
-        "flag": "https://restcountries.eu/data/tun.svg"
+        "flag": "https://restcountries.eu/data/tun.svg",
+        "ISO_2": "TN",
+        "ISO_3": "TUN"
     },
     {
         "id": "231",
         "title": "Turkey",
-        "code": "TRY",
+        "currency_code": "TRY",
         "latlng:": [
             39,
             35
         ],
-        "flag": "https://restcountries.eu/data/tur.svg"
+        "flag": "https://restcountries.eu/data/tur.svg",
+        "ISO_2": "TR",
+        "ISO_3": "TUR"
     },
     {
         "id": "232",
         "title": "Turkmenistan",
-        "code": "TMT",
+        "currency_code": "TMT",
         "latlng:": [
             40,
             60
         ],
-        "flag": "https://restcountries.eu/data/tkm.svg"
+        "flag": "https://restcountries.eu/data/tkm.svg",
+        "ISO_2": "TM",
+        "ISO_3": "TKM"
     },
     {
         "id": "233",
         "title": "Turks and Caicos Islands",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             21.75,
             -71.58333333
         ],
-        "flag": "https://restcountries.eu/data/tca.svg"
+        "flag": "https://restcountries.eu/data/tca.svg",
+        "ISO_2": "TC",
+        "ISO_3": "TCA"
     },
     {
         "id": "234",
         "title": "Tuvalu",
-        "code": "AUD",
+        "currency_code": "AUD",
         "latlng:": [
             -8,
             178
         ],
-        "flag": "https://restcountries.eu/data/tuv.svg"
+        "flag": "https://restcountries.eu/data/tuv.svg",
+        "ISO_2": "TV",
+        "ISO_3": "TUV"
     },
     {
         "id": "235",
         "title": "Uganda",
-        "code": "UGX",
+        "currency_code": "UGX",
         "latlng:": [
             1,
             32
         ],
-        "flag": "https://restcountries.eu/data/uga.svg"
+        "flag": "https://restcountries.eu/data/uga.svg",
+        "ISO_2": "UG",
+        "ISO_3": "UGA"
     },
     {
         "id": "236",
         "title": "Ukraine",
-        "code": "UAH",
+        "currency_code": "UAH",
         "latlng:": [
             49,
             32
         ],
-        "flag": "https://restcountries.eu/data/ukr.svg"
+        "flag": "https://restcountries.eu/data/ukr.svg",
+        "ISO_2": "UA",
+        "ISO_3": "UKR"
     },
     {
         "id": "237",
         "title": "United Arab Emirates",
-        "code": "AED",
+        "currency_code": "AED",
         "latlng:": [
             24,
             54
         ],
-        "flag": "https://restcountries.eu/data/are.svg"
+        "flag": "https://restcountries.eu/data/are.svg",
+        "ISO_2": "AE",
+        "ISO_3": "ARE"
     },
     {
         "id": "238",
         "title": "United Kingdom",
-        "code": "GBP",
+        "currency_code": "GBP",
         "latlng:": [
             54,
             -2
         ],
-        "flag": "https://restcountries.eu/data/gbr.svg"
+        "flag": "https://restcountries.eu/data/gbr.svg",
+        "ISO_2": "GB",
+        "ISO_3": "GBR"
     },
     {
         "id": "33",
         "title": "United States Minor Outlying Islands",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [],
-        "flag": "https://restcountries.eu/data/umi.svg"
+        "flag": "https://restcountries.eu/data/umi.svg",
+        "ISO_2": "UM",
+        "ISO_3": "UMI"
     },
     {
         "id": "239",
         "title": "United States of America",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             38,
             -97
         ],
-        "flag": "https://restcountries.eu/data/usa.svg"
+        "flag": "https://restcountries.eu/data/usa.svg",
+        "ISO_2": "US",
+        "ISO_3": "USA"
     },
     {
         "id": "240",
         "title": "Uruguay",
-        "code": "UYU",
+        "currency_code": "UYU",
         "latlng:": [
             -33,
             -56
         ],
-        "flag": "https://restcountries.eu/data/ury.svg"
+        "flag": "https://restcountries.eu/data/ury.svg",
+        "ISO_2": "UY",
+        "ISO_3": "URY"
     },
     {
         "id": "241",
         "title": "Uzbekistan",
-        "code": "UZS",
+        "currency_code": "UZS",
         "latlng:": [
             41,
             64
         ],
-        "flag": "https://restcountries.eu/data/uzb.svg"
+        "flag": "https://restcountries.eu/data/uzb.svg",
+        "ISO_2": "UZ",
+        "ISO_3": "UZB"
     },
     {
         "id": "242",
         "title": "Vanuatu",
-        "code": "VUV",
+        "currency_code": "VUV",
         "latlng:": [
             -16,
             167
         ],
-        "flag": "https://restcountries.eu/data/vut.svg"
+        "flag": "https://restcountries.eu/data/vut.svg",
+        "ISO_2": "VU",
+        "ISO_3": "VUT"
     },
     {
         "id": "243",
-        "title": "Venezuela (Bolivarian Republic of)",
-        "code": "VEF",
+        "title": "Venezuela",
+        "currency_code": "VEF",
         "latlng:": [
             8,
             -66
         ],
-        "flag": "https://restcountries.eu/data/ven.svg"
+        "flag": "https://restcountries.eu/data/ven.svg",
+        "ISO_2": "VE",
+        "ISO_3": "VEN"
     },
     {
         "id": "244",
         "title": "Viet Nam",
-        "code": "VND",
+        "currency_code": "VND",
         "latlng:": [
             16.16666666,
             107.83333333
         ],
-        "flag": "https://restcountries.eu/data/vnm.svg"
+        "flag": "https://restcountries.eu/data/vnm.svg",
+        "ISO_2": "VN",
+        "ISO_3": "VNM"
     },
     {
         "id": "34",
         "title": "Virgin Islands (British)",
-        "code": "null",
+        "currency_code": "null",
         "latlng:": [
             18.431383,
             -64.62305
         ],
-        "flag": "https://restcountries.eu/data/vgb.svg"
+        "flag": "https://restcountries.eu/data/vgb.svg",
+        "ISO_2": "VG",
+        "ISO_3": "VGB"
     },
     {
         "id": "35",
         "title": "Virgin Islands (U.S.)",
-        "code": "USD",
+        "currency_code": "USD",
         "latlng:": [
             18.34,
             -64.93
         ],
-        "flag": "https://restcountries.eu/data/vir.svg"
+        "flag": "https://restcountries.eu/data/vir.svg",
+        "ISO_2": "VI",
+        "ISO_3": "VIR"
     },
     {
         "id": "245",
         "title": "Wallis and Futuna",
-        "code": "XPF",
+        "currency_code": "XPF",
         "latlng:": [
             -13.3,
             -176.2
         ],
-        "flag": "https://restcountries.eu/data/wlf.svg"
+        "flag": "https://restcountries.eu/data/wlf.svg",
+        "ISO_2": "WF",
+        "ISO_3": "WLF"
     },
     {
         "id": "246",
         "title": "Western Sahara",
-        "code": "MAD",
+        "currency_code": "MAD",
         "latlng:": [
             24.5,
             -13
         ],
-        "flag": "https://restcountries.eu/data/esh.svg"
+        "flag": "https://restcountries.eu/data/esh.svg",
+        "ISO_2": "EH",
+        "ISO_3": "ESH"
     },
     {
         "id": "247",
         "title": "Yemen",
-        "code": "YER",
+        "currency_code": "YER",
         "latlng:": [
             15,
             48
         ],
-        "flag": "https://restcountries.eu/data/yem.svg"
+        "flag": "https://restcountries.eu/data/yem.svg",
+        "ISO_2": "YE",
+        "ISO_3": "YEM"
     },
     {
         "id": "248",
         "title": "Zambia",
-        "code": "ZMW",
+        "currency_code": "ZMW",
         "latlng:": [
             -15,
             30
         ],
-        "flag": "https://restcountries.eu/data/zmb.svg"
+        "flag": "https://restcountries.eu/data/zmb.svg",
+        "ISO_2": "ZM",
+        "ISO_3": "ZMB"
     },
     {
         "id": "249",
         "title": "Zimbabwe",
-        "code": "BWP",
+        "currency_code": "BWP",
         "latlng:": [
             -20,
             30
         ],
-        "flag": "https://restcountries.eu/data/zwe.svg"
+        "flag": "https://restcountries.eu/data/zwe.svg",
+        "ISO_2": "ZW",
+        "ISO_3": "ZWE"
     },
     {
         "id": "1",
         "title": "Åland Islands",
-        "code": "EUR",
+        "currency_code": "EUR",
         "latlng:": [
             60.116667,
             19.9
         ],
-        "flag": "https://restcountries.eu/data/ala.svg"
+        "flag": "https://restcountries.eu/data/ala.svg",
+        "ISO_2": "AX",
+        "ISO_3": "ALA"
     }
 ]

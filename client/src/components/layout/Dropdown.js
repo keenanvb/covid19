@@ -87,7 +87,7 @@ const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountr
                                     if (type === 'landing') {
                                         getCountryData(country.title)
                                         countryUpdate({ prop: 'selectedCountry', value: country.title })
-                                        getCountryInfo(country.title);
+                                        getCountryInfo(country.ISO_2);
                                         //test timeseseries on ladning page
                                         countryUpdate({ prop: 'selectedCountryGraph', value: country.title })
                                         getTimeSeriesData(country.title)
