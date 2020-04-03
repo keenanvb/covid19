@@ -6,14 +6,16 @@ import Spinner from './Spinner'
 import Dropdown from './Dropdown'
 import moment from 'moment'
 import CountUp from 'react-countup';
+import Timeseries from '../timeseries/Timeseries'
 
 const Landing = ({ data: { data,
-    countryData, loading, countryAdditionalInfo, selectedCountry }, countries, getData }) => {
+    countryData, loading, countryAdditionalInfo, selectedCountry, timeseriesData }, countries, getData }) => {
     useEffect(() => {
         getData()
     }, [getData])
 
-    const [checked, setChecked] = useState(false)
+    const [checkedAddtionalInfo, setCheckedAddtionalInfo] = useState(false)
+    const [checkedTimeline, setCheckedTimeline] = useState(false)
 
     let displayGlobalStats = () => {
         return (
@@ -129,16 +131,29 @@ const Landing = ({ data: { data,
     return (
         <div className="container">
             {data == null ? <Spinner /> :
-                (displayGlobalStats())
-            }
-            <Dropdown title={selectedCountry || 'Please select a country'} dropdownData={countries} type='landing' />
-            {countryData == null ? displayEmptyStats() : displayCountryStats()}
-            <div className="stats-container">
-                <div>Additional Country Information {countryAdditionalInfo ? 'Available' : 'Not Available'}</div>
-                <input style={{ margin: '0px auto' }} type="checkbox" name="check" checked={checked} onChange={() => { setChecked(!checked) }} />
-            </div>
-            {checked && countryAdditionalInfo ? displayCountryAdditionalInfo() : null}
+                <>
+                    {displayGlobalStats()}
+                    <Dropdown title={selectedCountry || 'Please select a country'} dropdownData={countries} type='landing' />
+                    {countryData == null ? displayEmptyStats() : displayCountryStats()}
+                    <div className="stats-container">
+                        <div className="status-block">
+                            <div className="stats-status toggle">
+                                <div>Additional Country Info {countryAdditionalInfo ? 'Available' : 'Not Available'}</div>
+                                <input style={{ margin: '0px auto' }} type="checkbox" name="check" disabled={countryAdditionalInfo ? false : true} checked={checkedAddtionalInfo} onChange={() => { setCheckedAddtionalInfo(!checkedAddtionalInfo) }} />
+                                <div>{checkedAddtionalInfo ? 'Activated' : 'Deactivate'}</div>
+                            </div>
+                            <div className="stats-status toggle">
+                                <div>Timeline {timeseriesData.length > 0 ? 'Available' : 'Not Available'}</div>
+                                <input style={{ margin: '0px auto' }} type="checkbox" name="check" disabled={timeseriesData.length > 0 ? false : true} checked={checkedTimeline} onChange={() => { setCheckedTimeline(!checkedTimeline) }} />
+                                <div>{checkedTimeline ? 'Activated' : 'Deactivate'}</div>
+                            </div>
+                        </div>
+                    </div>
+                    {checkedAddtionalInfo && countryAdditionalInfo ? displayCountryAdditionalInfo() : null}
+                    {checkedTimeline && timeseriesData ? <Timeseries /> : null}
+                </>
 
+            }
         </div>
     )
 }
