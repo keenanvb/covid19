@@ -127,7 +127,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
         return (
             <Control position="bottomleft" >
                 <div className="info top5">
-                    <h3>{`Top 5 ${title}`}</h3>
+                    <h3>{`${title}`}</h3>
                     {countries.map((country, index) => {
                         let number = getNumber(title, country)
                         const { lat, long, combinedKey } = country
