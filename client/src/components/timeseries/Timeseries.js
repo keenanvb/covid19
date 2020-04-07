@@ -50,7 +50,9 @@ const Timeseries = ({ data: { timeseriesData, selectedCountryGraph } }) => {
                             <XAxis dataKey="date" />
                             <YAxis />
                             <CartesianGrid strokeDasharray="3 3" />
-                            <Tooltip />
+                            <Tooltip
+                                labelStyle={{ color: "#2c3e50" }}
+                            />
                             <Area type="monotone" dataKey="confirmed" stroke="#f39c12" fillOpacity={1} fill="url(#confirmed)" />
                             <Area type="monotone" dataKey="recovered" stroke="#27ae60" fillOpacity={1} fill="url(#recovered)" />
                             <Area type="monotone" dataKey="deaths" stroke="#c0392b" fillOpacity={1} fill="url(#deaths)" />

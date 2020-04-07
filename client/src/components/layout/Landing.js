@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { getData } from '../../actions'
 import PropTypes from 'prop-types'
@@ -7,9 +8,10 @@ import Dropdown from './Dropdown'
 import moment from 'moment'
 import CountUp from 'react-countup';
 import Timeseries from '../timeseries/Timeseries'
+import { CompareIcon } from '../../icons/compare'
 
 const Landing = ({ data: { data,
-    countryData, loading, countryAdditionalInfo, selectedCountry, timeseriesData }, countries, getData }) => {
+    countryData, loading, countryAdditionalInfo, selectedCountry, selectedCountryDisplay, timeseriesData }, countries, getData }) => {
     useEffect(() => {
         getData()
     }, [getData])
@@ -67,7 +69,7 @@ const Landing = ({ data: { data,
         return (
             <div className="stats-container">
                 {/* <h2>Global Statistics</h2> */}
-                <span>{selectedCountry}</span>
+                <span>{selectedCountryDisplay}</span>
                 <div className="status-block status-wrap">
                     <div className="stats-status">
                         <h3>{}</h3>
@@ -141,6 +143,11 @@ const Landing = ({ data: { data,
                                 <div>Additional Country Info {countryAdditionalInfo ? 'Available' : 'Not Available'}</div>
                                 <input style={{ margin: '0px auto' }} type="checkbox" name="check" disabled={countryAdditionalInfo ? false : true} checked={checkedAddtionalInfo} onChange={() => { setCheckedAddtionalInfo(!checkedAddtionalInfo) }} />
                                 <div>{checkedAddtionalInfo ? 'Activated' : 'Deactivate'}</div>
+                            </div>
+                            <div className="stats-status toggle">
+                                <div>Country Compare {timeseriesData.length > 0 ? 'Available' : 'Not Available'}</div>
+                                <div>{timeseriesData.length > 0 ? <Link to='/compare' > <div className='pulse pulse-center'><CompareIcon /></div></Link> : null}</div>
+
                             </div>
                             <div className="stats-status toggle">
                                 <div>Timeline {timeseriesData.length > 0 ? 'Available' : 'Not Available'}</div>

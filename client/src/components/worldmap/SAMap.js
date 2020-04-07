@@ -147,7 +147,7 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                     {provices.map((provice, index) => {
                         const { position, provinceFullName, count, data } = provice
                         return (
-                            <div className="top5-row" onClick={() => {
+                            <div style={{ marginTop: '10px' }} className="top5-row" onClick={() => {
                                 const map = mapRef.current.leafletElement
                                 // map.setView([-30.00, 25.00], 6)
                                 // map.setView([position[0], position[1]], map.getZoom(), {
