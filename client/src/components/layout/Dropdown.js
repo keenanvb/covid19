@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
-import { countryUpdate, getCountryData, getCountryInfo, getTimeSeriesData } from '../../actions'
+import { countryUpdate, getCountryData, getCountryInfo, getTimeSeriesData, getTimeSeriesDataCompare } from '../../actions'
 
-const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountryGraph }, countryUpdate, getCountryData, getCountryInfo, type, getTimeSeriesData }) => {
+const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountryGraph, selectedCountryCompare }, countryUpdate, getCountryData, getCountryInfo, type, getTimeSeriesData, getTimeSeriesDataCompare }) => {
 
     const [displayList, toggleDisplayList] = useState(false)
     const [data, getFilteredData] = useState(dropdownData)
@@ -44,8 +44,9 @@ const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountr
         getFilteredData(filterSearch);
         if (type === 'landing') {
             countryUpdate({ prop: 'selectedCountry', value: e.target.value })
-        } else {
             countryUpdate({ prop: 'selectedCountryGraph', value: e.target.value })
+        } else {
+            countryUpdate({ prop: 'selectedCountryCompare', value: e.target.value })
         }
     }
 
@@ -55,10 +56,10 @@ const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountr
                 <span role="img" aria-label="">🗺️</span>
                 <input
                     className="search-country"
-                    placeholder='Search'
+                    placeholder={type === 'landing' ? 'Search' : 'Compare To'}
                     autoComplete="on"
                     type="text"
-                    value={type === 'landing' ? selectedCountry : selectedCountryGraph}
+                    value={type === 'landing' ? selectedCountry : selectedCountryCompare}
                     name="search"
                     onChange={(e) => { onChange(e) }}
                     maxLength="20"
@@ -88,14 +89,16 @@ const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountr
                                         getCountryData(country.title)
                                         countryUpdate({ prop: 'selectedCountry', value: country.title })
                                         getCountryInfo(country.ISO_2);
-                                        //test timeseseries on ladning page
                                         countryUpdate({ prop: 'selectedCountryGraph', value: country.title })
+                                        countryUpdate({ prop: 'selectedCountryDisplay', value: country.title });
                                         getTimeSeriesData(country.title)
                                     } else {
-                                        countryUpdate({ prop: 'selectedCountryGraph', value: country.title })
-                                        getTimeSeriesData(country.title)
+                                        // countryUpdate({ prop: 'selectedCountryGraph', value: country.title })
+                                        // getTimeSeriesData(country.title) 
+                                        countryUpdate({ prop: 'selectedCountryCompare', value: country.title });
+                                        countryUpdate({ prop: 'selectedCountryCompareDisplay', value: country.title });
+                                        getTimeSeriesDataCompare(country.title)
                                     }
-
                                 }}>
 
                                     <img className="flag-image round"
@@ -120,4 +123,4 @@ const mapStateToProps = state => {
     }
 };
 
-export default connect(mapStateToProps, { countryUpdate, getCountryData, getCountryInfo, getTimeSeriesData })(Dropdown)
+export default connect(mapStateToProps, { countryUpdate, getCountryData, getCountryInfo, getTimeSeriesData, getTimeSeriesDataCompare })(Dropdown)

@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {
     GET_DATA, GET_COUNTRY_DATA, GET_MAP_DATA, COUNTRY_UPDATE, GET_COUNTRY_ADDITIONAL_INFO, GET_TIMESERIES_DATA,
-    GET_MAP_DATA_SOUTH_AFRICA
+    GET_MAP_DATA_SOUTH_AFRICA, GET_TIMESERIES_DATA_COMPARE
 } from './types';
 import { setAlert } from './index'
 
@@ -135,6 +135,44 @@ export const getTimeSeriesData = (country) => {
         } catch (err) {
             dispatch({
                 type: GET_TIMESERIES_DATA,
+                payload: [{
+                    date: 0,
+                    confirmed: 0,
+                    recovered: 0,
+                    deaths: 0
+                }
+                ]
+            })
+            let emoji = getRandomEmoji();
+            dispatch(setAlert(`${country} Timeseries data not available ${emoji}`, 'danger'))
+        }
+    }
+}
+
+export const getTimeSeriesDataCompare = (country) => {
+    return async (dispatch) => {
+        try {
+            if (country == 'United States of America') {
+                country = 'US'
+            }
+            const res = await axios.get(`https://pomber.github.io/covid19/timeseries.json`);
+            let result = res.data[country].map(({ date, confirmed, recovered, deaths }) => {
+                return {
+                    date,
+                    confirmed,
+                    recovered,
+                    deaths
+                }
+            }
+            )
+            dispatch({
+                type: GET_TIMESERIES_DATA_COMPARE,
+                payload: result
+            })
+            // dispatch(setAlert(`${country}: Timeseries data available`, 'success'))
+        } catch (err) {
+            dispatch({
+                type: GET_TIMESERIES_DATA_COMPARE,
                 payload: [{
                     date: 0,
                     confirmed: 0,

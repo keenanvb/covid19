@@ -3,6 +3,7 @@ import ReactGA from 'react-ga'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Landing from './components/layout/Landing'
+import Compare from './components/compare/Compare'
 import WorldMap from './components/worldmap/WorldMap'
 import SAMap from './components/worldmap/SAMap'
 import Timeseries from './components/timeseries/Timeseries'
@@ -37,6 +38,7 @@ const App = () => {
                 <Switch location={location}>
                   {/* <Switch> */}
                   <Route path='/' exact component={Landing} />
+                  <Route path='/compare' exact component={Compare} />
                   <Route path='/world-map' exact component={WorldMap} />
                   <Route path='/south-africa' exact component={SAMap} />
                   <Route path='/timeseries' exact component={Timeseries} />
