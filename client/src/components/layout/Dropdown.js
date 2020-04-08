@@ -74,42 +74,40 @@ const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountr
                     }
                 </div>
             </div>
-            <div style={{ overflowY: "scroll", height: "150px", width: '300px', position: 'absoulte' }}>
+            <div style={{ width: '300px', position: 'absoulte' }}>
                 {displayList && <ul className="dropdown-list" onClick={() => {
                     toggleDisplayList(!displayList)
                 }}>
-                    <div>
-                        {data.map((country, index) => (
-                            <div>
-                                <div >
-                                    {displayFirstLetter(data, country, index)}
-                                </div>
-                                <li key={`${country.id}`} onClick={() => {
-                                    if (type === 'landing') {
-                                        getCountryData(country.title)
-                                        countryUpdate({ prop: 'selectedCountry', value: country.title })
-                                        getCountryInfo(country.ISO_2);
-                                        countryUpdate({ prop: 'selectedCountryGraph', value: country.title })
-                                        countryUpdate({ prop: 'selectedCountryDisplay', value: country.title });
-                                        getTimeSeriesData(country.title)
-                                    } else {
-                                        // countryUpdate({ prop: 'selectedCountryGraph', value: country.title })
-                                        // getTimeSeriesData(country.title) 
-                                        countryUpdate({ prop: 'selectedCountryCompare', value: country.title });
-                                        countryUpdate({ prop: 'selectedCountryCompareDisplay', value: country.title });
-                                        getTimeSeriesDataCompare(country.title)
-                                    }
-                                }}>
-
-                                    <img className="flag-image round"
-                                        src={`${country.flag}`}
-                                        alt="new"
-                                    />
-                                    {country.title}
-                                </li>
+                    {data.map((country, index) => (
+                        <div>
+                            <div >
+                                {displayFirstLetter(data, country, index)}
                             </div>
-                        ))}
-                    </div>
+                            <li key={`${country.id}`} onClick={() => {
+                                if (type === 'landing') {
+                                    getCountryData(country.title)
+                                    countryUpdate({ prop: 'selectedCountry', value: country.title })
+                                    getCountryInfo(country.ISO_2);
+                                    countryUpdate({ prop: 'selectedCountryGraph', value: country.title })
+                                    countryUpdate({ prop: 'selectedCountryDisplay', value: country.title });
+                                    getTimeSeriesData(country.title)
+                                } else {
+                                    // countryUpdate({ prop: 'selectedCountryGraph', value: country.title })
+                                    // getTimeSeriesData(country.title) 
+                                    countryUpdate({ prop: 'selectedCountryCompare', value: country.title });
+                                    countryUpdate({ prop: 'selectedCountryCompareDisplay', value: country.title });
+                                    getTimeSeriesDataCompare(country.title)
+                                }
+                            }}>
+
+                                <img style={{ marginRight: '8px' }} className="flag-image round"
+                                    src={`${country.flag}`}
+                                    alt="new"
+                                />
+                                {country.title}
+                            </li>
+                        </div>
+                    ))}
                 </ul>}
             </div>
         </div >
