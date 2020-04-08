@@ -51,15 +51,9 @@ export const getCountryData = (country) => {
             // dispatch(setAlert(`${country}: stats available`, 'success'))
         } catch (err) {
 
-            let result = {
-                countryConfirmed: 0,
-                countryRecovered: 0,
-                countryDeaths: 0,
-                countryLastUpdate: 0
-            }
             dispatch({
                 type: GET_COUNTRY_DATA,
-                payload: result
+                payload: null
             })
             let emoji = getRandomEmoji();
             dispatch(setAlert(`${country}: No stats data available ${emoji}`, 'danger'))
