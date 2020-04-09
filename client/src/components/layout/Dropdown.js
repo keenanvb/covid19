@@ -85,12 +85,12 @@ const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountr
                             </div>
                             <li key={`${country.id}`} onClick={() => {
                                 if (type === 'landing') {
-                                    getCountryData(country.title)
-                                    countryUpdate({ prop: 'selectedCountry', value: country.title })
+                                    getCountryData(country.title);
+                                    countryUpdate({ prop: 'selectedCountry', value: country.title });
                                     getCountryInfo(country.ISO_2);
-                                    countryUpdate({ prop: 'selectedCountryGraph', value: country.title })
+                                    countryUpdate({ prop: 'selectedCountryGraph', value: country.title });
                                     countryUpdate({ prop: 'selectedCountryDisplay', value: country.title });
-                                    getTimeSeriesData(country.title)
+                                    getTimeSeriesData(country.title);
                                 } else {
                                     // countryUpdate({ prop: 'selectedCountryGraph', value: country.title })
                                     // getTimeSeriesData(country.title) 
@@ -98,6 +98,7 @@ const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountr
                                     countryUpdate({ prop: 'selectedCountryCompareDisplay', value: country.title });
                                     getTimeSeriesDataCompare(country.title)
                                 }
+                                getFilteredData(dropdownData);
                             }}>
 
                                 <img style={{ marginRight: '8px' }} className="flag-image round"
