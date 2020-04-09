@@ -8,10 +8,23 @@
   --success-color: #28a745;
   --text-color: #ecf0f1;
 }
-
+/* 
 ::-webkit-scrollbar {	
   display: none;	
+}	 */
+
+::-webkit-scrollbar {	
+  width: 0.5rem;	
+}
+
+::-webkit-scrollbar-track {	
+  background: #2c3e50;	
 }	
+
+::-webkit-scrollbar-thumb {	
+  background: #34495e;	
+}	
+
 
 html{
   scroll-behavior: smooth;
@@ -824,6 +837,11 @@ input:checked[type="checkbox"]:before{
     display: none;
   }
 
+  .top5-heading{
+    width: 60px !important;
+    margin-bottom: 8px !important;
+  }
+
   .world-map-container{
     padding: 0px;
     height: 80vh;
@@ -903,6 +921,12 @@ input:checked[type="checkbox"]:before{
   flex-direction: row;
   cursor: pointer;
   justify-content: space-between;
+}
+
+.top5-heading{
+  padding-top: 6px;
+  width: 150px; 
+  text-align: center
 }
 
 .top5-count{
@@ -1085,4 +1109,32 @@ button {
 
 .compare-display{
   text-align: center;
+}
+
+
+
+.arrow {
+  animation: swing 3s 1s linear infinite
+  }
+
+  
+  @keyframes swing {
+  15% {
+  transform: translateX(5px);
+  }
+  30% {
+  transform: translateX(-5px);
+  }
+  50% {
+  transform: translateX(3px);
+  }
+  65% {
+  transform: translateX(-3px);
+  }
+  80% {
+  transform: translateX(2px);
+  }
+  100% {
+  transform: translateX(0);
+  }
 }
