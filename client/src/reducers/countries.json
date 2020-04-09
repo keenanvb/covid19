@@ -301,7 +301,7 @@
     },
     {
         "id": "26",
-        "title": "Bolivia (Plurinational State of)",
+        "title": "Bolivia",
         "currency_code": "BOB",
         "latlng:": [
             -17,
@@ -2005,7 +2005,7 @@
     },
     {
         "id": "171",
-        "title": "Palestine, State of",
+        "title": "Palestine",
         "currency_code": "ILS",
         "latlng:": [
             31.9,
