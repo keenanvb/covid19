@@ -339,7 +339,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                         </Popup>
                                     )}
                                     {/* <PrintControl  {...printOptions} /> */}
-                                    {/* <PrintControl {...downloadOptions} /> */}
+                                    <PrintControl {...downloadOptions} />
                                 </Map>
                             ) :
                             <Spinner />
