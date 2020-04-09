@@ -30,27 +30,20 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
         return (
             <LayersControl position="topright">
                 {baseMaps.map(({ name, url, attribution, type, layer, format, checked = false }) => {
-
-                    return name === 'OpenStreet Map' ? (
+                    return (
                         <LayersControl.BaseLayer key={name} name={name} checked={checked} >
-                            <WMSTileLayer
+                            <TileLayer
+                                attribution={attribution}
+                                url={url}
                                 layers={layer}
                                 format={format}
                                 transparent={false}
                                 url={url}
-                                attribution={attribution}
                             />
                         </LayersControl.BaseLayer>
-                    ) : (
-                            <LayersControl.BaseLayer key={name} name={name} checked={checked} >
-                                <TileLayer
-                                    attribution={attribution}
-                                    url={url}
-                                />
-                            </LayersControl.BaseLayer>
-                        );
+                    );
                 })}
-                <LayersControl.BaseLayer name="ImageryLabels" >
+                {/* <LayersControl.BaseLayer name="ImageryLabels" >
                     <FeatureGroup>
                         <TileLayer
                             attribution="Esri, DigitalGlobe, GeoEye, i-cubed, USDA, USGS, AEX, Getmapping, Aerogrid, IGN, IGP, swisstopo, and the GIS User Community"
@@ -65,7 +58,7 @@ const SAMap = ({ data: { mapData, southAfricaData }, getMapDataSouthAfrica }) =>
                             url="https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}"
                         />
                     </FeatureGroup>
-                </LayersControl.BaseLayer>
+                </LayersControl.BaseLayer> */}
             </LayersControl>
         );
     }

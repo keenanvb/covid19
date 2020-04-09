@@ -11,6 +11,8 @@ import { getMapData } from '../../actions'
 import ReactGA from 'react-ga'
 import FullscreenControl from 'react-leaflet-fullscreen';
 import 'react-leaflet-fullscreen/dist/styles.css'
+import { RightIcon, LeftIcon } from '../../icons'
+import CountUp from 'react-countup';
 
 const WorldMap = ({ data: { mapData }, getMapData }) => {
     let mapRef = useRef(null);
@@ -18,7 +20,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
     const [activeCountry, setActiveCountry] = useState(null);
     const [showLegend, setShowLegend] = useState(true);
     const [showTop5, setShowTop5] = useState(false);
-
+    const [stepTop5, setStepTop5] = useState(1);
 
     useEffect(() => {
         getMapData()
@@ -54,27 +56,21 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
     let renderBaseLayerControl = () => {
         return (
             <LayersControl position="topright">
-                {baseMaps.map(({ name, url, attribution, type, layer, format, checked = false }) => {
-                    return name === 'OpenStreet Map' ? (
+                {baseMaps.map(({ name, url, attribution, type, layer, format, checked }) => {
+                    return (
                         <LayersControl.BaseLayer key={name} name={name} checked={checked} >
-                            <WMSTileLayer
+                            <TileLayer
+                                attribution={attribution}
+                                url={url}
                                 layers={layer}
                                 format={format}
                                 transparent={false}
                                 url={url}
-                                attribution={attribution}
                             />
                         </LayersControl.BaseLayer>
-                    ) : (
-                            <LayersControl.BaseLayer key={name} name={name} checked={checked} >
-                                <TileLayer
-                                    attribution={attribution}
-                                    url={url}
-                                />
-                            </LayersControl.BaseLayer>
-                        );
+                    );
                 })}
-                <LayersControl.BaseLayer name="ImageryLabels" >
+                {/* <LayersControl.BaseLayer name="ImageryLabels" >
                     <FeatureGroup>
                         <TileLayer
                             attribution="Esri, DigitalGlobe, GeoEye, i-cubed, USDA, USGS, AEX, Getmapping, Aerogrid, IGN, IGP, swisstopo, and the GIS User Community"
@@ -89,7 +85,7 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                             url="https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}"
                         />
                     </FeatureGroup>
-                </LayersControl.BaseLayer>
+                </LayersControl.BaseLayer> */}
             </LayersControl>
         );
     }
@@ -123,12 +119,52 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
     }
 
 
-    let displayTop5 = (countries, title) => {
+    let displayTop5 = () => {
+
+        let confirmed = sortCountries('confirmed');
+        let recovered = sortCountries('recovered');
+        let deaths = sortCountries('deaths');
+
+        let active = '';
+        let title = '';
+
+        switch (stepTop5) {
+            case 1:
+                active = confirmed;
+                title = 'confirmed'
+                break;
+            case 2:
+                active = recovered;
+                title = 'recovered'
+                break
+            case 3:
+                active = deaths;
+                title = 'deaths'
+                break;
+            default:
+                console.log('no steps')
+        }
+
         return (
             <Control position="bottomleft" >
                 <div className="info top5">
-                    <h3>{`${title}`}</h3>
-                    {countries.map((country, index) => {
+                    <div style={{ display: 'flex', justifyItems: 'spaceBewteen' }}>
+                        <button className={`${stepTop5 == 3 ? 'arrow' : ''}`} disabled={stepTop5 == 1 ? true : false} onClick={() => {
+                            let stepBack = stepTop5 - 1
+                            if (stepBack >= 1) {
+                                setStepTop5(stepBack)
+                            }
+                        }}><LeftIcon /></button>
+                        <h3 className="top5-heading">{`${title}`}</h3>
+                        <button className={`${stepTop5 == 1 ? 'arrow' : ''}`} disabled={stepTop5 == 4 ? true : false}
+                            onClick={() => {
+                                let stepTo = stepTop5 + 1
+                                if (stepTo <= 3) {
+                                    setStepTop5(stepTo)
+                                }
+                            }}><RightIcon /></button>
+                    </div>
+                    {active.map((country, index) => {
                         let number = getNumber(title, country)
                         const { lat, long, combinedKey } = country
                         let activeCountry = country
@@ -154,7 +190,10 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                             }}
                             key={{ index }} style={{ marginTop: '10px' }}>
                             <div> {`${index + 1} ${combinedKey}`}</div>
-                            <div className={`top5-count ${title.toLowerCase()}`}>{`${number}`}</div>
+                            <div className={`top5-count`}>
+                                {/* {number} */}
+                                <CountUp separator=',' delay={1} duration={3} end={number} />
+                            </div>
                         </div>)
                     })}
                 </div>
@@ -229,11 +268,13 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                     {showLegend ? displayLegend() : null}
                                     {/* <Top5 countries={sortCountries('deaths')} title={'Deaths'} /> //removed */}
                                     {showTop5 ?
+                                        displayTop5() : null}
+                                    {/* {showTop5 ?
                                         displayTop5(sortCountries('deaths'), 'Deaths') : null}
                                     {showTop5 ?
                                         displayTop5(sortCountries('recovered'), 'Recovered') : null}
                                     {showTop5 ?
-                                        displayTop5(sortCountries('confirmed'), 'Confirmed') : null}
+                                        displayTop5(sortCountries('confirmed'), 'Confirmed') : null} */}
                                     {mapData.map((country, index) => {
                                         if (country.lat && country.long) {
                                             // <Marker

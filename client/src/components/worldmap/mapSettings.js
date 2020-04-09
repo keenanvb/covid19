@@ -65,12 +65,12 @@ export const baseMaps = [
     //     attribution: '',
     //     type: 'tile'
     // },
-    {
-        name: 'ArcGIS World Imagery',
-        url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-        attribution: 'Esri, DigitalGlobe, GeoEye, i-cubed, USDA, USGS, AEX, Getmapping, Aerogrid, IGN, IGP, swisstopo, and the GIS User Community',
-        type: 'tile'
-    },
+    // {
+    //     name: 'ArcGIS World Imagery',
+    //     url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    //     attribution: 'Esri, DigitalGlobe, GeoEye, i-cubed, USDA, USGS, AEX, Getmapping, Aerogrid, IGN, IGP, swisstopo, and the GIS User Community',
+    //     type: 'tile'
+    // },
     // {
     //     name: 'ArcGIS World Imagery with Label',
     //     url: 'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
@@ -113,18 +113,18 @@ export const baseMaps = [
     //     attribution: 'Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community',
     //     type: 'tile'
     // },
-    {
-        name: 'ArcGIS World Imagery Firefly',
-        url: 'https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/{z}/{y}/{x}',
-        attribution: 'Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community',
-        type: 'tile'
-    },
-    {
-        name: 'ArcGIS World Physical Map',
-        url: 'https://server.arcgisonline.com/arcgis/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}',
-        attribution: 'U.S. National Park Service',
-        type: 'tile'
-    },
+    // {
+    //     name: 'ArcGIS World Imagery Firefly',
+    //     url: 'https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/{z}/{y}/{x}',
+    //     attribution: 'Esri, DigitalGlobe, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community',
+    //     type: 'tile'
+    // },
+    // {
+    //     name: 'ArcGIS World Physical Map',
+    //     url: 'https://server.arcgisonline.com/arcgis/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}',
+    //     attribution: 'U.S. National Park Service',
+    //     type: 'tile'
+    // },
     // {
     //     name: 'Google Satellite',
     //     url: 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
