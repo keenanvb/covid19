@@ -961,7 +961,7 @@ input:checked[type="checkbox"]:before{
   background: none;
   color: white ;
   font-size: 18px;
-  width: 80%;
+  /* width: 80%; */
   float: left;
   margin: 0 10px;
 }
