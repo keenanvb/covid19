@@ -9,6 +9,7 @@ import {
 import Spinner from '../layout/Spinner'
 import { isMobile } from '../../utils'
 import { countryUpdate } from '../../actions'
+import ReactGA from 'react-ga'
 
 const Compare = ({ data: { selectedCountry, selectedCountryCompare,
     timeseriesData, timeseriesDataCompare, loading, selectedCountryCompareDisplay, selectedCountryDisplay }, countries, countryUpdate }) => {
@@ -26,7 +27,8 @@ const Compare = ({ data: { selectedCountry, selectedCountryCompare,
     useEffect(() => {
         setTimeSeriesData({
             countrylist: loading ? [] : compareArray()
-        })
+        });
+        ReactGA.pageview(window.location.pathname);
     }, [timeseriesData, timeseriesDataCompare, selectedCountryCompare, loading, selectSort])
 
     let compareArray = () => {
