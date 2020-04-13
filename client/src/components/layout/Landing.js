@@ -130,6 +130,15 @@ const Landing = ({ data: { data,
         )
     }
 
+    const timelineChecked = () => {
+        if (timeseriesData.length > 1 && checkedTimeline) {
+            console.log('true running')
+            return true
+        } else {
+            return false
+        }
+    }
+
     return (
         <div className="container">
             {data == null ? <Spinner /> :
@@ -142,22 +151,25 @@ const Landing = ({ data: { data,
                             <div className="stats-status toggle">
                                 <div>Additional Country Info {countryAdditionalInfo ? 'Available' : 'Not Available'}</div>
                                 <input style={{ margin: '0px auto' }} type="checkbox" name="check" disabled={countryAdditionalInfo ? false : true} checked={checkedAddtionalInfo} onChange={() => { setCheckedAddtionalInfo(!checkedAddtionalInfo) }} />
-                                <div>{checkedAddtionalInfo ? 'Activated' : 'Deactivate'}</div>
-                            </div>
-                            <div className="stats-status toggle">
-                                <div>Country Compare {timeseriesData.length > 0 ? 'Available' : 'Not Available'}</div>
-                                <div>{timeseriesData.length > 0 ? <Link to='/compare' > <div className='pulse pulse-center'><CompareIcon /></div></Link> : null}</div>
 
                             </div>
                             <div className="stats-status toggle">
-                                <div>Timeline {timeseriesData.length > 0 ? 'Available' : 'Not Available'}</div>
-                                <input style={{ margin: '0px auto' }} type="checkbox" name="check" disabled={timeseriesData.length > 0 ? false : true} checked={checkedTimeline} onChange={() => { setCheckedTimeline(!checkedTimeline) }} />
-                                <div>{checkedTimeline ? 'Activated' : 'Deactivate'}</div>
+                                <div>Country Compare {timeseriesData.length > 1 ? 'Available' : 'Not Available'}</div>
+                                {timeseriesData.length > 1 ? <div>{timeseriesData.length > 0 ? <Link to='/compare' > <div className='pulse pulse-center'><CompareIcon /></div></Link> : null}</div> : null}
+                            </div>
+                            <div className="stats-status toggle">
+                                <div>Timeline {timeseriesData.length > 1 ? 'Available' : 'Not Available'}</div>
+                                <input style={{ margin: '0px auto' }} type="checkbox" name="check" disabled={timeseriesData.length > 1 ? false : true} checked={timelineChecked()} onChange={() => {
+                                    if (timeseriesData.length > 1) {
+                                        setCheckedTimeline(!checkedTimeline)
+                                    }
+                                }} />
+
                             </div>
                         </div>
                     </div>
                     {checkedAddtionalInfo && countryAdditionalInfo ? displayCountryAdditionalInfo() : null}
-                    {checkedTimeline && timeseriesData ? <Timeseries /> : null}
+                    {checkedTimeline && timeseriesData.length > 1 ? <Timeseries /> : null}
                 </>
 
             }

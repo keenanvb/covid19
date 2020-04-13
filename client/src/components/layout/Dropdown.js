@@ -50,6 +50,8 @@ const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountr
         }
     }
 
+    const handleFocus = (event) => event.target.select();
+
     return (
         <div className='dropdown-container'>
             <div className="country-input">
@@ -63,6 +65,7 @@ const Dropdown = ({ title, dropdownData, data: { selectedCountry, selectedCountr
                     name="search"
                     onChange={(e) => { onChange(e) }}
                     maxLength="20"
+                    onFocus={handleFocus}
                 />
                 <div className='pulse' onClick={() => {
                     toggleDisplayList(!displayList)
