@@ -249,11 +249,11 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                 <Map ref={mapRef} center={[-22.93, 30.55]} zoom={3} animate={true} >
                                     <FullscreenControl position="topleft" />
                                     <Control position="topright" >
-                                        <button
+                                        {/* <button
                                             onClick={() => setShowTop5(!showTop5)}
                                         >
                                             {showTop5 ? 'Hide Top 5' : 'Show Top 5'}
-                                        </button>
+                                        </button> */}
                                         <button
                                             onClick={() => setShowLegend(!showLegend)}
                                         >
@@ -267,8 +267,8 @@ const WorldMap = ({ data: { mapData }, getMapData }) => {
                                     />
                                     {showLegend ? displayLegend() : null}
                                     {/* <Top5 countries={sortCountries('deaths')} title={'Deaths'} /> //removed */}
-                                    {showTop5 ?
-                                        displayTop5() : null}
+                                    {/* {showTop5 ?
+                                        displayTop5() : null} */}
                                     {/* {showTop5 ?
                                         displayTop5(sortCountries('deaths'), 'Deaths') : null}
                                     {showTop5 ?
